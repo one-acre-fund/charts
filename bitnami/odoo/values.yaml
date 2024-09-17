@@ -167,6 +167,9 @@ command: []
 ## @param args Override default container args (useful when using custom images)
 ##
 args: []
+## @param args Override default container args for cron job pod (useful when using custom images)
+##
+cronArgs: []
 ## @param extraEnvVars Array with extra environment variables to add to the Odoo container
 ## e.g:
 ## extraEnvVars:
@@ -187,6 +190,8 @@ extraEnvVarsSecret: ""
 ## NOTE: ReadWriteMany PVC(s) are required if replicaCount > 1
 ##
 replicaCount: 1
+
+replicaCronCount: 1
 ## Odoo container ports
 ## @param containerPorts.http Odoo HTTP container port
 ##
@@ -703,6 +708,20 @@ pdb:
 ## @param autoscaling.targetMemory Target Memory utilization percentage
 ##
 autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 11
+  targetCPU: 50
+  targetMemory: 50
+## Odoo Autoscaling Cron configuration
+## ref: https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+## @param autoscalingCron.enabled Enable Horizontal POD autoscaling for Odoo
+## @param autoscalingCron.minReplicas Minimum number of Odoo replicas
+## @param autoscalingCron.maxReplicas Maximum number of Odoo replicas
+## @param autoscalingCron.targetCPU Target CPU utilization percentage
+## @param autoscalingCron.targetMemory Target Memory utilization percentage
+##
+autoscalingCron:
   enabled: false
   minReplicas: 1
   maxReplicas: 11
