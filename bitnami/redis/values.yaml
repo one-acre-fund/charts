@@ -1928,7 +1928,7 @@ metrics:
     # add metricRelabelings with label like app=redis to main redis pod-monitor port
     # - interval: "30s"
     #   path: "/scrape"
-    #   port: "metrics"
+    #   port: "http-metrics"
     #   params:
     #     target: ["localhost:26379"]
     #   metricRelabelings:
@@ -2127,7 +2127,7 @@ kubectl:
   image:
     registry: docker.io
     repository: bitnami/kubectl
-    tag: 1.31.1-debian-12-r1
+    tag: 1.31.1-debian-12-r2
     digest: ""
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
