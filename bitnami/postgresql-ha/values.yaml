@@ -32,6 +32,11 @@ global:
   imagePullSecrets: []
   defaultStorageClass: ""
   storageClass: ""
+  ## Security parameters
+  ##
+  security:
+    ## @param global.security.allowInsecureImages Allows skipping image verification
+    allowInsecureImages: false
   postgresql:
     username: ""
     password: ""
@@ -113,9 +118,8 @@ postgresql:
   image:
     registry: docker.io
     repository: bitnami/postgresql-repmgr
-    tag: 16.4.0-debian-12-r18
+    tag: 17.4.0-debian-12-r2
     digest: ""
-    ## Specify a imagePullPolicy. Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -265,7 +269,7 @@ postgresql:
   ##
   containerSecurityContext:
     enabled: true
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
     runAsNonRoot: true
@@ -831,7 +835,7 @@ witness:
   ##
   containerSecurityContext:
     enabled: true
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
     runAsNonRoot: true
@@ -1130,9 +1134,8 @@ pgpool:
   image:
     registry: docker.io
     repository: bitnami/pgpool
-    tag: 4.5.4-debian-12-r0
+    tag: 4.5.5-debian-12-r6
     digest: ""
-    ## Specify a imagePullPolicy. Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1326,7 +1329,7 @@ pgpool:
   ##
   containerSecurityContext:
     enabled: true
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
     runAsNonRoot: true
@@ -1668,7 +1671,7 @@ rbac:
 ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
 ##
 serviceAccount:
-  ## @param serviceAccount.create Enable creation of ServiceAccount for Airflow pods
+  ## @param serviceAccount.create Specifies whether a ServiceAccount should be created
   ##
   create: true
   ## @param serviceAccount.name The name of the ServiceAccount to use.
@@ -1709,9 +1712,8 @@ metrics:
   image:
     registry: docker.io
     repository: bitnami/postgres-exporter
-    tag: 0.15.0-debian-12-r43
+    tag: 0.16.0-debian-12-r11
     digest: ""
-    ## Specify a imagePullPolicy. Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1737,7 +1739,7 @@ metrics:
   ##
   podSecurityContext:
     enabled: true
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
     runAsNonRoot: true
@@ -1960,9 +1962,8 @@ volumePermissions:
   image:
     registry: docker.io
     repository: bitnami/os-shell
-    tag: 12-debian-12-r30
+    tag: 12-debian-12-r39
     digest: ""
-    ## Specify a imagePullPolicy. Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1985,7 +1986,7 @@ volumePermissions:
   ##
   podSecurityContext:
     enabled: true
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 0
     runAsGroup: 0
     runAsNonRoot: false
@@ -2187,7 +2188,7 @@ backup:
     ## @param backup.cronjob.containerSecurityContext.capabilities.drop Set backup container's Security Context capabilities to drop
     containerSecurityContext:
       enabled: true
-      seLinuxOptions: null
+      seLinuxOptions: {}
       runAsUser: 1001
       runAsGroup: 1001
       runAsNonRoot: true
@@ -2215,6 +2216,40 @@ backup:
     ## ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
     ##
     tolerations: []
+    ## backup cronjob container resource requests and limits
+    ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+    ## @param backup.cronjob.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if backup.cronjob.resources is set (backup.cronjob.resources is recommended for production).
+    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ##
+    resourcesPreset: "nano"
+    ## @param backup.cronjob.resources Set container requests and limits for different resources like CPU or memory
+    ## Example:
+    resources: {}
+    ## resources:
+    ##   requests:
+    ##     cpu: 1
+    ##     memory: 512Mi
+    ##   limits:
+    ##     cpu: 2
+    ##     memory: 1024Mi    
+    ## @param backup.cronjob.extraEnvVars Array containing extra environment variables
+    ## For example:
+    ##  - name: BEARER_AUTH
+    ##    value: true
+    ##
+    extraEnvVars: []
+    ## @param backup.cronjob.extraEnvVarsCM ConfigMap with extra environment variables
+    ##
+    extraEnvVarsCM: ""
+    ## @param backup.cronjob.extraEnvVarsSecret Secret with extra environment variables
+    ##
+    extraEnvVarsSecret: ""
+    ## @param backup.cronjob.extraVolumes Extra volumes to add to the backup container
+    ##
+    extraVolumes: []
+    ## @param backup.cronjob.extraVolumeMounts Extra volume mounts to add to the backup container. Normally used with `extraVolumes`
+    ##
+    extraVolumeMounts: []
     storage:
       ## @param backup.cronjob.storage.existingClaim Provide an existing `PersistentVolumeClaim` (only when `architecture=standalone`)
       ## If defined, PVC must be created manually before volume will be bound

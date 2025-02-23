@@ -1,8 +1,102 @@
 # Changelog
 
-## 0.1.32 (2024-09-26)
+## 1.2.0 (2025-02-20)
 
-* [bitnami/nessie] Release 0.1.32 ([#29636](https://github.com/bitnami/charts/pull/29636))
+* [bitnami/nessie] feat: use new helper for checking API versions ([#32060](https://github.com/bitnami/charts/pull/32060))
+
+## <small>1.1.10 (2025-02-06)</small>
+
+* [bitnami/nessie] Release 1.1.10 (#31800) ([086e2b1](https://github.com/bitnami/charts/commit/086e2b1e0f63b02568e23b4a8020d92d89aa4e1f)), closes [#31800](https://github.com/bitnami/charts/issues/31800)
+
+## <small>1.1.9 (2025-02-03)</small>
+
+* [bitnami/nessie] Release 1.1.9 (#31695) ([4fb4018](https://github.com/bitnami/charts/commit/4fb40180e98e3ac9a5795e3f47452bea5a584e98)), closes [#31695](https://github.com/bitnami/charts/issues/31695)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.1.8 (2025-01-30)</small>
+
+* [bitnami/nessie] Release 1.1.8 (#31676) ([f2d4caa](https://github.com/bitnami/charts/commit/f2d4caa470a6729efecd7c8e8479f75f173b7c53)), closes [#31676](https://github.com/bitnami/charts/issues/31676)
+
+## <small>1.1.7 (2025-01-28)</small>
+
+* [bitnami/nessie] Release 1.1.7 (#31632) ([cbb2262](https://github.com/bitnami/charts/commit/cbb2262339ae8e62e075d2913dcc8151aa29716d)), closes [#31632](https://github.com/bitnami/charts/issues/31632)
+
+## <small>1.1.6 (2025-01-24)</small>
+
+* [bitnami/nessie] Release 1.1.6 (#31575) ([bf4bef9](https://github.com/bitnami/charts/commit/bf4bef9b70a002aaeb888ecaaf60e71684b709f1)), closes [#31575](https://github.com/bitnami/charts/issues/31575)
+
+## <small>1.1.5 (2025-01-22)</small>
+
+* [bitnami/nessie] Release 1.1.5 (#31520) ([62399ed](https://github.com/bitnami/charts/commit/62399ed3863e70775d66f9581e28129026a86e5d)), closes [#31520](https://github.com/bitnami/charts/issues/31520)
+
+## <small>1.1.4 (2025-01-22)</small>
+
+* [bitnami/nessie] Release 1.1.4 (#31504) ([d3408f8](https://github.com/bitnami/charts/commit/d3408f87b35eb20208dc2ded6cb6dc15d6c6d395)), closes [#31504](https://github.com/bitnami/charts/issues/31504)
+
+## <small>1.1.3 (2024-12-26)</small>
+
+* [bitnami/nessie]fix(runtime-parameters.yaml): Set long postgresql password (#31165) ([89f4512](https://github.com/bitnami/charts/commit/89f4512f29baf80919652ba74aa1a8d8fcb47801)), closes [#31165](https://github.com/bitnami/charts/issues/31165)
+
+## <small>1.1.2 (2024-12-18)</small>
+
+* [bitnami/nessie] Release 1.1.2 (#31096) ([31f73fe](https://github.com/bitnami/charts/commit/31f73fe9c561b996028a11550eeaf9292969d4ff)), closes [#31096](https://github.com/bitnami/charts/issues/31096)
+
+## <small>1.1.1 (2024-12-12)</small>
+
+* [bitnami/nessie] Release 1.1.1 (#31003) ([5be4662](https://github.com/bitnami/charts/commit/5be46622e257e418ec703a5a002e0a379cabac99)), closes [#31003](https://github.com/bitnami/charts/issues/31003)
+
+## 1.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/nessie] Detect non-standard images (#30931) ([021372b](https://github.com/bitnami/charts/commit/021372bbc3ef6e718f7b581f335014369f4eb7df)), closes [#30931](https://github.com/bitnami/charts/issues/30931)
+
+## <small>1.0.7 (2024-12-09)</small>
+
+* [bitnami/nessie] Release 1.0.7 (#30845) ([7df0c76](https://github.com/bitnami/charts/commit/7df0c769083e44d8847a9be82ad9731922fafbd4)), closes [#30845](https://github.com/bitnami/charts/issues/30845)
+
+## <small>1.0.6 (2024-12-06)</small>
+
+* [bitnami/nessie] Release 1.0.6 (#30814) ([fec53c6](https://github.com/bitnami/charts/commit/fec53c6b7be4ff4acb3daf670cc27e712bb5cc6a)), closes [#30814](https://github.com/bitnami/charts/issues/30814)
+
+## <small>1.0.5 (2024-12-02)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/nessie] Release 1.0.5 (#30712) ([79b92ab](https://github.com/bitnami/charts/commit/79b92ab8ac3181fbea44acbf26064e87df7ec5f3)), closes [#30712](https://github.com/bitnami/charts/issues/30712)
+
+## <small>1.0.4 (2024-11-21)</small>
+
+* [bitnami/nessie] Release 1.0.4 (#30555) ([180c7ee](https://github.com/bitnami/charts/commit/180c7ee1ca182f89df0ef185f5504428ab956e3d)), closes [#30555](https://github.com/bitnami/charts/issues/30555)
+
+## <small>1.0.3 (2024-11-12)</small>
+
+* [bitnami/nessie] Release 1.0.3 (#30422) ([08fe906](https://github.com/bitnami/charts/commit/08fe906aee737e07ddb30ea943ba29b1d1dfcb58)), closes [#30422](https://github.com/bitnami/charts/issues/30422)
+
+## <small>1.0.2 (2024-11-10)</small>
+
+* [bitnami/nessie] Release 1.0.2 (#30386) ([858bbe7](https://github.com/bitnami/charts/commit/858bbe76dc285aeb1bfa53f48a84dd2029800821)), closes [#30386](https://github.com/bitnami/charts/issues/30386)
+
+## <small>1.0.1 (2024-11-08)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/nessie] Unify seLinuxOptions default value (#30341) ([6461b44](https://github.com/bitnami/charts/commit/6461b44f25b3fd57cd50faea7532956474632127)), closes [#30341](https://github.com/bitnami/charts/issues/30341)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 1.0.0 (2024-10-03)
+
+* [bitnami/nessie] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29741) ([c62b315](https://github.com/bitnami/charts/commit/c62b31550a99d32365ded549c1c84cbf733661ab)), closes [#29741](https://github.com/bitnami/charts/issues/29741)
+
+## <small>0.1.34 (2024-10-01)</small>
+
+* [bitnami/nessie] Release 0.1.34 (#29679) ([3792cc1](https://github.com/bitnami/charts/commit/3792cc13fac27350bf3068105caabe86caa11ac5)), closes [#29679](https://github.com/bitnami/charts/issues/29679)
+
+## <small>0.1.33 (2024-10-01)</small>
+
+* [bitnami/nessie] Release 0.1.33 (#29677) ([3a06a36](https://github.com/bitnami/charts/commit/3a06a3620919767cfc377213527946587968da4e)), closes [#29677](https://github.com/bitnami/charts/issues/29677)
+
+## <small>0.1.32 (2024-09-26)</small>
+
+* [bitnami/nessie] Release 0.1.32 (#29636) ([98e1a81](https://github.com/bitnami/charts/commit/98e1a811d041ad1b58cd1ce27f7c838eda789e51)), closes [#29636](https://github.com/bitnami/charts/issues/29636)
 
 ## <small>0.1.31 (2024-09-25)</small>
 

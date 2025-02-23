@@ -1,8 +1,46 @@
 # Changelog
 
+## 34.1.2 (2025-01-31)
+
+* [bitnami/spring-cloud-dataflow] Release 34.1.2 ([#31688](https://github.com/bitnami/charts/pull/31688))
+
+## <small>34.1.1 (2025-01-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/spring-cloud-dataflow] Release 34.1.1 (#31451) ([2faecca](https://github.com/bitnami/charts/commit/2faeccac20cff398acfa3036c62140e1cfc70c14)), closes [#31451](https://github.com/bitnami/charts/issues/31451)
+
+## 34.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/spring-cloud-dataflow] Detect non-standard images (#30968) ([f1ceafb](https://github.com/bitnami/charts/commit/f1ceafba996e8b44a30abdff8594376a7e3b0399)), closes [#30968](https://github.com/bitnami/charts/issues/30968)
+
+## <small>34.0.1 (2024-12-08)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/spring-cloud-dataflow] Release 34.0.1 (#30829) ([99bdcc4](https://github.com/bitnami/charts/commit/99bdcc485b97dd97b1e74836d6b32805aab7323f)), closes [#30829](https://github.com/bitnami/charts/issues/30829)
+
+## 34.0.0 (2024-11-12)
+
+* [bitnami/spring-cloud-dataflow] Update kafka subchart to 31.0.0 (#30426) ([01bfb98](https://github.com/bitnami/charts/commit/01bfb98c9b21baf9c18d15ef67e8a116979994e9)), closes [#30426](https://github.com/bitnami/charts/issues/30426)
+
+## 33.0.0 (2024-11-12)
+
+* [bitnami/spring-cloud-dataflow] chore!: :arrow_up: :boom: Bump MariaDB subchart to 20 (#30359) ([1369cbf](https://github.com/bitnami/charts/commit/1369cbfd07e26350d2b4fa91eeeb7c908fd49cca)), closes [#30359](https://github.com/bitnami/charts/issues/30359)
+
+## <small>32.0.2 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/spring-cloud-dataflow] Release 32.0.2 (#30122) ([6349db0](https://github.com/bitnami/charts/commit/6349db02cff375314e0278cc3618b33ffb4eafd1)), closes [#30122](https://github.com/bitnami/charts/issues/30122)
+
+## <small>32.0.1 (2024-10-22)</small>
+
+* [bitnami/spring-cloud-dataflow] fix: :bug: Add missing /.m2 emptyDir (#30034) ([483b762](https://github.com/bitnami/charts/commit/483b762831fff2de246581452b91501e6309f052)), closes [#30034](https://github.com/bitnami/charts/issues/30034)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
 ## 32.0.0 (2024-09-23)
 
-* [bitnami/spring-cloud-dataflow] feat!: :arrow_up: :boom: Bump RabbitMQ to 4.x.x ([#29572](https://github.com/bitnami/charts/pull/29572))
+* [bitnami/spring-cloud-dataflow] feat!: :arrow_up: :boom: Bump RabbitMQ to 4.x.x (#29572) ([7adaf80](https://github.com/bitnami/charts/commit/7adaf809d4275fa8c1dfedc2c8a23f7fab33c242)), closes [#29572](https://github.com/bitnami/charts/issues/29572)
 
 ## <small>31.0.4 (2024-09-19)</small>
 

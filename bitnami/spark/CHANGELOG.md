@@ -1,8 +1,46 @@
 # Changelog
 
-## 9.2.11 (2024-09-25)
+## 9.3.4 (2025-02-20)
 
-* [bitnami/spark] Release 9.2.11 ([#29593](https://github.com/bitnami/charts/pull/29593))
+* [bitnami/spark] Release 9.3.4 ([#32043](https://github.com/bitnami/charts/pull/32043))
+
+## <small>9.3.3 (2025-01-28)</small>
+
+* [bitnami/spark] Release 9.3.3 (#31629) ([e3b25fd](https://github.com/bitnami/charts/commit/e3b25fd171105803c76475111ffd44474f92ae12)), closes [#31629](https://github.com/bitnami/charts/issues/31629)
+
+## <small>9.3.2 (2024-12-21)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/spark] Release 9.3.2 (#31136) ([a1c8548](https://github.com/bitnami/charts/commit/a1c854821dca9f467d4ae999880d15dc702f5afc)), closes [#31136](https://github.com/bitnami/charts/issues/31136)
+
+## <small>9.3.1 (2024-12-14)</small>
+
+* [bitnami/spark] Release 9.3.1 (#31041) ([092c28c](https://github.com/bitnami/charts/commit/092c28c197402c2d06ec821a86d6656df696f568)), closes [#31041](https://github.com/bitnami/charts/issues/31041)
+
+## 9.3.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/spark] Detect non-standard images (#30947) ([85f0c77](https://github.com/bitnami/charts/commit/85f0c770ad8792b2371207403eabedfb701730c1)), closes [#30947](https://github.com/bitnami/charts/issues/30947)
+
+## <small>9.2.14 (2024-11-08)</small>
+
+* [bitnami/spark] Unify seLinuxOptions default value (#30326) ([f47256e](https://github.com/bitnami/charts/commit/f47256e1c1d90eecb1850ca453568e9c8990ea5c)), closes [#30326](https://github.com/bitnami/charts/issues/30326)
+
+## <small>9.2.13 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/spark] Release 9.2.13 (#30189) ([68f8f1f](https://github.com/bitnami/charts/commit/68f8f1f9932a70137ce4b26fe2a5025e956b31fe)), closes [#30189](https://github.com/bitnami/charts/issues/30189)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>9.2.12 (2024-10-01)</small>
+
+* [bitnami/spark] Fix extraEgress being applied from master instead of worker (#29591) ([65b08b5](https://github.com/bitnami/charts/commit/65b08b500c0324ba079d1a8c18306330d4812026)), closes [#29591](https://github.com/bitnami/charts/issues/29591)
+
+## <small>9.2.11 (2024-09-25)</small>
+
+* [bitnami/spark] Release 9.2.11 (#29593) ([733c5e8](https://github.com/bitnami/charts/commit/733c5e8a5516fa46c6f86c5d503edc388fae2d7e)), closes [#29593](https://github.com/bitnami/charts/issues/29593)
 
 ## <small>9.2.10 (2024-08-24)</small>
 

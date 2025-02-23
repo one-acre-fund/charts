@@ -55,13 +55,31 @@ helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/harbor
 
 Bitnami charts allow setting resource requests and limits for all containers inside the chart deployment. These are inside the `resources` value (check parameter table). Setting requests is essential for production workloads and these should be adapted to your specific use case.
 
-To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcePreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
+To make this process easier, the chart contains the `resourcesPreset` values, which automatically sets the `resources` section according to different presets. Check these presets in [the bitnami/common chart](https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15). However, in production workloads using `resourcesPreset` is discouraged as it may not fully adapt to your specific needs. Find more information on container resource management in the [official Kubernetes documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/).
 
-### [Rolling VS Immutable tags](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-understand-rolling-tags-containers-index.html)
+### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 
 It is strongly recommended to use immutable tags in a production environment. This ensures your deployment does not change automatically if the same tag is updated with a different image.
 
 Bitnami will release a new chart updating its containers if a new version of the main container, significant changes, or critical vulnerabilities exist.
+
+### Prometheus metrics
+
+This chart can be integrated with Prometheus by setting `metrics.enabled` to true. This will expose the Harbor native Prometheus port in both the containers and services. The services will also have the necessary annotations to be automatically scraped by Prometheus.
+
+#### Prometheus requirements
+
+It is necessary to have a working installation of Prometheus or Prometheus Operator for the integration to work. Install the [Bitnami Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/prometheus) or the [Bitnami Kube Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus) to easily have a working Prometheus in your cluster.
+
+#### Integration with Prometheus Operator
+
+The chart can deploy `ServiceMonitor` objects for integration with Prometheus Operator installations. To do so, set the value `metrics.serviceMonitor.enabled=true`. Ensure that the Prometheus Operator `CustomResourceDefinitions` are installed in the cluster or it will fail with the following error:
+
+```text
+no matches for kind "ServiceMonitor" in version "monitoring.coreos.com/v1"
+```
+
+Install the [Bitnami Kube Prometheus helm chart](https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus) for having the necessary CRDs and the Prometheus Operator.
 
 ### Configure the way how to expose Harbor core
 
@@ -89,6 +107,19 @@ Format: `protocol://domain[:port]`. Usually:
 - if expose Harbor core via NGINX proxy using a `LoadBalancer` service type, set the `domain` as your own domain name and add a CNAME record to map the domain name to the one you got from the cloud provider.
 
 If Harbor is deployed behind the proxy, set it as the URL of proxy.
+
+### Securing traffic using TLS
+
+It is possible to configure TLS communication in the `core`, `jobservice`, `portal`, `registry` and `trivy` components by setting `internalTLS.enabled=true`. The chart allows two configuration options:
+
+- Provide your own secrets for Harbor components using the `*.tls.existingSecret` (under the `core`, `jobservice`, `portal`, `registry` and `trivy' sections) values.
+- Have the chart auto-generate the certificates. This is done when not setting the `*.tls.existingSecret` values.
+
+Additionally, it is possible to add a custom authority to each component trust store. This is done using the `internalTLS.caBundleSecret` value with the name of a secret containing the corresponding `ca.crt` file.
+
+### Backup and restore
+
+To back up and restore Helm chart deployments on Kubernetes, you need to back up the persistent volumes from the source deployment and attach them to a new deployment using [Velero](https://velero.io/), a Kubernetes backup/restore tool. Find the instructions for using Velero in [this guide](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-backup-restore-deployments-velero-index.html).
 
 ### Sidecars and Init Containers
 
@@ -168,13 +199,14 @@ You can enable this initContainer by setting `volumePermissions.enabled` to `tru
 
 ### Global parameters
 
-| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value  |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
-| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`   |
-| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`   |
-| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
+| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value   |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`    |
+| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`    |
+| `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`    |
+| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`    |
+| `global.security.allowInsecureImages`                 | Allows skipping image verification                                                                                                                                                                                                                                                                                                                                  | `false` |
+| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto`  |
 
 ### Common Parameters
 
@@ -948,6 +980,9 @@ You can enable this initContainer by setting `volumePermissions.enabled` to `tru
 | `trivy.existingEnvVarsSecret`                             | Existing secret for trivy                                                                                                                                                                                                     | `""`                                   |
 | `trivy.gitHubToken`                                       | The GitHub access token to download Trivy DB                                                                                                                                                                                  | `""`                                   |
 | `trivy.skipUpdate`                                        | The flag to disable Trivy DB downloads from GitHub                                                                                                                                                                            | `false`                                |
+| `trivy.skipJavaDbUpdate`                                  | The flag to disable Trivy JAVA DB downloads.                                                                                                                                                                                  | `false`                                |
+| `trivy.dbRepository`                                      | OCI repositor(ies) to retrieve the trivy vulnerability database from                                                                                                                                                          | `""`                                   |
+| `trivy.javaDbRepository`                                  | OCI repositor(ies) to retrieve the Java trivy vulnerability database from                                                                                                                                                     | `""`                                   |
 | `trivy.cacheDir`                                          | Directory to store the cache                                                                                                                                                                                                  | `/bitnami/harbor-adapter-trivy/.cache` |
 | `trivy.tls.existingSecret`                                | Name of an existing secret with the certificates for internal TLS access                                                                                                                                                      | `""`                                   |
 | `trivy.command`                                           | Override default container command (useful when using custom images)                                                                                                                                                          | `[]`                                   |
@@ -1128,27 +1163,29 @@ You can enable this initContainer by setting `volumePermissions.enabled` to `tru
 
 ### PostgreSQL Parameters
 
-| Name                                       | Description                                                                                                                                                                                                                | Value                          |
-| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| `postgresql.enabled`                       | Switch to enable or disable the PostgreSQL helm chart                                                                                                                                                                      | `true`                         |
-| `postgresql.auth.enablePostgresUser`       | Assign a password to the "postgres" admin user. Otherwise, remote access will be blocked for this user                                                                                                                     | `true`                         |
-| `postgresql.auth.postgresPassword`         | Password for the "postgres" admin user                                                                                                                                                                                     | `not-secure-database-password` |
-| `postgresql.auth.existingSecret`           | Name of existing secret to use for PostgreSQL credentials                                                                                                                                                                  | `""`                           |
-| `postgresql.architecture`                  | PostgreSQL architecture (`standalone` or `replication`)                                                                                                                                                                    | `standalone`                   |
-| `postgresql.primary.extendedConfiguration` | Extended PostgreSQL Primary configuration (appended to main or default configuration)                                                                                                                                      | `max_connections = 1024
+| Name                                         | Description                                                                                                                                                                                                                | Value                          |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `postgresql.enabled`                         | Switch to enable or disable the PostgreSQL helm chart                                                                                                                                                                      | `true`                         |
+| `postgresql.auth.enablePostgresUser`         | Assign a password to the "postgres" admin user. Otherwise, remote access will be blocked for this user                                                                                                                     | `true`                         |
+| `postgresql.auth.postgresPassword`           | Password for the "postgres" admin user                                                                                                                                                                                     | `not-secure-database-password` |
+| `postgresql.auth.existingSecret`             | Name of existing secret to use for PostgreSQL credentials                                                                                                                                                                  | `""`                           |
+| `postgresql.architecture`                    | PostgreSQL architecture (`standalone` or `replication`)                                                                                                                                                                    | `standalone`                   |
+| `postgresql.primary.extendedConfiguration`   | Extended PostgreSQL Primary configuration (appended to main or default configuration)                                                                                                                                      | `max_connections = 1024
 `      |
-| `postgresql.primary.initdb.scripts`        | Initdb scripts to create Harbor databases                                                                                                                                                                                  | `{}`                           |
-| `postgresql.image.registry`                | PostgreSQL image registry                                                                                                                                                                                                  | `REGISTRY_NAME`                |
-| `postgresql.image.repository`              | PostgreSQL image repository                                                                                                                                                                                                | `REPOSITORY_NAME/postgresql`   |
-| `postgresql.image.digest`                  | PostgreSQL image digest in the way sha256:aa.... Please note this parameter, if set, will override the tag                                                                                                                 | `""`                           |
-| `postgresql.primary.resourcesPreset`       | Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production). | `nano`                         |
-| `postgresql.primary.resources`             | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                          | `{}`                           |
-| `externalDatabase.host`                    | Database host                                                                                                                                                                                                              | `localhost`                    |
-| `externalDatabase.port`                    | Database port number                                                                                                                                                                                                       | `5432`                         |
-| `externalDatabase.user`                    | Non-root username for Harbor                                                                                                                                                                                               | `bn_harbor`                    |
-| `externalDatabase.password`                | Password for the non-root username for Harbor                                                                                                                                                                              | `""`                           |
-| `externalDatabase.sslmode`                 | External database ssl mode                                                                                                                                                                                                 | `disable`                      |
-| `externalDatabase.coreDatabase`            | External database name for core                                                                                                                                                                                            | `""`                           |
+| `postgresql.primary.initdb.scripts`          | Initdb scripts to create Harbor databases                                                                                                                                                                                  | `{}`                           |
+| `postgresql.image.registry`                  | PostgreSQL image registry                                                                                                                                                                                                  | `REGISTRY_NAME`                |
+| `postgresql.image.repository`                | PostgreSQL image repository                                                                                                                                                                                                | `REPOSITORY_NAME/postgresql`   |
+| `postgresql.image.digest`                    | PostgreSQL image digest in the way sha256:aa.... Please note this parameter, if set, will override the tag                                                                                                                 | `""`                           |
+| `postgresql.primary.resourcesPreset`         | Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production). | `nano`                         |
+| `postgresql.primary.resources`               | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                          | `{}`                           |
+| `externalDatabase.host`                      | Database host                                                                                                                                                                                                              | `localhost`                    |
+| `externalDatabase.port`                      | Database port number                                                                                                                                                                                                       | `5432`                         |
+| `externalDatabase.user`                      | Non-root username for Harbor                                                                                                                                                                                               | `bn_harbor`                    |
+| `externalDatabase.password`                  | Password for the non-root username for Harbor                                                                                                                                                                              | `""`                           |
+| `externalDatabase.sslmode`                   | External database ssl mode                                                                                                                                                                                                 | `disable`                      |
+| `externalDatabase.coreDatabase`              | External database name for core                                                                                                                                                                                            | `""`                           |
+| `externalDatabase.existingSecret`            | The name of an existing secret with database credentials                                                                                                                                                                   | `""`                           |
+| `externalDatabase.existingSecretPasswordKey` | Password key on the existing secret                                                                                                                                                                                        | `db-password`                  |
 
 ### Redis&reg; parameters
 
@@ -1219,6 +1256,14 @@ helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/harbo
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 24.1.0
+
+This version introduces image verification for security purposes. To disable it, set `global.security.allowInsecureImages` to `true`. More details at [GitHub issue](https://github.com/bitnami/charts/issues/30850).
+
+### To 24.0.0
+
+This major updates the PostgreSQL subchart to its newest major, 16.0.0, which uses PostgreSQL 17.x. Follow the [official instructions](https://www.postgresql.org/docs/17/upgrading.html) to upgrade to 17.x.
 
 ### To 23.0.0
 
@@ -1431,7 +1476,7 @@ Please note that Clair might be fully deprecated from this chart in following up
 
 #### Useful links
 
-- [Bitnami Tutorial](https://docs.vmware.com/en/VMware-Tanzu-Application-Catalog/services/tutorials/GUID-resolve-helm2-helm3-post-migration-issues-index.html)
+- [Bitnami Tutorial](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-resolve-helm2-helm3-post-migration-issues-index.html)
 - [Helm docs](https://helm.sh/docs/topics/v2_v3_migration)
 - [Helm Blog](https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3)
 
@@ -1473,7 +1518,7 @@ kubectl delete pod harbor-postgresql-0
 
 ## License
 
-Copyright &copy; 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+Copyright &copy; 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

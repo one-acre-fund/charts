@@ -1,8 +1,68 @@
 # Changelog
 
-## 11.0.5 (2024-09-30)
+## 11.4.3 (2025-02-20)
 
-* [bitnami/redis-cluster] Release 11.0.5 ([#29657](https://github.com/bitnami/charts/pull/29657))
+* [bitnami/redis-cluster] Release 11.4.3 ([#32032](https://github.com/bitnami/charts/pull/32032))
+
+## <small>11.4.2 (2025-02-16)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/redis-cluster] Release 11.4.2 (#31942) ([0229928](https://github.com/bitnami/charts/commit/022992851c0b19d1a89f719f95b117a0f72ebd83)), closes [#31942](https://github.com/bitnami/charts/issues/31942)
+* [bitnami/redis-cluster] Update README.md (#31705) ([1b1c34a](https://github.com/bitnami/charts/commit/1b1c34a879fd2726ac21c3f2ceb111b15aab8cab)), closes [#31705](https://github.com/bitnami/charts/issues/31705)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>11.4.1 (2025-01-23)</small>
+
+* [bitnami/redis-cluster] Address chart not working with external access enabled (#31494) ([89e4605](https://github.com/bitnami/charts/commit/89e460598d8a5373174d597941ff36b0f9315177)), closes [#31494](https://github.com/bitnami/charts/issues/31494)
+
+## 11.4.0 (2025-01-13)
+
+* [bitnami/redis-cluster] feat: add support for svc bindings (#31330) ([c409f1f](https://github.com/bitnami/charts/commit/c409f1fc5d34e37299878f19718410493350344e)), closes [#31330](https://github.com/bitnami/charts/issues/31330)
+
+## 11.3.0 (2025-01-10)
+
+* [bitnami/redis-cluster] feat: add support for customizing loadBalancerClass on services (#31288) ([ca6048a](https://github.com/bitnami/charts/commit/ca6048a15b45d61c0f590f6b98041ac92bac61c0)), closes [#31288](https://github.com/bitnami/charts/issues/31288)
+
+## <small>11.2.3 (2025-01-08)</small>
+
+* [bitnami/redis-cluster] Release 11.2.3 (#31239) ([f14298a](https://github.com/bitnami/charts/commit/f14298a112c8d6a7eb51ab3f1fd8b114bd27b050)), closes [#31239](https://github.com/bitnami/charts/issues/31239)
+
+## <small>11.2.2 (2025-01-08)</small>
+
+* [bitnami/redis-cluster] Add support for namespaceOverride (#31243) ([d0dbf85](https://github.com/bitnami/charts/commit/d0dbf85e15c388ad23c6a3c58c3553c267a19356)), closes [#31243](https://github.com/bitnami/charts/issues/31243)
+
+## <small>11.2.1 (2024-12-21)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/redis-cluster] Release 11.2.1 (#31137) ([b648635](https://github.com/bitnami/charts/commit/b64863575083fb3358c8bc144a0807102b623290)), closes [#31137](https://github.com/bitnami/charts/issues/31137)
+
+## 11.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/redis-cluster] Detect non-standard images (#30943) ([941937f](https://github.com/bitnami/charts/commit/941937f791d75eb04f1f29733fa73b37d3ecf15f)), closes [#30943](https://github.com/bitnami/charts/issues/30943)
+
+## 11.1.0 (2024-11-26)
+
+* [bitnami/redis-cluster] feat: Set custom terminationGracePeriodSeconds for redis (#30470) ([1cacaa5](https://github.com/bitnami/charts/commit/1cacaa54741ef79e47c8ca402ad97c9dbaa5103d)), closes [#30470](https://github.com/bitnami/charts/issues/30470)
+
+## <small>11.0.8 (2024-11-11)</small>
+
+* [bitnami/redis-cluster] Release 11.0.8 (#30406) ([03bdf29](https://github.com/bitnami/charts/commit/03bdf29b58fb4f1d4d9561d7654d39fc5e8e7ffd)), closes [#30406](https://github.com/bitnami/charts/issues/30406)
+
+## <small>11.0.7 (2024-11-08)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/redis-cluster] Unify seLinuxOptions default value (#30328) ([0743b55](https://github.com/bitnami/charts/commit/0743b55625dd5ccc2dc78de04c6536254ac40239)), closes [#30328](https://github.com/bitnami/charts/issues/30328)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>11.0.6 (2024-10-02)</small>
+
+* [bitnami/redis-cluster] Release 11.0.6 (#29755) ([c99aea9](https://github.com/bitnami/charts/commit/c99aea94ae614acd9e15b3333496da5d7e29de01)), closes [#29755](https://github.com/bitnami/charts/issues/29755)
+
+## <small>11.0.5 (2024-09-30)</small>
+
+* [bitnami/redis-cluster] Release 11.0.5 (#29657) ([d8e686d](https://github.com/bitnami/charts/commit/d8e686d691541b3f570ae8a01d0f5128ea99a50a)), closes [#29657](https://github.com/bitnami/charts/issues/29657)
 
 ## <small>11.0.4 (2024-09-12)</small>
 

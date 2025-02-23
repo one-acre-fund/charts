@@ -1,8 +1,71 @@
 # Changelog
 
-## 19.0.7 (2024-09-23)
+## 20.3.1 (2025-02-19)
 
-* [bitnami/mariadb] Release 19.0.7 ([#29571](https://github.com/bitnami/charts/pull/29571))
+* [bitnami/mariadb] Release 20.3.1 ([#32014](https://github.com/bitnami/charts/pull/32014))
+
+## 20.3.0 (2025-02-19)
+
+* [bitnami/*] Fix typo in named template name (#31858) ([b739b69](https://github.com/bitnami/charts/commit/b739b69532e637bd33b4a44eeb422c3e749eac77)), closes [#31858](https://github.com/bitnami/charts/issues/31858)
+* [bitnami/mariadb] feat: Add Transparent Data Encryption support (#31706) ([486712d](https://github.com/bitnami/charts/commit/486712d975d5fd85fe764e42f042b4a185599155)), closes [#31706](https://github.com/bitnami/charts/issues/31706)
+
+## <small>20.2.4 (2025-02-17)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/mariadb] chore(resources): Increase primary resources (#31959) ([04f85f5](https://github.com/bitnami/charts/commit/04f85f5b9d464b8f9670affa339ab277692308ad)), closes [#31959](https://github.com/bitnami/charts/issues/31959)
+
+## <small>20.2.3 (2025-02-05)</small>
+
+* [bitnami/mariadb] Release 20.2.3 (#31789) ([896aebc](https://github.com/bitnami/charts/commit/896aebc4920cb3f3493cfc922d5e5673aa862d64)), closes [#31789](https://github.com/bitnami/charts/issues/31789)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>20.2.2 (2025-01-23)</small>
+
+* [bitnami/mariadb] Release 20.2.2 (#31535) ([9bc801b](https://github.com/bitnami/charts/commit/9bc801b4caa0b2fff6ae3392f6b417877a056965)), closes [#31535](https://github.com/bitnami/charts/issues/31535)
+
+## <small>20.2.1 (2024-12-14)</small>
+
+* [bitnami/mariadb] Release 20.2.1 (#31043) ([afe2d8d](https://github.com/bitnami/charts/commit/afe2d8d5b540a8b3ced4a46d04b4c5313c7354e1)), closes [#31043](https://github.com/bitnami/charts/issues/31043)
+
+## 20.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 4) (#30669) ([a4ec006](https://github.com/bitnami/charts/commit/a4ec00624589023a70a7094fcfb9f12e382bc280)), closes [#30669](https://github.com/bitnami/charts/issues/30669)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/mariadb] Detect non-standard images (#30956) ([bb3402c](https://github.com/bitnami/charts/commit/bb3402c7a75a6a54976cd7c30a2116485deb7203)), closes [#30956](https://github.com/bitnami/charts/issues/30956)
+* [bitnami/mariadb] Fix typo in README (#30800) ([2b8b5f5](https://github.com/bitnami/charts/commit/2b8b5f5bed0ccb9840b35aca9e0415d88755b83c)), closes [#30800](https://github.com/bitnami/charts/issues/30800)
+
+## <small>20.1.1 (2024-11-27)</small>
+
+* [bitnami/mariadb] fix: :bug: Set correct TLS mountPath (#30641) ([fc2dcd7](https://github.com/bitnami/charts/commit/fc2dcd711548553180d6fc1d5debc51f40aa4d22)), closes [#30641](https://github.com/bitnami/charts/issues/30641)
+
+## 20.1.0 (2024-11-27)
+
+* [bitnami/mariadb] feat: :sparkles: Add TLS support (#30629) ([13c518f](https://github.com/bitnami/charts/commit/13c518ffc9cfefc10110317d9aa13ddc84a2d6ec)), closes [#30629](https://github.com/bitnami/charts/issues/30629)
+
+## 20.0.0 (2024-11-08)
+
+* [bitnami/mariadb] fix!: :bug: :sparkles: :boom: Set correct serviceName and add Password Update Job  ([b90422b](https://github.com/bitnami/charts/commit/b90422bd86f34d4c94d8b9da41ebf89e03dbf384)), closes [#30300](https://github.com/bitnami/charts/issues/30300)
+
+## <small>19.1.2 (2024-11-04)</small>
+
+* [bitnami/mariadb] Release 19.1.2 (#30203) ([86984d1](https://github.com/bitnami/charts/commit/86984d109d4bb2be040824fe362649b8678f7ae6)), closes [#30203](https://github.com/bitnami/charts/issues/30203)
+
+## <small>19.1.1 (2024-11-02)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/mariadb] Release 19.1.1 (#30176) ([6e6c654](https://github.com/bitnami/charts/commit/6e6c654a7a0d175f9ae47aa6f70aef9bbe11fb65)), closes [#30176](https://github.com/bitnami/charts/issues/30176)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 19.1.0 (2024-10-10)
+
+* [bitnami/mariadb] add default binlog expiry configuration of 30 days (#29841) ([bb0c258](https://github.com/bitnami/charts/commit/bb0c258b0ee0965ab2b97f2bc30e3d8e0710be07)), closes [#29841](https://github.com/bitnami/charts/issues/29841)
+
+## <small>19.0.7 (2024-09-23)</small>
+
+* [bitnami/mariadb] Release 19.0.7 (#29571) ([a64fadf](https://github.com/bitnami/charts/commit/a64fadf42cc82f7468245ff87c61aa50356fbb47)), closes [#29571](https://github.com/bitnami/charts/issues/29571)
 
 ## <small>19.0.6 (2024-09-17)</small>
 
@@ -600,7 +663,7 @@
 
 ## 10.4.0 (2022-03-08)
 
-* [bitnami/mariadb] Don't overwrite existing secrets (#9268) ([3d5945a](https://github.com/bitnami/charts/commit/3d5945a08afac40a812f2d48f888e374582dbcc3)), closes [#9268](https://github.com/bitnami/charts/issues/9268) [#7403](https://github.com/bitnami/charts/issues/7403)
+* [bitnami/mariadb] Don't overwrite existing secrets (#9268) ([3d5945a](https://github.com/bitnami/charts/commit/3d5945a08afac40a812f2d48f888e374582dbcc3)), closes [#9268](https://github.com/bitnami/charts/issues/9268)
 
 ## <small>10.3.7 (2022-02-27)</small>
 

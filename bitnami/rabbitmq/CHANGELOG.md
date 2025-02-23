@@ -1,8 +1,81 @@
 # Changelog
 
-## 15.0.1 (2024-09-25)
+## 15.3.2 (2025-02-21)
 
-* [bitnami/rabbitmq] Release 15.0.1 ([#29600](https://github.com/bitnami/charts/pull/29600))
+* [bitnami/rabbitmq] Release 15.3.2 ([#32101](https://github.com/bitnami/charts/pull/32101))
+
+## <small>15.3.1 (2025-02-11)</small>
+
+* [bitnami/rabbitmq] Release 15.3.1 (#31873) ([6857694](https://github.com/bitnami/charts/commit/68576941a396c697cd98b74f6fece6201b18f41e)), closes [#31873](https://github.com/bitnami/charts/issues/31873)
+
+## 15.3.0 (2025-02-10)
+
+* [bitnami/rabbitmq]: add hostPort support to the chart (#31836) ([5bcbebf](https://github.com/bitnami/charts/commit/5bcbebf3d6c35048bf2dad13abecbdf57744a928)), closes [#31836](https://github.com/bitnami/charts/issues/31836)
+
+## <small>15.2.5 (2025-02-03)</small>
+
+* [bitnami/rabbitmq] Release 15.2.5 (#31684) ([9f2b108](https://github.com/bitnami/charts/commit/9f2b108e450d4bc837335432333fde78d946c031)), closes [#31684](https://github.com/bitnami/charts/issues/31684)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>15.2.4 (2025-01-25)</small>
+
+* [bitnami/rabbitmq] Release 15.2.4 (#31593) ([30b43f3](https://github.com/bitnami/charts/commit/30b43f32ddb93639ae7a714c7a9cbd686280d302)), closes [#31593](https://github.com/bitnami/charts/issues/31593)
+
+## <small>15.2.3 (2025-01-15)</small>
+
+* [bitnami/rabbitmq] Fix incorrect configuration of TCP listen options by memoryHighWatermark settings ([7432a31](https://github.com/bitnami/charts/commit/7432a317f4126ac2ca2b3a56e731d483a92b752a)), closes [#31336](https://github.com/bitnami/charts/issues/31336)
+
+## <small>15.2.2 (2025-01-07)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/rabbitmq] remove undefined rts key from network policy template (#31210) ([1e98bac](https://github.com/bitnami/charts/commit/1e98bacbb4153a6a57690d1cc96b7f76e66c6abe)), closes [#31210](https://github.com/bitnami/charts/issues/31210)
+
+## <small>15.2.1 (2024-12-16)</small>
+
+* [bitnami/rabbitmq] Release 15.2.1 (#31049) ([973da81](https://github.com/bitnami/charts/commit/973da81d773b2b834c83e8b7b90553d915899bc5)), closes [#31049](https://github.com/bitnami/charts/issues/31049)
+
+## 15.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/rabbitmq] Detect non-standard images (#30940) ([4dade21](https://github.com/bitnami/charts/commit/4dade214ff39b6741a9f1c1239c51a4ab13c1a4d)), closes [#30940](https://github.com/bitnami/charts/issues/30940)
+
+## 15.1.0 (2024-11-25)
+
+* [bitnami/rabbitmq] feat: :sparkles: Allow password updates (#30615) ([d98aecc](https://github.com/bitnami/charts/commit/d98aecce08aebd795cdace9bc1f814296a9aa873)), closes [#30615](https://github.com/bitnami/charts/issues/30615)
+
+## <small>15.0.7 (2024-11-22)</small>
+
+* [bitnami/rabbitmq] Release 15.0.7 (#30572) ([212993b](https://github.com/bitnami/charts/commit/212993b0c06a0f0a3ccafdc8c253fe260b525b73)), closes [#30572](https://github.com/bitnami/charts/issues/30572)
+
+## <small>15.0.6 (2024-11-08)</small>
+
+* [bitnami/rabbitmq] Unify seLinuxOptions default value (#30327) ([9537964](https://github.com/bitnami/charts/commit/95379640c83645c2b37e8cebc18823cf5984308b)), closes [#30327](https://github.com/bitnami/charts/issues/30327)
+
+## <small>15.0.5 (2024-10-31)</small>
+
+* [bitnami/rabbitmq] Release 15.0.5 (#30152) ([2dba9cb](https://github.com/bitnami/charts/commit/2dba9cb5e390c6bef2a0d5ee9b4a401cffea0070)), closes [#30152](https://github.com/bitnami/charts/issues/30152)
+
+## <small>15.0.4 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/rabbitmq] Allow missing memory limit when memoryHighWatermark is absolute (#30079) ([b92af12](https://github.com/bitnami/charts/commit/b92af12ad55e92c8b1377987b222090787d23b02)), closes [#30079](https://github.com/bitnami/charts/issues/30079)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>15.0.3 (2024-10-14)</small>
+
+* [bitnami/rabbitmq] Use common password/secrets manager to handle credentials (#29879) ([456bfb2](https://github.com/bitnami/charts/commit/456bfb2a2762fb78e96ae09d55d82cfaacc74d45)), closes [#29879](https://github.com/bitnami/charts/issues/29879)
+
+## <small>15.0.2 (2024-10-07)</small>
+
+* [Bitnami/rabbitmq] - Fix duplicate key issue with Helm/FluxCD integration (#29780) ([cea9e6c](https://github.com/bitnami/charts/commit/cea9e6c9ea4b97b5ec48c5156d8d6c9fcd1ded13)), closes [#29780](https://github.com/bitnami/charts/issues/29780)
+
+## <small>15.0.1 (2024-09-25)</small>
+
+* [bitnami/rabbitmq] docs: :memo: Add upgrade notes for version 15.x.x ([012685d](https://github.com/bitnami/charts/commit/012685db9831eefe1a77be9122fbcdf5933198a1))
+* [bitnami/rabbitmq] Release 15.0.1 (#29600) ([f0bcc5c](https://github.com/bitnami/charts/commit/f0bcc5cb258b5329bcb6cacd998d4f4170d3b06a)), closes [#29600](https://github.com/bitnami/charts/issues/29600)
 
 ## 15.0.0 (2024-09-20)
 
@@ -209,7 +282,7 @@
 
 ## <small>12.9.4 (2024-02-06)</small>
 
-* [bitnami/rabbitmq] fix: make toBytes handle numbers with a decimal dot (#22557) ([90f6e7f](https://github.com/bitnami/charts/commit/90f6e7f3e6c341fd11cd04874be33e606e56fa48)), closes [#22557](https://github.com/bitnami/charts/issues/22557) [/github.com/redpanda-data/helm-charts/blob/main/charts/redpanda/templates/_helpers.tpl#L199C1-L236C12](https://github.com//github.com/redpanda-data/helm-charts/blob/main/charts/redpanda/templates/_helpers.tpl/issues/L199C1-L236C12)
+* [bitnami/rabbitmq] fix: make toBytes handle numbers with a decimal dot (#22557) ([90f6e7f](https://github.com/bitnami/charts/commit/90f6e7f3e6c341fd11cd04874be33e606e56fa48)), closes [#22557](https://github.com/bitnami/charts/issues/22557)
 
 ## <small>12.9.3 (2024-02-03)</small>
 

@@ -1,8 +1,47 @@
 # Changelog
 
-## 1.3.14 (2024-09-02)
+## 1.4.4 (2025-02-21)
 
-* [bitnami/flink] Release 1.3.14 ([#29155](https://github.com/bitnami/charts/pull/29155))
+* [bitnami/flink] Release 1.4.4 ([#31995](https://github.com/bitnami/charts/pull/31995))
+
+## <small>1.4.3 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/flink] Release 1.4.3 (#31905) ([cc6d993](https://github.com/bitnami/charts/commit/cc6d99384d62416d9b7265539d99f047833d6966)), closes [#31905](https://github.com/bitnami/charts/issues/31905)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.4.2 (2025-01-28)</small>
+
+* [bitnami/flink] Release 1.4.2 (#31636) ([420ed14](https://github.com/bitnami/charts/commit/420ed144c8967af027f6c11a8e64800f394005ad)), closes [#31636](https://github.com/bitnami/charts/issues/31636)
+
+## <small>1.4.1 (2024-12-26)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/flink] Release 1.4.1 (#31170) ([f07b771](https://github.com/bitnami/charts/commit/f07b771b405429185de6fdb6d631e87040cf6425)), closes [#31170](https://github.com/bitnami/charts/issues/31170)
+
+## 1.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/flink] Detect non-standard images (#30893) ([9bbfbf7](https://github.com/bitnami/charts/commit/9bbfbf7e1b99916edcb4a4fbe2feae45c46742d1)), closes [#30893](https://github.com/bitnami/charts/issues/30893)
+
+## <small>1.3.16 (2024-11-16)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/flink] Release 1.3.16 (#30486) ([1794591](https://github.com/bitnami/charts/commit/1794591109bfa996ede6717411d1737b277b63dc)), closes [#30486](https://github.com/bitnami/charts/issues/30486)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.3.15 (2024-10-07)</small>
+
+* [bitnami/flink] Release 1.3.15 (#29803) ([6926d7e](https://github.com/bitnami/charts/commit/6926d7e3cb8376a8c0a71643cb9b249922ef0901)), closes [#29803](https://github.com/bitnami/charts/issues/29803)
+
+## <small>1.3.14 (2024-09-02)</small>
+
+* [bitnami/flink] Release 1.3.14 (#29155) ([33446f2](https://github.com/bitnami/charts/commit/33446f233c518c6df94cdf1ed63164c1a3dba2ff)), closes [#29155](https://github.com/bitnami/charts/issues/29155)
+
+## <small>1.3.13 (2024-09-02)</small>
+
+* [bitnami/flink] Release 1.3.13 (#29152) ([2424812](https://github.com/bitnami/charts/commit/242481260cb5f7467a46ee2f4ed44b65446ed76b)), closes [#29152](https://github.com/bitnami/charts/issues/29152)
 
 ## <small>1.3.12 (2024-08-01)</small>
 

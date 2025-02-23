@@ -1,8 +1,74 @@
 # Changelog
 
-## 2.3.1 (2024-09-06)
+## 2.4.9 (2025-02-07)
 
-* [bitnami/pinniped] Release 2.3.1 ([#29257](https://github.com/bitnami/charts/pull/29257))
+* [bitnami/pinniped] Release 2.4.9 ([#31826](https://github.com/bitnami/charts/pull/31826))
+
+## <small>2.4.8 (2025-02-05)</small>
+
+* [bitnami/pinniped] Release 2.4.8 (#31774) ([d35eec7](https://github.com/bitnami/charts/commit/d35eec7815622f4f0c7ee710ca4fc19a3f4d9c1c)), closes [#31774](https://github.com/bitnami/charts/issues/31774)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>2.4.7 (2025-01-27)</small>
+
+* [bitnami/pinniped] Ensure rbac and networkpolicy is not created for Concierge when disabled (#31564) ([0405f84](https://github.com/bitnami/charts/commit/0405f8474f0b47e7a93cd37c9dddbe5547a72c5f)), closes [#31564](https://github.com/bitnami/charts/issues/31564)
+
+## <small>2.4.6 (2025-01-24)</small>
+
+* [bitnami/pinniped] Release 2.4.6 (#31578) ([bdb886b](https://github.com/bitnami/charts/commit/bdb886b13ad7b43e211f601eccbccb4460c3de00)), closes [#31578](https://github.com/bitnami/charts/issues/31578)
+
+## <small>2.4.5 (2025-01-23)</small>
+
+* [bitnami/pinniped] Ensure rbac and networkpolicy is not created for s… (#31515) ([29d041b](https://github.com/bitnami/charts/commit/29d041b4e34ffa0e6aea5d6f8681db57435372db)), closes [#31515](https://github.com/bitnami/charts/issues/31515)
+
+## <small>2.4.4 (2025-01-17)</small>
+
+* [bitnami/pinniped] Release 2.4.4 (#31440) ([c198f0f](https://github.com/bitnami/charts/commit/c198f0f46df6ceec39eda8f66177fc586a791082)), closes [#31440](https://github.com/bitnami/charts/issues/31440)
+
+## <small>2.4.3 (2025-01-15)</small>
+
+* [bitnami/pinniped] Release 2.4.3 (#31388) ([5431593](https://github.com/bitnami/charts/commit/5431593572ef413843aed94fb50978fce9a77c6a)), closes [#31388](https://github.com/bitnami/charts/issues/31388)
+
+## <small>2.4.2 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/pinniped] bugfix: remove deprecated vars to configure OpenLDAP on VIB (#31337) ([e24fab4](https://github.com/bitnami/charts/commit/e24fab4b2cb9d6e5e0c3b4e3b93fd87bca011c2b)), closes [#31337](https://github.com/bitnami/charts/issues/31337)
+
+## <small>2.4.1 (2024-12-10)</small>
+
+* [bitnami/pinniped] Release 2.4.1 (#30975) ([0505a7e](https://github.com/bitnami/charts/commit/0505a7eadfbcd76a857100c0676f36069b03bf79)), closes [#30975](https://github.com/bitnami/charts/issues/30975)
+
+## 2.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/pinniped] Detect non-standard images (#30935) ([337fe9c](https://github.com/bitnami/charts/commit/337fe9c6f22c1a3afab25eef28118528d24b3737)), closes [#30935](https://github.com/bitnami/charts/issues/30935)
+
+## <small>2.3.6 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/pinniped] Release 2.3.6 (#30772) ([ab55671](https://github.com/bitnami/charts/commit/ab556712be6547d1d1f722c9fa612413559659a2)), closes [#30772](https://github.com/bitnami/charts/issues/30772)
+
+## <small>2.3.5 (2024-11-08)</small>
+
+* [bitnami/pinniped] Unify seLinuxOptions default value (#30334) ([06e2318](https://github.com/bitnami/charts/commit/06e2318131efc03e6c67b942d087c94586121925)), closes [#30334](https://github.com/bitnami/charts/issues/30334)
+
+## <small>2.3.4 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/pinniped] Release 2.3.4 (#30304) ([d4ac7f8](https://github.com/bitnami/charts/commit/d4ac7f87d05deba5be151dbacb4df8aff62c17b3)), closes [#30304](https://github.com/bitnami/charts/issues/30304)
+
+## <small>2.3.3 (2024-10-17)</small>
+
+* [bitnami/pinniped] Release 2.3.3 (#29959) ([d7c67b9](https://github.com/bitnami/charts/commit/d7c67b926bf3546097193e79677d5601692eb461)), closes [#29959](https://github.com/bitnami/charts/issues/29959)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>2.3.2 (2024-10-02)</small>
+
+* [bitnami/pinniped] Release 2.3.2 (#29714) ([4871f7b](https://github.com/bitnami/charts/commit/4871f7bf11f3641b4700eb161ffb22ca49d7fe60)), closes [#29714](https://github.com/bitnami/charts/issues/29714)
+
+## <small>2.3.1 (2024-09-06)</small>
+
+* [bitnami/pinniped] Release 2.3.1 (#29257) ([cc3ce8e](https://github.com/bitnami/charts/commit/cc3ce8ead7d47a2b84b7e135e6016e9e0cd4e3a8)), closes [#29257](https://github.com/bitnami/charts/issues/29257)
 
 ## 2.3.0 (2024-08-14)
 

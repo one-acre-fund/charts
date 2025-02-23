@@ -1,8 +1,51 @@
 # Changelog
 
+## 2.30.0 (2025-02-19)
+
+* [bitnami/common] Add helper to check API versions ([#31969](https://github.com/bitnami/charts/pull/31969))
+
+## <small>2.29.1 (2025-01-23)</small>
+
+* [bitnami/common] Removing seLinuxOptions from omission (#31279) ([e7cb168](https://github.com/bitnami/charts/commit/e7cb168ca2bccd57e28bb985e099953a4f7e3b38)), closes [#31279](https://github.com/bitnami/charts/issues/31279) [#31278](https://github.com/bitnami/charts/issues/31278)
+
+## 2.29.0 (2025-01-03)
+
+* [bitnami/common] Add "common.capabilities.job.apiVersion" template (#31164) ([2ca979a](https://github.com/bitnami/charts/commit/2ca979a6add279384d60e6b35199eaf13553cefa)), closes [#31164](https://github.com/bitnami/charts/issues/31164)
+
+## 2.28.0 (2024-12-10)
+
+* [bitnami/common] New helper to detect non-standard images (#30851) ([ae33d01](https://github.com/bitnami/charts/commit/ae33d01968e8a353a569785f9867827153c797dc)), closes [#30851](https://github.com/bitnami/charts/issues/30851)
+
+## <small>2.27.2 (2024-11-27)</small>
+
+* [bitnami/common] Fix appVersion (#30628) ([b87d39e](https://github.com/bitnami/charts/commit/b87d39e27a0889c74b20c3d2fe5ae0c4a2417bfd)), closes [#30628](https://github.com/bitnami/charts/issues/30628)
+* [bitnami/common]: bump patch version (#30639) ([623e584](https://github.com/bitnami/charts/commit/623e5846ff827b7ecbcffa2dc51e2e94b14ef8fd)), closes [#30639](https://github.com/bitnami/charts/issues/30639)
+
+## <small>2.27.1 (2024-11-26)</small>
+
+* [bitnami/common] Fix VPA apiVersion (#30625) ([8c24438](https://github.com/bitnami/charts/commit/8c24438a2f6e8ec646cad9901ed82d71d4196e3e)), closes [#30625](https://github.com/bitnami/charts/issues/30625)
+
+## 2.27.0 (2024-11-07)
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/common] feat: :sparkles: Add honorProvidedValues in common.secrets.manage (#30243) ([3d76a49](https://github.com/bitnami/charts/commit/3d76a4955c11fa4d2464da2c4d2096e1e3c6fa37)), closes [#30243](https://github.com/bitnami/charts/issues/30243)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 2.26.0 (2024-10-14)
+
+* [bitnami/common] Drop unused custom empty password validators (#29432) ([5fb0e97](https://github.com/bitnami/charts/commit/5fb0e97d9336d40d86c3295637d4233218b8afea)), closes [#29432](https://github.com/bitnami/charts/issues/29432)
+
+## 2.25.0 (2024-10-11)
+
+* [bitnami/common] Add the ability to specify namespaces for affinity (#29479) ([005e0d6](https://github.com/bitnami/charts/commit/005e0d696004dd972915f290b7caffb2bc332400)), closes [#29479](https://github.com/bitnami/charts/issues/29479)
+
+## 2.24.0 (2024-10-03)
+
+* [bitnami/common] Add common.tplvalues.merge-overwrite helper (#29668) ([611b2a5](https://github.com/bitnami/charts/commit/611b2a59e06feaac878b3b218fd848a687216158)), closes [#29668](https://github.com/bitnami/charts/issues/29668)
+
 ## 2.23.0 (2024-09-13)
 
-* [bitnami/common] Add option to remove empty seLinuxOptions from securityContext in non OpenShift environment ([#28945](https://github.com/bitnami/charts/pull/28945))
+* [bitnami/common] Add option to remove empty seLinuxOptions from securityContext in non OpenShift env ([7e44e64](https://github.com/bitnami/charts/commit/7e44e64626f5b1fc6d56889cdfdeadc1f62c7cf1)), closes [#28945](https://github.com/bitnami/charts/issues/28945)
 
 ## 2.22.0 (2024-08-08)
 
@@ -230,7 +273,7 @@
 
 ## <small>2.1.2 (2022-10-31)</small>
 
-* [bitnami/common] Do not explicitly specify namespace in affinity term. (#12932) ([638a48e](https://github.com/bitnami/charts/commit/638a48e4d3ec7b5d160f4b525ec40218512c464b)), closes [#12932](https://github.com/bitnami/charts/issues/12932) [/kubernetes.io/docs/reference/generated/kubernetes-api/v1.23/#podaffinityterm-v1](https://github.com//kubernetes.io/docs/reference/generated/kubernetes-api/v1.23//issues/podaffinityterm-v1) [#12668](https://github.com/bitnami/charts/issues/12668)
+* [bitnami/common] Do not explicitly specify namespace in affinity term. (#12932) ([638a48e](https://github.com/bitnami/charts/commit/638a48e4d3ec7b5d160f4b525ec40218512c464b)), closes [#12932](https://github.com/bitnami/charts/issues/12932) [#12668](https://github.com/bitnami/charts/issues/12668)
 
 ## <small>2.1.1 (2022-10-27)</small>
 

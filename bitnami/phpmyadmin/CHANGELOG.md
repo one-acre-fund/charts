@@ -1,8 +1,52 @@
 # Changelog
 
-## 17.0.7 (2024-09-19)
+## 18.1.4 (2025-02-21)
 
-* [bitnami/phpmyadmin] Release 17.0.7 ([#29523](https://github.com/bitnami/charts/pull/29523))
+* [bitnami/phpmyadmin] Release 18.1.4 ([#32100](https://github.com/bitnami/charts/pull/32100))
+
+## <small>18.1.3 (2025-02-20)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/phpmyadmin] Release 18.1.3 (#32094) ([db38656](https://github.com/bitnami/charts/commit/db386563131859663c5be9a1943c4828fd7173bc)), closes [#32094](https://github.com/bitnami/charts/issues/32094)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>18.1.2 (2025-01-21)</small>
+
+* [bitnami/phpmyadmin] Release 18.1.2 (#31501) ([b80d31c](https://github.com/bitnami/charts/commit/b80d31c98558d3111b40f4c932331035045816df)), closes [#31501](https://github.com/bitnami/charts/issues/31501)
+
+## <small>18.1.1 (2025-01-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/phpmyadmin] Release 18.1.1 (#31452) ([6665848](https://github.com/bitnami/charts/commit/66658481c760abea6015c05d2368e2dc88566fc5)), closes [#31452](https://github.com/bitnami/charts/issues/31452)
+
+## 18.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/phpmyadmin] Detect non-standard images (#30963) ([fa05829](https://github.com/bitnami/charts/commit/fa058290a52c6f0c59f3ee3c02ea89afadff8b57)), closes [#30963](https://github.com/bitnami/charts/issues/30963)
+
+## <small>18.0.1 (2024-12-08)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/phpmyadmin] Release 18.0.1 (#30828) ([d071989](https://github.com/bitnami/charts/commit/d071989c5ddebffdc20c17f58a45c29a8f1649c2)), closes [#30828](https://github.com/bitnami/charts/issues/30828)
+
+## 18.0.0 (2024-11-12)
+
+* [bitnami/phpmyadmin] chore!: :arrow_up: :boom: Bump MariaDB subchart to 20 (#30356) ([51d5755](https://github.com/bitnami/charts/commit/51d5755e62be68f8937c8b03c1efcee03272e785)), closes [#30356](https://github.com/bitnami/charts/issues/30356)
+
+## <small>17.0.9 (2024-11-08)</small>
+
+* [bitnami/phpmyadmin] Unify seLinuxOptions default value (#30333) ([55cdce0](https://github.com/bitnami/charts/commit/55cdce05b2217870b5db25ff18dc755dad1a0f95)), closes [#30333](https://github.com/bitnami/charts/issues/30333)
+
+## <small>17.0.8 (2024-10-29)</small>
+
+* [bitnami/phpmyadmin] Release 17.0.8 (#30121) ([b558073](https://github.com/bitnami/charts/commit/b558073849edc86755907155ab62765eb7102923)), closes [#30121](https://github.com/bitnami/charts/issues/30121)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>17.0.7 (2024-09-19)</small>
+
+* [bitnami/phpmyadmin] Release 17.0.7 (#29523) ([d25c970](https://github.com/bitnami/charts/commit/d25c97028c3adab3380ad512b0cb51ac392133d2)), closes [#29523](https://github.com/bitnami/charts/issues/29523)
 
 ## <small>17.0.6 (2024-08-25)</small>
 

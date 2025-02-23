@@ -1,8 +1,68 @@
 # Changelog
 
-## 0.1.11 (2024-09-30)
+## 0.3.0 (2025-02-20)
 
-* [bitnami/neo4j] Release 0.1.11 ([#29659](https://github.com/bitnami/charts/pull/29659))
+* [bitnami/neo4j] feat: use new helper for checking API versions ([#32059](https://github.com/bitnami/charts/pull/32059))
+
+## <small>0.2.5 (2025-02-20)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/neo4j] Release 0.2.5 (#32022) ([0fe999a](https://github.com/bitnami/charts/commit/0fe999af5041f466a4b0913670c16adf766ef693)), closes [#32022](https://github.com/bitnami/charts/issues/32022)
+
+## <small>0.2.4 (2025-02-05)</small>
+
+* [bitnami/neo4j] Release 0.2.4 (#31770) ([78e2a9f](https://github.com/bitnami/charts/commit/78e2a9f8451f8f159f3d1768080205ba784b686b)), closes [#31770](https://github.com/bitnami/charts/issues/31770)
+
+## <small>0.2.3 (2025-02-04)</small>
+
+* [bitnami/neo4j] Release 0.2.3 (#31737) ([f036b96](https://github.com/bitnami/charts/commit/f036b96e358ae1674322806a7f76a54ec57a7595)), closes [#31737](https://github.com/bitnami/charts/issues/31737)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>0.2.2 (2025-01-10)</small>
+
+* [bitnami/neo4j] Release 0.2.2 (#31295) ([41652fd](https://github.com/bitnami/charts/commit/41652fdf0e09f2f5ddcc22fd9ddaf61dcc5c2648)), closes [#31295](https://github.com/bitnami/charts/issues/31295)
+
+## <small>0.2.1 (2025-01-10)</small>
+
+* [bitnami/neo4j] Release 0.2.1 (#31291) ([29b6858](https://github.com/bitnami/charts/commit/29b6858ada26369db629e3c0215ab8ebe97411a4)), closes [#31291](https://github.com/bitnami/charts/issues/31291)
+
+## 0.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/neo4j] Detect non-standard images (#30917) ([317b01b](https://github.com/bitnami/charts/commit/317b01bed1fcd1c13f77a38295ea19d40cfbd34d)), closes [#30917](https://github.com/bitnami/charts/issues/30917)
+
+## <small>0.1.17 (2024-12-09)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 3) (#30688) ([10a49f9](https://github.com/bitnami/charts/commit/10a49f9ff2db1d9d11a6edd1c40a9f61803241bc)), closes [#30688](https://github.com/bitnami/charts/issues/30688)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/neo4j] Release 0.1.17 (#30841) ([d67bdde](https://github.com/bitnami/charts/commit/d67bdde9423969d62ad7d95771c779b6aeb55989)), closes [#30841](https://github.com/bitnami/charts/issues/30841)
+
+## <small>0.1.16 (2024-10-31)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/neo4j] Release 0.1.16 (#30153) ([d3bff55](https://github.com/bitnami/charts/commit/d3bff55c6eee70c87740fc60e26c3bb798f91e53)), closes [#30153](https://github.com/bitnami/charts/issues/30153)
+
+## <small>0.1.15 (2024-10-18)</small>
+
+* [bitnami/neo4j] Remove wrong entries from image verification (#29915) ([0d3586a](https://github.com/bitnami/charts/commit/0d3586acf10b4ab410e00608c832c59b4f2febc4)), closes [#29915](https://github.com/bitnami/charts/issues/29915)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>0.1.14 (2024-10-16)</small>
+
+* [bitnami/neo4j] Release 0.1.14 (#29930) ([b371cca](https://github.com/bitnami/charts/commit/b371cca9ab0e0865cff14cf4d9b05745d093576c)), closes [#29930](https://github.com/bitnami/charts/issues/29930)
+
+## <small>0.1.13 (2024-10-02)</small>
+
+* [bitnami/neo4j] Release 0.1.13 (#29757) ([70a1e5e](https://github.com/bitnami/charts/commit/70a1e5e1240b563ec29150ff8db66bd4e6cba22e)), closes [#29757](https://github.com/bitnami/charts/issues/29757)
+
+## <small>0.1.12 (2024-10-02)</small>
+
+* [bitnami/neo4j] Release 0.1.12 (#29754) ([33502ac](https://github.com/bitnami/charts/commit/33502ac29cb4505d4f3f67fe91c06067a4d36873)), closes [#29754](https://github.com/bitnami/charts/issues/29754)
+
+## <small>0.1.11 (2024-09-30)</small>
+
+* [bitnami/neo4j] Release 0.1.11 (#29659) ([bd8f396](https://github.com/bitnami/charts/commit/bd8f396328ac5b066d30cc4e987ee1a2c75468bb)), closes [#29659](https://github.com/bitnami/charts/issues/29659)
 
 ## <small>0.1.10 (2024-09-26)</small>
 

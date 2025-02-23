@@ -1,8 +1,84 @@
 # Changelog
 
-## 20.1.5 (2024-09-25)
+## 20.8.0 (2025-02-20)
 
-* [bitnami/redis] - fix additionalEndpoints in servicemonitor ([#29595](https://github.com/bitnami/charts/pull/29595))
+* [bitnami/redis] feat: add parameter to disable checksums ([#31948](https://github.com/bitnami/charts/pull/31948))
+
+## <small>20.7.2 (2025-02-20)</small>
+
+* [bitnami/redis] Release 20.7.2 (#32033) ([829c44e](https://github.com/bitnami/charts/commit/829c44eddcc0f0fdc3e80d49acd7b4ee41b0408a)), closes [#32033](https://github.com/bitnami/charts/issues/32033)
+
+## <small>20.7.1 (2025-02-16)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/redis] Release 20.7.1 (#31943) ([e82cc74](https://github.com/bitnami/charts/commit/e82cc74d4bcdf5a352d0de26c600c7aa9098390f)), closes [#31943](https://github.com/bitnami/charts/issues/31943)
+
+## 20.7.0 (2025-02-04)
+
+* [bitnami/redis] Redis ACL support to the Bitnami Redis Helm Chart (#31707) ([9c6e5d6](https://github.com/bitnami/charts/commit/9c6e5d6fa4460281e1275bf4e5ba9dfd482d79e2)), closes [#31707](https://github.com/bitnami/charts/issues/31707)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>20.6.3 (2025-01-14)</small>
+
+* [bitnami/redis] fix: update JSON schema to allow string values for values passed to tpl (#30526) ([2c78a06](https://github.com/bitnami/charts/commit/2c78a06e5e351506a02a4ebbd7b706ebbe987169)), closes [#30526](https://github.com/bitnami/charts/issues/30526)
+
+## <small>20.6.2 (2025-01-07)</small>
+
+* [bitnami/redis] Release 20.6.2 (#31238) ([f24c74c](https://github.com/bitnami/charts/commit/f24c74cf287e64a25688ae0aab0362c3119f9f20)), closes [#31238](https://github.com/bitnami/charts/issues/31238)
+
+## <small>20.6.1 (2024-12-21)</small>
+
+* [bitnami/redis] Release 20.6.1 (#31138) ([2da450b](https://github.com/bitnami/charts/commit/2da450bd72c598237763760d9128e11a7599ec32)), closes [#31138](https://github.com/bitnami/charts/issues/31138)
+
+## 20.6.0 (2024-12-16)
+
+* [bitname/redis] Add support for master and replicas resources to be annotated (#31034) ([5111fa5](https://github.com/bitnami/charts/commit/5111fa5201b1cec4bf3c9aab8806bee45d07e4c6)), closes [#31034](https://github.com/bitnami/charts/issues/31034)
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* Redis Readme: fix typo in value key name (#31007) ([4a8c60a](https://github.com/bitnami/charts/commit/4a8c60aa11316a73e846c3316b36132822e30956)), closes [#31007](https://github.com/bitnami/charts/issues/31007)
+
+## 20.5.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/redis] Detect non-standard images (#30942) ([f06f8db](https://github.com/bitnami/charts/commit/f06f8dbafe5eb3b22f689168d7ac9fb2fb0f707d)), closes [#30942](https://github.com/bitnami/charts/issues/30942)
+
+## <small>20.4.1 (2024-12-10)</small>
+
+* [bitnami/redis] CA shouldn't be mandatory when TLS is enabled (#30520) ([85219eb](https://github.com/bitnami/charts/commit/85219eb721efa640075325a1812d9ca8316a0a1a)), closes [#30520](https://github.com/bitnami/charts/issues/30520)
+
+## 20.4.0 (2024-12-02)
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/redis] add extraPortsEnabled (#30607) ([77a98fa](https://github.com/bitnami/charts/commit/77a98fa631f21a49b0c013d856cfb21ba090a0a6)), closes [#30607](https://github.com/bitnami/charts/issues/30607)
+
+## 20.3.0 (2024-11-14)
+
+* [bitnami/redis] feat: :sparkles: Allow updating credentials via values.yaml (#30452) ([d6a3118](https://github.com/bitnami/charts/commit/d6a3118e42a9a481d4429defbd628015a3b8f755)), closes [#30452](https://github.com/bitnami/charts/issues/30452)
+
+## <small>20.2.2 (2024-11-11)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/redis] Release 20.2.2 (#30407) ([ae54e98](https://github.com/bitnami/charts/commit/ae54e980494b5431d98d72a672532fc36b7a21c4)), closes [#30407](https://github.com/bitnami/charts/issues/30407)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>20.2.1 (2024-10-15)</small>
+
+* [bitnami/redis] Fix preExecCmds parameter (#29898) ([6db8a2e](https://github.com/bitnami/charts/commit/6db8a2e736e2a60be2d3848d85f49d236a43136c)), closes [#29898](https://github.com/bitnami/charts/issues/29898)
+
+## 20.2.0 (2024-10-09)
+
+* [bitnami/redis] add extraPodSpec (#29725) ([0d2b826](https://github.com/bitnami/charts/commit/0d2b8269e0e5c1a287fcd8e44c623afa6311e761)), closes [#29725](https://github.com/bitnami/charts/issues/29725)
+
+## <small>20.1.7 (2024-10-02)</small>
+
+* [bitnami/redis] Release 20.1.7 (#29756) ([bc01e03](https://github.com/bitnami/charts/commit/bc01e03cea20cd93fdd43a4fece348aabb3f1ea4)), closes [#29756](https://github.com/bitnami/charts/issues/29756)
+
+## <small>20.1.6 (2024-10-02)</small>
+
+* [bitnami/redis] adds kind & apiVersion for pvc template in statefulset (#29678) ([13212d2](https://github.com/bitnami/charts/commit/13212d218c0eea9d60a3b9d08f8d5ca1b5951d74)), closes [#29678](https://github.com/bitnami/charts/issues/29678)
+
+## <small>20.1.5 (2024-09-26)</small>
+
+* [bitnami/redis] - fix additionalEndpoints in servicemonitor (#29595) ([6e674ff](https://github.com/bitnami/charts/commit/6e674ff9f082dc60676e4451917400a48c05a6ad)), closes [#29595](https://github.com/bitnami/charts/issues/29595)
 
 ## <small>20.1.4 (2024-09-19)</small>
 
@@ -649,7 +725,7 @@
 
 ## <small>17.4.2 (2023-01-09)</small>
 
-* [bitnami/redis] Sentinel deployment: Fix Failover at graceful shutdown (#14133) ([0274e44](https://github.com/bitnami/charts/commit/0274e44ae4460f91a3e25c20e12be11bc8874c95)), closes [#14133](https://github.com/bitnami/charts/issues/14133) [#13021](https://github.com/bitnami/charts/issues/13021) [#12598](https://github.com/bitnami/charts/issues/12598) [#13956](https://github.com/bitnami/charts/issues/13956) [/github.com/bitnami/charts/pull/13021#issuecomment-1289177976](https://github.com//github.com/bitnami/charts/pull/13021/issues/issuecomment-1289177976) [#13956](https://github.com/bitnami/charts/issues/13956)
+* [bitnami/redis] Sentinel deployment: Fix Failover at graceful shutdown (#14133) ([0274e44](https://github.com/bitnami/charts/commit/0274e44ae4460f91a3e25c20e12be11bc8874c95)), closes [#14133](https://github.com/bitnami/charts/issues/14133) [#13021](https://github.com/bitnami/charts/issues/13021) [#12598](https://github.com/bitnami/charts/issues/12598) [#13956](https://github.com/bitnami/charts/issues/13956) [#13956](https://github.com/bitnami/charts/issues/13956)
 
 ## <small>17.4.1 (2023-01-03)</small>
 

@@ -1,8 +1,59 @@
 # Changelog
 
-## 1.1.13 (2024-09-06)
+## 1.2.6 (2025-02-20)
 
-* [bitnami/whereabouts] Release 1.1.13 ([#29264](https://github.com/bitnami/charts/pull/29264))
+* [bitnami/whereabouts] Release 1.2.6 ([#32070](https://github.com/bitnami/charts/pull/32070))
+
+## <small>1.2.5 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/whereabouts] Release 1.2.5 (#31903) ([7d59616](https://github.com/bitnami/charts/commit/7d59616e053f98fdc7e04c09c99cd9eb9e997e0a)), closes [#31903](https://github.com/bitnami/charts/issues/31903)
+
+## <small>1.2.4 (2025-02-05)</small>
+
+* [bitnami/whereabouts] Release 1.2.4 (#31782) ([7ecea37](https://github.com/bitnami/charts/commit/7ecea371aeadf29a2ad90d7421958fc64434fd7d)), closes [#31782](https://github.com/bitnami/charts/issues/31782)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.2.3 (2025-01-24)</small>
+
+* [bitnami/whereabouts] Release 1.2.3 (#31587) ([841d0a7](https://github.com/bitnami/charts/commit/841d0a756f380234e164859a49c71f0de31f3e87)), closes [#31587](https://github.com/bitnami/charts/issues/31587)
+
+## <small>1.2.2 (2025-01-17)</small>
+
+* [bitnami/whereabouts] Release 1.2.2 (#31447) ([892157d](https://github.com/bitnami/charts/commit/892157ddd2086064088a1b439cafea02228eb3b8)), closes [#31447](https://github.com/bitnami/charts/issues/31447)
+
+## <small>1.2.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/whereabouts] Release 1.2.1 (#31326) ([03d96f7](https://github.com/bitnami/charts/commit/03d96f76490d77c02fa4cdd40ee3bbac5f5d06c1)), closes [#31326](https://github.com/bitnami/charts/issues/31326)
+
+## 1.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/whereabouts] Detect non-standard images (#30953) ([0da5ab8](https://github.com/bitnami/charts/commit/0da5ab850e004dd1afc1d7052247ea954b70d1d1)), closes [#30953](https://github.com/bitnami/charts/issues/30953)
+
+## <small>1.1.17 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/whereabouts] Release 1.1.17 (#30781) ([168257a](https://github.com/bitnami/charts/commit/168257a00e4a297ed4efadeddaafa395553fc71f)), closes [#30781](https://github.com/bitnami/charts/issues/30781)
+
+## <small>1.1.16 (2024-11-08)</small>
+
+* [bitnami/whereabouts] Unify seLinuxOptions default value (#30318) ([5f02b3c](https://github.com/bitnami/charts/commit/5f02b3c19acb3e4bf7c74c4315e634321ef07284)), closes [#30318](https://github.com/bitnami/charts/issues/30318)
+
+## <small>1.1.15 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/whereabouts] Release 1.1.15 (#30296) ([61ae225](https://github.com/bitnami/charts/commit/61ae2253fe142864212fb920a4efe971f501c755)), closes [#30296](https://github.com/bitnami/charts/issues/30296)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.1.14 (2024-10-02)</small>
+
+* [bitnami/whereabouts] Release 1.1.14 (#29722) ([e0090fc](https://github.com/bitnami/charts/commit/e0090fc97f4ef258d78e6c45803d666f0364a923)), closes [#29722](https://github.com/bitnami/charts/issues/29722)
+
+## <small>1.1.13 (2024-09-06)</small>
+
+* [bitnami/whereabouts] Release 1.1.13 (#29264) ([73655d1](https://github.com/bitnami/charts/commit/73655d160953c3ee0771508db48cd1dc307558a5)), closes [#29264](https://github.com/bitnami/charts/issues/29264)
 
 ## <small>1.1.12 (2024-08-27)</small>
 

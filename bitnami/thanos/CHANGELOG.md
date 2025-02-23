@@ -1,8 +1,109 @@
 # Changelog
 
-## 15.7.25 (2024-09-06)
+## 15.12.4 (2025-02-21)
 
-* [bitnami/thanos] Release 15.7.25 ([#29260](https://github.com/bitnami/charts/pull/29260))
+* [bitnami/thanos] Release 15.12.4 ([#32102](https://github.com/bitnami/charts/pull/32102))
+
+## <small>15.12.3 (2025-02-14)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/thanos] Add common annotations to pod templates (#31928) ([11e4087](https://github.com/bitnami/charts/commit/11e4087799b594ba4a592d70667195c2d3af0dd8)), closes [#31928](https://github.com/bitnami/charts/issues/31928)
+
+## <small>15.12.2 (2025-02-07)</small>
+
+* [bitnami/thanos] Release 15.12.2 (#31831) ([bd298e4](https://github.com/bitnami/charts/commit/bd298e442152ae47a719974e87e48dc61705f061)), closes [#31831](https://github.com/bitnami/charts/issues/31831)
+
+## <small>15.12.1 (2025-02-05)</small>
+
+* [bitnami/thanos] Release 15.12.1 (#31780) ([c49cedb](https://github.com/bitnami/charts/commit/c49cedba45928f20ceba5e6f723e725e09219c30)), closes [#31780](https://github.com/bitnami/charts/issues/31780)
+
+## 15.12.0 (2025-02-04)
+
+* [bitnami/thanos] Enable Can'N'Proto replication protocol for Receiver (#31715) ([58ff639](https://github.com/bitnami/charts/commit/58ff63927a319abbdf8b3efe0c26eee68a48a7aa)), closes [#31715](https://github.com/bitnami/charts/issues/31715)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## 15.11.0 (2025-01-30)
+
+* [bitnami/thanos] feature(minio): Bump MinIO subchart (#31663) ([32912fd](https://github.com/bitnami/charts/commit/32912fd449cdadc7f30a1400a084bb8977101571)), closes [#31663](https://github.com/bitnami/charts/issues/31663)
+
+## <small>15.10.3 (2025-01-24)</small>
+
+* [bitnami/thanos] Release 15.10.3 (#31584) ([67e1d09](https://github.com/bitnami/charts/commit/67e1d092248249b1f2171d452ec54a27e0ca79de)), closes [#31584](https://github.com/bitnami/charts/issues/31584)
+
+## <small>15.10.2 (2025-01-21)</small>
+
+* [bitnami/thanos] Fix Helm Template Error For Storegateway and HPA (#31486) ([9e323ab](https://github.com/bitnami/charts/commit/9e323abcc11a74c3fc5287541a7621cca0a3254f)), closes [#31486](https://github.com/bitnami/charts/issues/31486)
+
+## <small>15.10.1 (2025-01-17)</small>
+
+* [bitnami/thanos] Release 15.10.1 (#31444) ([7767445](https://github.com/bitnami/charts/commit/7767445e87f3846c4f57b62ba25382ba5732cde0)), closes [#31444](https://github.com/bitnami/charts/issues/31444)
+
+## 15.10.0 (2025-01-16)
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/thanos] feature: allow configuring the Thanos ruler rule-file via ruler.ruleFile parameter  ([72d5d3f](https://github.com/bitnami/charts/commit/72d5d3f854cde59f5ac4ef5e647eefec855fe91b)), closes [#31377](https://github.com/bitnami/charts/issues/31377)
+
+## <small>15.9.2 (2024-12-12)</small>
+
+* [bitnami/thanos] Add concurrency value to compactor (#30722) ([12b9c84](https://github.com/bitnami/charts/commit/12b9c8457916ffa9cce85d7914ca5c46f3b7b085)), closes [#30722](https://github.com/bitnami/charts/issues/30722)
+
+## <small>15.9.1 (2024-12-11)</small>
+
+* [bitnami/thanos] Release 15.9.1 (#30983) ([fa9f690](https://github.com/bitnami/charts/commit/fa9f690820269eae74ac5fbb577047b6f36fdd66)), closes [#30983](https://github.com/bitnami/charts/issues/30983)
+
+## 15.9.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/thanos] Detect non-standard images (#30948) ([f094a30](https://github.com/bitnami/charts/commit/f094a30ae63cfd95ee365a01ad3425655e397996)), closes [#30948](https://github.com/bitnami/charts/issues/30948)
+
+## <small>15.8.5 (2024-12-10)</small>
+
+* [bitnami/thanos] Allow for shards that are both time and hash partitioned. (#30826) ([bb42a7e](https://github.com/bitnami/charts/commit/bb42a7ebded506612dc56783d5f9c7c5ce0bc9b0)), closes [#30826](https://github.com/bitnami/charts/issues/30826)
+
+## <small>15.8.4 (2024-12-04)</small>
+
+* [bitnami/thanos] Release 15.8.4 (#30783) ([a172556](https://github.com/bitnami/charts/commit/a172556265fa310e0fdfbde50da4711b45019499)), closes [#30783](https://github.com/bitnami/charts/issues/30783)
+
+## <small>15.8.3 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/thanos] Release 15.8.3 (#30779) ([963e102](https://github.com/bitnami/charts/commit/963e102d0cd1a5a359b839505015d4e7360c92ef)), closes [#30779](https://github.com/bitnami/charts/issues/30779)
+
+## <small>15.8.2 (2024-11-26)</small>
+
+* [bitnami/thanos] Release 15.8.2 (#30626) ([82d9517](https://github.com/bitnami/charts/commit/82d95175682e86d300667a1c75999a8acfa39ce5)), closes [#30626](https://github.com/bitnami/charts/issues/30626)
+
+## <small>15.8.1 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/thanos] Release 15.8.1 (#30293) ([cd0e549](https://github.com/bitnami/charts/commit/cd0e5491be20d9fbc78f2732c81e5af6e73806d8)), closes [#30293](https://github.com/bitnami/charts/issues/30293)
+
+## 15.8.0 (2024-10-24)
+
+* [bitnami/thanos] Add compactor dataDir setting (#29856) ([e8c23ba](https://github.com/bitnami/charts/commit/e8c23ba5762e188c23986a41c6910bda330c21bb)), closes [#29856](https://github.com/bitnami/charts/issues/29856)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>15.7.29 (2024-10-14)</small>
+
+* [bitnami/thanos] Add customAutoScaling flag (#29849) ([6cf283d](https://github.com/bitnami/charts/commit/6cf283dcd11068207dfad8aa61bd9f614b2634b5)), closes [#29849](https://github.com/bitnami/charts/issues/29849)
+
+## <small>15.7.28 (2024-10-08)</small>
+
+* [bitnami/thanos] Revert #29673 (#29763) ([0e20117](https://github.com/bitnami/charts/commit/0e201170447506913aa97713a769732baaf3802b)), closes [#29673](https://github.com/bitnami/charts/issues/29673) [#29763](https://github.com/bitnami/charts/issues/29763)
+
+## <small>15.7.27 (2024-10-02)</small>
+
+* [bitnami/thanos] Release 15.7.27 (#29720) ([cd99907](https://github.com/bitnami/charts/commit/cd999075fe633956019ac142dd7965deba5aea09)), closes [#29720](https://github.com/bitnami/charts/issues/29720)
+
+## <small>15.7.26 (2024-10-02)</small>
+
+* [bitnami/thanos] Fix serviceNames based on additionalHeadless (#29673) ([418a890](https://github.com/bitnami/charts/commit/418a890c3210947ff9e1aa9d75ba0fb611681b45)), closes [#29673](https://github.com/bitnami/charts/issues/29673)
+
+## <small>15.7.25 (2024-09-06)</small>
+
+* [bitnami/thanos] Release 15.7.25 (#29260) ([254365c](https://github.com/bitnami/charts/commit/254365c371be4c7bc6ee0fcc50647c5aab6ab5df)), closes [#29260](https://github.com/bitnami/charts/issues/29260)
 
 ## <small>15.7.24 (2024-09-05)</small>
 

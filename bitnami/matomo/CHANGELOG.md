@@ -1,8 +1,47 @@
 # Changelog
 
-## 8.0.13 (2024-09-25)
+## 9.2.3 (2025-01-24)
 
-* [bitnami/matomo] Release 8.0.13 ([#29605](https://github.com/bitnami/charts/pull/29605))
+* [bitnami/matomo] Release 9.2.3 ([#31589](https://github.com/bitnami/charts/pull/31589))
+
+## <small>9.2.2 (2025-01-15)</small>
+
+* [bitnami/matomo] Release 9.2.2 (#31382) ([fdbdfdf](https://github.com/bitnami/charts/commit/fdbdfdfc90f8fa6f2f55569d48359e6c29c67111)), closes [#31382](https://github.com/bitnami/charts/issues/31382)
+
+## <small>9.2.1 (2024-12-23)</small>
+
+* [bitnami/matomo] Release 9.2.1 (#31134) ([c0307c7](https://github.com/bitnami/charts/commit/c0307c7717372da54334ff98d4e8ac1155cb035d)), closes [#31134](https://github.com/bitnami/charts/issues/31134)
+
+## 9.2.0 (2024-12-17)
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/matomo] add initContainers parameter to CronJob pods (#31065) ([27feba9](https://github.com/bitnami/charts/commit/27feba938379638644aae8e61f8f90c30d331b79)), closes [#31065](https://github.com/bitnami/charts/issues/31065)
+
+## <small>9.1.1 (2024-12-12)</small>
+
+* [bitnami/matomo] Release 9.1.1 (#31005) ([a55802f](https://github.com/bitnami/charts/commit/a55802f34fa18246dcc5337c1428033485068e9a)), closes [#31005](https://github.com/bitnami/charts/issues/31005)
+
+## 9.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 4) (#30669) ([a4ec006](https://github.com/bitnami/charts/commit/a4ec00624589023a70a7094fcfb9f12e382bc280)), closes [#30669](https://github.com/bitnami/charts/issues/30669)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 2) (#30687) ([c457848](https://github.com/bitnami/charts/commit/c457848b2a111aad59830b98f85ffa1e29918e10)), closes [#30687](https://github.com/bitnami/charts/issues/30687)
+* [bitnami/matomo] Detect non-standard images (#30957) ([5d1a731](https://github.com/bitnami/charts/commit/5d1a731a820afcddaf91e9f2596e0e752795e134)), closes [#30957](https://github.com/bitnami/charts/issues/30957)
+
+## 9.0.0 (2024-11-12)
+
+* [bitnami/matomo] chore!: :arrow_up: :boom: Bump MariaDB subchart to 20 (#30354) ([a9c658d](https://github.com/bitnami/charts/commit/a9c658dc5fce8487df2a207fdb75baadd2b976b4)), closes [#30354](https://github.com/bitnami/charts/issues/30354)
+
+## <small>8.0.14 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/matomo] Release 8.0.14 (#30207) ([3809c46](https://github.com/bitnami/charts/commit/3809c46ba76d04b054f39c1a8d6857d708f023af)), closes [#30207](https://github.com/bitnami/charts/issues/30207)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>8.0.13 (2024-09-25)</small>
+
+* [bitnami/matomo] Release 8.0.13 (#29605) ([a5a89c9](https://github.com/bitnami/charts/commit/a5a89c9685b585b6ddfecdf4c2e067da163563d0)), closes [#29605](https://github.com/bitnami/charts/issues/29605)
 
 ## <small>8.0.12 (2024-09-19)</small>
 

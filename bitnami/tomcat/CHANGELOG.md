@@ -1,8 +1,68 @@
 # Changelog
 
-## 11.2.21 (2024-09-17)
+## 11.5.4 (2025-02-14)
 
-* [bitnami/tomcat] Release 11.2.21 ([#29485](https://github.com/bitnami/charts/pull/29485))
+* [bitnami/tomcat] Release 11.5.4 ([#31926](https://github.com/bitnami/charts/pull/31926))
+
+## <small>11.5.3 (2025-02-11)</small>
+
+* [bitnami/tomcat] Release 11.5.3 (#31875) ([823f656](https://github.com/bitnami/charts/commit/823f656236b559e07e61fd99d47ea05488ee0ca4)), closes [#31875](https://github.com/bitnami/charts/issues/31875)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>11.5.2 (2025-01-28)</small>
+
+* [bitnami/tomcat] Release 11.5.2 (#31626) ([8df20cf](https://github.com/bitnami/charts/commit/8df20cf13c0b7c0edcbbb46e406c5e12a1d4b892)), closes [#31626](https://github.com/bitnami/charts/issues/31626)
+
+## <small>11.5.1 (2025-01-14)</small>
+
+* [bitnami/tomcat] Release 11.5.1 (#31370) ([b524bc1](https://github.com/bitnami/charts/commit/b524bc1571c226de23cb9f058ddb8fe7387b065c)), closes [#31370](https://github.com/bitnami/charts/issues/31370)
+
+## 11.5.0 (2024-12-19)
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/tomcat] chore(jmx-exporter): Upgrade image and change args (#31104) ([95b6681](https://github.com/bitnami/charts/commit/95b66814b50b2ac7b23d9f1987d207700f222d24)), closes [#31104](https://github.com/bitnami/charts/issues/31104)
+
+## 11.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/tomcat] Detect non-standard images (#30949) ([936a5de](https://github.com/bitnami/charts/commit/936a5dee502a7761e05d5e2254bb0ddba15a4a0b)), closes [#30949](https://github.com/bitnami/charts/issues/30949)
+
+## <small>11.3.3 (2024-12-10)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 3) (#30688) ([10a49f9](https://github.com/bitnami/charts/commit/10a49f9ff2db1d9d11a6edd1c40a9f61803241bc)), closes [#30688](https://github.com/bitnami/charts/issues/30688)
+* [bitnami/tomcat] Release 11.3.3 (#30847) ([dccf562](https://github.com/bitnami/charts/commit/dccf562c26e63a321f60903fa46eac3ff59c2e94)), closes [#30847](https://github.com/bitnami/charts/issues/30847)
+
+## <small>11.3.2 (2024-11-20)</small>
+
+* [bitnami/tomcat] Release 11.3.2 (#30550) ([56f6abf](https://github.com/bitnami/charts/commit/56f6abf1123818096cc7834274a6d26057dbc748)), closes [#30550](https://github.com/bitnami/charts/issues/30550)
+
+## <small>11.3.1 (2024-11-12)</small>
+
+* [bitnami/tomcat] Release 11.3.1 (#30409) ([d1d0b6a](https://github.com/bitnami/charts/commit/d1d0b6a786fab4ab14e4926c3cfc99d24d6fd7bf)), closes [#30409](https://github.com/bitnami/charts/issues/30409)
+
+## 11.3.0 (2024-10-30)
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/tomcat] Make existing secret key names choosable. Allow tomcat username to be set from secr ([bd8163c](https://github.com/bitnami/charts/commit/bd8163ca1540450b86c6efd7d37772ea48d2174c)), closes [#30080](https://github.com/bitnami/charts/issues/30080)
+
+## <small>11.2.24 (2024-10-26)</small>
+
+* [bitnami/tomcat] Release 11.2.24 (#30092) ([e5764e1](https://github.com/bitnami/charts/commit/e5764e1ce621a9f3365e27ee627249c312fd49c1)), closes [#30092](https://github.com/bitnami/charts/issues/30092)
+
+## <small>11.2.23 (2024-10-17)</small>
+
+* [bitnami/tomcat] Release 11.2.23 (#29960) ([d76f36c](https://github.com/bitnami/charts/commit/d76f36c8ba13c8fecd1ad695e7b8a14f47deee63)), closes [#29960](https://github.com/bitnami/charts/issues/29960)
+
+## <small>11.2.22 (2024-10-16)</small>
+
+* [bitnami/tomcat] Release 11.2.22 (#29937) ([5559a58](https://github.com/bitnami/charts/commit/5559a58ac027d23ac1100f807dc9616fa6853ea4)), closes [#29937](https://github.com/bitnami/charts/issues/29937)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>11.2.21 (2024-09-17)</small>
+
+* [bitnami/tomcat] Release 11.2.21 (#29485) ([0285e87](https://github.com/bitnami/charts/commit/0285e874e95cb490542b889370f2c1a3210c9f99)), closes [#29485](https://github.com/bitnami/charts/issues/29485)
 
 ## <small>11.2.20 (2024-09-11)</small>
 

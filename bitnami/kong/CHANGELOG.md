@@ -1,8 +1,80 @@
 # Changelog
 
-## 13.0.3 (2024-09-19)
+## 15.2.0 (2025-02-20)
 
-* [bitnami/kong] Remove duplicated empty password check `common.validations.values.cassandra.passwords` ([#29441](https://github.com/bitnami/charts/pull/29441))
+* [bitnami/kong] feat: use new helper for checking API versions ([#32053](https://github.com/bitnami/charts/pull/32053))
+
+## <small>15.1.3 (2025-02-19)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/kong] Release 15.1.3 (#32009) ([3a82c75](https://github.com/bitnami/charts/commit/3a82c757bc8f0a231eb9884aebca1f11d58949e6)), closes [#32009](https://github.com/bitnami/charts/issues/32009)
+
+## <small>15.1.2 (2025-02-04)</small>
+
+* [bitnami/kong] Release 15.1.2 (#31736) ([7a87721](https://github.com/bitnami/charts/commit/7a8772124ee0655f9470669101342c65e644e55c)), closes [#31736](https://github.com/bitnami/charts/issues/31736)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>15.1.1 (2025-01-07)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/kong] Release 15.1.1 (#31173) ([b265fbe](https://github.com/bitnami/charts/commit/b265fbed4047e4ffeb82b8307b05bf5630af058a)), closes [#31173](https://github.com/bitnami/charts/issues/31173)
+
+## 15.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 3) (#30666) ([82fc7e2](https://github.com/bitnami/charts/commit/82fc7e2fc12e2648ed22069942203c02bf5d4cc6)), closes [#30666](https://github.com/bitnami/charts/issues/30666)
+* [bitnami/kong] Detect non-standard images (#30898) ([f51cea0](https://github.com/bitnami/charts/commit/f51cea0833ace64f69a2c73167f3d3d7fabfc312)), closes [#30898](https://github.com/bitnami/charts/issues/30898)
+
+## 15.0.0 (2024-11-22)
+
+* [bitnami/kong] Use postgresql 17 for Kong (#30584) ([66c3a1c](https://github.com/bitnami/charts/commit/66c3a1c7c70034befe21bf5f004ab040f264dca6)), closes [#30584](https://github.com/bitnami/charts/issues/30584)
+
+## <small>14.0.9 (2024-11-22)</small>
+
+* [bitnami/kong] Release 14.0.9 (#30574) ([1966baa](https://github.com/bitnami/charts/commit/1966baacadf3f66d9e52319e22d7269ba72b742a)), closes [#30574](https://github.com/bitnami/charts/issues/30574)
+
+## <small>14.0.8 (2024-11-21)</small>
+
+* [bitnami/kong] Release 14.0.8 (#30560) ([250a2ee](https://github.com/bitnami/charts/commit/250a2ee7562c5ecbbd1e1ff1562cb9728cf88aa3)), closes [#30560](https://github.com/bitnami/charts/issues/30560)
+
+## <small>14.0.7 (2024-11-21)</small>
+
+* [bitnami/kong] Release 14.0.7 (#30558) ([2f93e0e](https://github.com/bitnami/charts/commit/2f93e0e7a4cf274137bbe8fcb87716326b638dff)), closes [#30558](https://github.com/bitnami/charts/issues/30558)
+
+## <small>14.0.6 (2024-11-19)</small>
+
+* [bitnami/kong] Release 14.0.6 (#30511) ([2cbf54a](https://github.com/bitnami/charts/commit/2cbf54a295ebd343bb41b074641d7b640ff58807)), closes [#30511](https://github.com/bitnami/charts/issues/30511)
+
+## <small>14.0.5 (2024-11-09)</small>
+
+* [bitnami/kong] Release 14.0.5 (#30381) ([097a935](https://github.com/bitnami/charts/commit/097a9359c2b21f2de2e919d8ddd5b68733244af5)), closes [#30381](https://github.com/bitnami/charts/issues/30381)
+
+## <small>14.0.4 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/kong] Release 14.0.4 (#30276) ([5d37187](https://github.com/bitnami/charts/commit/5d37187597f35f33ea254f333e740d8a2963a440)), closes [#30276](https://github.com/bitnami/charts/issues/30276)
+
+## <small>14.0.3 (2024-10-28)</small>
+
+* [bitnami/kong] Release 14.0.3 (#30102) ([4f414b2](https://github.com/bitnami/charts/commit/4f414b270d913db9477efb273786d543b96fb408)), closes [#30102](https://github.com/bitnami/charts/issues/30102)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>14.0.2 (2024-10-16)</small>
+
+* [bitnami/kong] Release 14.0.2 (#29926) ([33bd511](https://github.com/bitnami/charts/commit/33bd5119767d11ee76a34dd137380558a7d4a584)), closes [#29926](https://github.com/bitnami/charts/issues/29926)
+
+## <small>14.0.1 (2024-10-16)</small>
+
+* [bitnami/kong] Release 14.0.1 (#29922) ([db33704](https://github.com/bitnami/charts/commit/db33704cd47f8afa9fc0c7822061212668674f42)), closes [#29922](https://github.com/bitnami/charts/issues/29922)
+
+## 14.0.0 (2024-10-03)
+
+* [bitnami/kong] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29736) ([2f9809b](https://github.com/bitnami/charts/commit/2f9809b8abe8a576cdb4f14be16749a4d1a9792a)), closes [#29736](https://github.com/bitnami/charts/issues/29736)
+
+## <small>13.0.3 (2024-09-19)</small>
+
+* [bitnami/kong] Remove duplicated empty password check `common.validations.values.cassandra.passwords ([139f5a5](https://github.com/bitnami/charts/commit/139f5a54c71ba4da1a0401300b84f8b31d8ff2e9)), closes [#29441](https://github.com/bitnami/charts/issues/29441)
 
 ## <small>13.0.2 (2024-09-19)</small>
 

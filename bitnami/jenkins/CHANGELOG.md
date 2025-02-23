@@ -1,8 +1,67 @@
 # Changelog
 
-## 13.4.22 (2024-09-19)
+## 13.5.6 (2025-02-19)
 
-* [bitnami/jenkins] Release 13.4.22 ([#29519](https://github.com/bitnami/charts/pull/29519))
+* [bitnami/jenkins] Release 13.5.6 ([#32004](https://github.com/bitnami/charts/pull/32004))
+
+## <small>13.5.5 (2025-02-05)</small>
+
+* [bitnami/jenkins] Release 13.5.5 (#31798) ([f2db75f](https://github.com/bitnami/charts/commit/f2db75f22dcaaf7c50a16447f495988103e95cce)), closes [#31798](https://github.com/bitnami/charts/issues/31798)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>13.5.4 (2025-01-28)</small>
+
+* [bitnami/jenkins] Release 13.5.4 (#31637) ([c3396df](https://github.com/bitnami/charts/commit/c3396dfc832122b344ad4b9a19dc263b748526f2)), closes [#31637](https://github.com/bitnami/charts/issues/31637)
+
+## <small>13.5.3 (2025-01-08)</small>
+
+* [bitnami/jenkins] Release 13.5.3 (#31259) ([5367ac7](https://github.com/bitnami/charts/commit/5367ac79885e9e4723997bbda84b94ca26dc742f)), closes [#31259](https://github.com/bitnami/charts/issues/31259)
+
+## <small>13.5.2 (2025-01-07)</small>
+
+* [bitnami/jenkins] Release 13.5.2 (#31225) ([5fd0be7](https://github.com/bitnami/charts/commit/5fd0be75c1a4714f324acd55a0a304ab20a46647)), closes [#31225](https://github.com/bitnami/charts/issues/31225)
+
+## <small>13.5.1 (2024-12-27)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/jenkins] Fix initHookScriptsSecret (#31175) ([77ca822](https://github.com/bitnami/charts/commit/77ca8222f5e564e76de8e997c67ee36b909f337a)), closes [#31175](https://github.com/bitnami/charts/issues/31175)
+
+## 13.5.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 2) (#30687) ([c457848](https://github.com/bitnami/charts/commit/c457848b2a111aad59830b98f85ffa1e29918e10)), closes [#30687](https://github.com/bitnami/charts/issues/30687)
+* [bitnami/jenkins] Detect non-standard images (#30905) ([59a3b68](https://github.com/bitnami/charts/commit/59a3b68c1b43deabc3a6eb08002baab4e2943bcf)), closes [#30905](https://github.com/bitnami/charts/issues/30905)
+
+## <small>13.4.28 (2024-11-28)</small>
+
+* [bitnami/jenkins] Release 13.4.28 (#30664) ([4b3a80d](https://github.com/bitnami/charts/commit/4b3a80d615308fddf33150c42e35da20dfad6ebb)), closes [#30664](https://github.com/bitnami/charts/issues/30664)
+
+## <small>13.4.27 (2024-11-04)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/jenkins] Release 13.4.27 (#30143) ([d461ca0](https://github.com/bitnami/charts/commit/d461ca069a425d5bf77ac9e0ddce9054ce287aa9)), closes [#30143](https://github.com/bitnami/charts/issues/30143)
+
+## <small>13.4.26 (2024-10-17)</small>
+
+* [bitnami/jenkins] Release 13.4.26 (#29973) ([ec9c4d2](https://github.com/bitnami/charts/commit/ec9c4d2eeea93832f4687028c89184424c95da78)), closes [#29973](https://github.com/bitnami/charts/issues/29973)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>13.4.25 (2024-10-10)</small>
+
+* [bitnami/jenkins] Fix: InitScripts, InitHookScripts (#29811) ([757f0f0](https://github.com/bitnami/charts/commit/757f0f0f70577481cfd097a00a1994124dc47010)), closes [#29811](https://github.com/bitnami/charts/issues/29811)
+
+## <small>13.4.24 (2024-10-09)</small>
+
+* [bitnami/jenkins] Release 13.4.24 (#29852) ([c34cd5f](https://github.com/bitnami/charts/commit/c34cd5f0cfae31289812ef78c9d3569ce41a4ac7)), closes [#29852](https://github.com/bitnami/charts/issues/29852)
+
+## <small>13.4.23 (2024-10-02)</small>
+
+* [bitnami/jenkins] Release 13.4.23 (#29748) ([c0981f7](https://github.com/bitnami/charts/commit/c0981f7cb714661bbca8ebf81b54e3ef5b383829)), closes [#29748](https://github.com/bitnami/charts/issues/29748)
+
+## <small>13.4.22 (2024-09-19)</small>
+
+* [bitnami/jenkins] Release 13.4.22 (#29519) ([8b4e9c2](https://github.com/bitnami/charts/commit/8b4e9c2bc7d2751e049c5a7e3df74e1a5355d5d8)), closes [#29519](https://github.com/bitnami/charts/issues/29519)
 
 ## <small>13.4.21 (2024-09-16)</small>
 
@@ -1198,7 +1257,7 @@
 ## <small>2.3.4 (2019-05-29)</small>
 
 * Change syntax because of linter failing ([adfc357](https://github.com/bitnami/charts/commit/adfc35728c2a8a9def9e1897b3772d64df621354))
-* Fix https://github.com/helm/charts/pull/14199\#issuecomment-496883321 and support _sha256_ as an imm ([95957ea](https://github.com/bitnami/charts/commit/95957ea6430f28ec3593053afb0bfccb75703c79)), closes [#issuecomment-496883321](https://github.com/bitnami/charts/issues/issuecomment-496883321)
+* Fix https://github.com/helm/charts/pull/14199\#issuecomment-496883321 and support _sha256_ as an imm ([95957ea](https://github.com/bitnami/charts/commit/95957ea6430f28ec3593053afb0bfccb75703c79))
 * Use immutable tags in the main images ([17ca4f5](https://github.com/bitnami/charts/commit/17ca4f5c91da33da03f9e2d411fe5e004e825c4d))
 
 ## <small>2.3.3 (2019-05-28)</small>

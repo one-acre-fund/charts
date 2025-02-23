@@ -1,8 +1,57 @@
 # Changelog
 
-## 23.0.7 (2024-09-19)
+## 25.1.4 (2025-02-21)
 
-* [bitnami/moodle] Release 23.0.7 ([#29521](https://github.com/bitnami/charts/pull/29521))
+* [bitnami/moodle] Release 25.1.4 ([#32103](https://github.com/bitnami/charts/pull/32103))
+
+## <small>25.1.3 (2025-02-10)</small>
+
+* [bitnami/clickhouse][bitnami/moodle] Remove references to deprecated kube-lego (#31726) ([4e44ec5](https://github.com/bitnami/charts/commit/4e44ec50d9144f8c3c017afa4e518c43d8f3847b)), closes [#31726](https://github.com/bitnami/charts/issues/31726)
+* [bitnami/moodle] Release 25.1.3 (#31845) ([bfa6335](https://github.com/bitnami/charts/commit/bfa63352e071c36ae8d2399e102ce96891422353)), closes [#31845](https://github.com/bitnami/charts/issues/31845)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>25.1.2 (2025-01-18)</small>
+
+* [bitnami/moodle] Release 25.1.2 (#31464) ([2dac33a](https://github.com/bitnami/charts/commit/2dac33a352eb558e87134eb8d91029ace3e9dbbb)), closes [#31464](https://github.com/bitnami/charts/issues/31464)
+
+## <small>25.1.1 (2025-01-08)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/moodle] #31199 Fix invalid imagePullSecrets on container level (#31208) ([f137992](https://github.com/bitnami/charts/commit/f13799285711dba7a9c81ef4578d55a602e0d4a8)), closes [#31208](https://github.com/bitnami/charts/issues/31208)
+
+## 25.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/moodle] Detect non-standard images (#30960) ([3438d77](https://github.com/bitnami/charts/commit/3438d776d1fe43b64779e83fbccd69d7c67accdd)), closes [#30960](https://github.com/bitnami/charts/issues/30960)
+
+## <small>25.0.2 (2024-12-09)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 4) (#30669) ([a4ec006](https://github.com/bitnami/charts/commit/a4ec00624589023a70a7094fcfb9f12e382bc280)), closes [#30669](https://github.com/bitnami/charts/issues/30669)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 3) (#30688) ([10a49f9](https://github.com/bitnami/charts/commit/10a49f9ff2db1d9d11a6edd1c40a9f61803241bc)), closes [#30688](https://github.com/bitnami/charts/issues/30688)
+* [bitnami/moodle] Release 25.0.2 (#30832) ([c286d50](https://github.com/bitnami/charts/commit/c286d504065a13868548de4b972c1c6c2c42a64d)), closes [#30832](https://github.com/bitnami/charts/issues/30832)
+
+## <small>25.0.1 (2024-11-17)</small>
+
+* [bitnami/moodle] Release 25.0.1 (#30488) ([7e1cd00](https://github.com/bitnami/charts/commit/7e1cd00c937ddd7fdfc182735077a35909dba1ce)), closes [#30488](https://github.com/bitnami/charts/issues/30488)
+
+## 25.0.0 (2024-11-12)
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/moodle] chore!: :arrow_up: :boom: Bump MariaDB subchart to 20 (#30355) ([6e52794](https://github.com/bitnami/charts/commit/6e52794183ad3bfc8a529266223949af88b05f47)), closes [#30355](https://github.com/bitnami/charts/issues/30355)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 24.0.0 (2024-10-08)
+
+* [bitnami/moodle] Release 24.0.0 (#29813) ([336d3e5](https://github.com/bitnami/charts/commit/336d3e548b56380fc01db55c94dca689e61d387a)), closes [#29813](https://github.com/bitnami/charts/issues/29813)
+
+## <small>23.0.8 (2024-10-07)</small>
+
+* [bitnami/moodle] Release 23.0.8 (#29791) ([1cd63b4](https://github.com/bitnami/charts/commit/1cd63b45109343ffedc6289e7a030e9a3d1ba63d)), closes [#29791](https://github.com/bitnami/charts/issues/29791)
+
+## <small>23.0.7 (2024-09-19)</small>
+
+* [bitnami/moodle] Release 23.0.7 (#29521) ([8f12839](https://github.com/bitnami/charts/commit/8f128395fc07f7aefdd1a27ef96e064e8546ed53)), closes [#29521](https://github.com/bitnami/charts/issues/29521)
 
 ## <small>23.0.6 (2024-09-02)</small>
 

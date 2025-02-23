@@ -1,8 +1,49 @@
 # Changelog
 
-## 6.3.5 (2024-09-26)
+## 6.4.4 (2025-02-11)
 
-* [bitnami/logstash] Release 6.3.5 ([#29633](https://github.com/bitnami/charts/pull/29633))
+* [bitnami/logstash] Release 6.4.4 ([#31870](https://github.com/bitnami/charts/pull/31870))
+
+## <small>6.4.3 (2025-01-29)</small>
+
+* [bitnami/logstash] Release 6.4.3 (#31667) ([46f003b](https://github.com/bitnami/charts/commit/46f003b12847591e12fa2e5b4dad9025c14fb1e3)), closes [#31667](https://github.com/bitnami/charts/issues/31667)
+
+## <small>6.4.2 (2025-01-21)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/logstash] Release 6.4.2 (#31497) ([826cea9](https://github.com/bitnami/charts/commit/826cea9060cdb0c7d2c7ec54d7abbdd68b565d00)), closes [#31497](https://github.com/bitnami/charts/issues/31497)
+
+## <small>6.4.1 (2024-12-12)</small>
+
+* [bitnami/logstash] Release 6.4.1 (#31022) ([1549343](https://github.com/bitnami/charts/commit/154934371073efe104fee09db7140356b62b6780)), closes [#31022](https://github.com/bitnami/charts/issues/31022)
+
+## 6.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/logstash] Detect non-standard images (#30919) ([e64e0d5](https://github.com/bitnami/charts/commit/e64e0d53149404ab60997cd038db3f517b47bc0c)), closes [#30919](https://github.com/bitnami/charts/issues/30919)
+
+## <small>6.3.9 (2024-11-22)</small>
+
+* [bitnami/logstash] Release 6.3.9 (#30591) ([266c704](https://github.com/bitnami/charts/commit/266c704facb55306a01fef15d69c7f3e722b2d06)), closes [#30591](https://github.com/bitnami/charts/issues/30591)
+
+## <small>6.3.8 (2024-11-12)</small>
+
+* [bitnami/logstash] Release 6.3.8 (#30433) ([760b0ed](https://github.com/bitnami/charts/commit/760b0edf16c6f76ef1e424ec1a6063335308d2a1)), closes [#30433](https://github.com/bitnami/charts/issues/30433)
+
+## <small>6.3.7 (2024-11-12)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/logstash] Release 6.3.7 (#30420) ([2324895](https://github.com/bitnami/charts/commit/232489503324b0cc7e1fa60cc334da2fffb6de02)), closes [#30420](https://github.com/bitnami/charts/issues/30420)
+
+## <small>6.3.6 (2024-10-17)</small>
+
+* [bitnami/logstash] Release 6.3.6 (#29969) ([75a26c7](https://github.com/bitnami/charts/commit/75a26c75d7fbb96b71598ae495d85482984981cf)), closes [#29969](https://github.com/bitnami/charts/issues/29969)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>6.3.5 (2024-09-26)</small>
+
+* [bitnami/logstash] Release 6.3.5 (#29633) ([abd6fed](https://github.com/bitnami/charts/commit/abd6fedf0711acaa28f61094575057255965ff14)), closes [#29633](https://github.com/bitnami/charts/issues/29633)
 
 ## <small>6.3.4 (2024-09-11)</small>
 

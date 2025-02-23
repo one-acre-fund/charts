@@ -1,8 +1,85 @@
 # Changelog
 
-## 23.0.4 (2024-09-19)
+## 24.3.3 (2025-02-20)
 
-* [bitnami/harbor] Fix REGISTRY_HTTP_SECRET encoding when declared on an existing secret ([#29494](https://github.com/bitnami/charts/pull/29494))
+* [bitnami/harbor] Release 24.3.3 ([#32091](https://github.com/bitnami/charts/pull/32091))
+
+## <small>24.3.2 (2025-02-18)</small>
+
+* [bitnami/harbor] Release 24.3.2 (#31965) ([273fa3f](https://github.com/bitnami/charts/commit/273fa3fd0c3da7da24a8f5ed25e38615deafba8b)), closes [#31965](https://github.com/bitnami/charts/issues/31965)
+
+## <small>24.3.1 (2025-02-17)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/harbor] Added tpl to externalURL (#31940) ([4b9c79f](https://github.com/bitnami/charts/commit/4b9c79fdf34d9f38cfbd65640152b3484cc43ed5)), closes [#31940](https://github.com/bitnami/charts/issues/31940)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## 24.3.0 (2025-01-27)
+
+* [bitnami/harbor] Added existingSecret parameter for external database (#31492) ([4cf7499](https://github.com/bitnami/charts/commit/4cf749975ff948cae80d961af7c75debf9fc49a3)), closes [#31492](https://github.com/bitnami/charts/issues/31492)
+
+## 24.2.0 (2025-01-27)
+
+* [bitnami/harbor] allow custom trivy db repository (#31594) ([1041261](https://github.com/bitnami/charts/commit/1041261ac0c42618da3e0357e18ac200052ff31f)), closes [#31594](https://github.com/bitnami/charts/issues/31594)
+
+## <small>24.1.8 (2025-01-23)</small>
+
+* [bitnami/harbor] Clarify usage of custom POSTGRESQL_PASSWORD (#31507) ([b871457](https://github.com/bitnami/charts/commit/b8714574f24519dcec83895fb19cb7819c6e016e)), closes [#31507](https://github.com/bitnami/charts/issues/31507)
+
+## <small>24.1.7 (2025-01-17)</small>
+
+* [bitnami/harbor] Release 24.1.7 (#31457) ([a607b9f](https://github.com/bitnami/charts/commit/a607b9faa767ef8ed65f535c0a4563ebfb39429e)), closes [#31457](https://github.com/bitnami/charts/issues/31457)
+
+## <small>24.1.6 (2025-01-07)</small>
+
+* [bitnami/harbor] Fix REGISTRY_HTTP_SECRET creation when not using an existing secret (#31013) ([a58ae98](https://github.com/bitnami/charts/commit/a58ae9883672f4f8b55733b143a17279fd3c9e81)), closes [#31013](https://github.com/bitnami/charts/issues/31013)
+
+## <small>24.1.5 (2025-01-02)</small>
+
+* [bitnami/harbor] Release 24.1.5 (#31196) ([588d3b5](https://github.com/bitnami/charts/commit/588d3b5967169f644d976d2f8f607a935a0beb26)), closes [#31196](https://github.com/bitnami/charts/issues/31196)
+
+## <small>24.1.4 (2024-12-31)</small>
+
+* [bitnami/harbor] Release 24.1.4 (#31190) ([8dc6466](https://github.com/bitnami/charts/commit/8dc6466ae516b27785c0a42b8a56614e89824ac5)), closes [#31190](https://github.com/bitnami/charts/issues/31190)
+
+## <small>24.1.3 (2024-12-31)</small>
+
+* [bitnami/harbor] Release 24.1.3 (#31187) ([520af96](https://github.com/bitnami/charts/commit/520af96aab6a5f0edcc92dbe33b6d1f27616248f)), closes [#31187](https://github.com/bitnami/charts/issues/31187)
+
+## <small>24.1.2 (2024-12-24)</small>
+
+* [bitnami/harbor] Release 24.1.2 (#31156) ([7b7e8e0](https://github.com/bitnami/charts/commit/7b7e8e0453d3c47b0b65051ecb0e4b4648a1aef0)), closes [#31156](https://github.com/bitnami/charts/issues/31156)
+
+## <small>24.1.1 (2024-12-23)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/harbor] Only set metric environment variables for exporter when enabled, set environment va ([7a204c4](https://github.com/bitnami/charts/commit/7a204c472c24a6b38344010f4907c0e189188b26)), closes [#31122](https://github.com/bitnami/charts/issues/31122)
+
+## 24.1.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/harbor] Detect non-standard images (#30883) ([95c2321](https://github.com/bitnami/charts/commit/95c232141f4d0e432da61c6b2d1331557a8e8acd)), closes [#30883](https://github.com/bitnami/charts/issues/30883)
+
+## <small>24.0.2 (2024-11-14)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/harbor] Release 24.0.2 (#30461) ([ec025a7](https://github.com/bitnami/charts/commit/ec025a7cc5a9dbde506653609ddb41d5941cd682)), closes [#30461](https://github.com/bitnami/charts/issues/30461)
+
+## <small>24.0.1 (2024-10-21)</small>
+
+* [bitnami/harbor] Release 24.0.1 (#30007) ([3ce23ef](https://github.com/bitnami/charts/commit/3ce23ef70ae1054732b2445d0175ed854eedb8e5)), closes [#30007](https://github.com/bitnami/charts/issues/30007)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## 24.0.0 (2024-10-03)
+
+* [bitnami/harbor] feat!: :arrow_up: :boom: Bump PostgreSQL to 17.x (#29733) ([017c8c3](https://github.com/bitnami/charts/commit/017c8c368e4740be7e4d465cbb9b0c54b2ca829a)), closes [#29733](https://github.com/bitnami/charts/issues/29733)
+
+## <small>23.0.4 (2024-09-19)</small>
+
+* [bitnami/harbor] Fix REGISTRY_HTTP_SECRET encoding when declared on an existing secret (#29494) ([1691323](https://github.com/bitnami/charts/commit/169132300077d028414938924d25000cb21e4ffc)), closes [#29494](https://github.com/bitnami/charts/issues/29494)
 
 ## <small>23.0.3 (2024-09-11)</small>
 

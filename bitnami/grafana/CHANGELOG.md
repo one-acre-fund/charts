@@ -1,8 +1,77 @@
 # Changelog
 
-## 11.3.21 (2024-09-26)
+## 11.4.9 (2025-02-20)
 
-* [bitnami/grafana] Release 11.3.21 ([#29630](https://github.com/bitnami/charts/pull/29630))
+* [bitnami/grafana] Release 11.4.9 ([#32092](https://github.com/bitnami/charts/pull/32092))
+
+## <small>11.4.8 (2025-02-20)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/grafana] Release 11.4.8 (#32042) ([52642ef](https://github.com/bitnami/charts/commit/52642ef968fc7746c95715b13f16aebe376bdfa2)), closes [#32042](https://github.com/bitnami/charts/issues/32042)
+
+## <small>11.4.7 (2025-02-04)</small>
+
+* [bitnami/grafana] Release 11.4.7 (#31758) ([206a4c6](https://github.com/bitnami/charts/commit/206a4c6d60df350df8687d3e3f2184ab5a1512c7)), closes [#31758](https://github.com/bitnami/charts/issues/31758)
+
+## <small>11.4.6 (2025-02-04)</small>
+
+* [bitnami/grafana] Release 11.4.6 (#31732) ([33a296b](https://github.com/bitnami/charts/commit/33a296b36137ffec23b2ff26b2c3329acbe149dc)), closes [#31732](https://github.com/bitnami/charts/issues/31732)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>11.4.5 (2025-01-29)</small>
+
+* [bitnami/grafana] Release 11.4.5 (#31668) ([e45b2db](https://github.com/bitnami/charts/commit/e45b2db0e916bd7fbea3dda3e6dfbf3a69f6d294)), closes [#31668](https://github.com/bitnami/charts/issues/31668)
+
+## <small>11.4.4 (2025-01-24)</small>
+
+* [bitnami/grafana] Release 11.4.4 (#31588) ([5cd8160](https://github.com/bitnami/charts/commit/5cd8160d55d70bdc12c7dfd7e2367ff565be4ed7)), closes [#31588](https://github.com/bitnami/charts/issues/31588)
+
+## <small>11.4.3 (2025-01-17)</small>
+
+* [bitnami/grafana] Release 11.4.3 (#31424) ([b514de2](https://github.com/bitnami/charts/commit/b514de25da7da4ea5a76f27176edf271667012fc)), closes [#31424](https://github.com/bitnami/charts/issues/31424)
+
+## <small>11.4.2 (2024-12-18)</small>
+
+* [bitnami/grafana] Release 11.4.2 (#31091) ([8dd034c](https://github.com/bitnami/charts/commit/8dd034c5430463f7a813b70985ee4bb2ba50b0c5)), closes [#31091](https://github.com/bitnami/charts/issues/31091)
+
+## <small>11.4.1 (2024-12-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/grafana] Release 11.4.1 (#31066) ([fb58a54](https://github.com/bitnami/charts/commit/fb58a54eb763f4320640745419567f9a286f1ce3)), closes [#31066](https://github.com/bitnami/charts/issues/31066)
+
+## 11.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 2) (#30662) ([50e0570](https://github.com/bitnami/charts/commit/50e0570f98ab15308af7910b405baa4480e5fe3f)), closes [#30662](https://github.com/bitnami/charts/issues/30662)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 2) (#30687) ([c457848](https://github.com/bitnami/charts/commit/c457848b2a111aad59830b98f85ffa1e29918e10)), closes [#30687](https://github.com/bitnami/charts/issues/30687)
+* [bitnami/grafana] Detect non-standard images (#30888) ([e09d7ad](https://github.com/bitnami/charts/commit/e09d7ad390e4c372cef3cf35a0f11c2305378519)), closes [#30888](https://github.com/bitnami/charts/issues/30888)
+
+## <small>11.3.26 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/grafana] Release 11.3.26 (#30270) ([95adc4d](https://github.com/bitnami/charts/commit/95adc4dc72da013e0a879bd195f1e32689535c7b)), closes [#30270](https://github.com/bitnami/charts/issues/30270)
+
+## <small>11.3.25 (2024-10-24)</small>
+
+* [bitnami/grafana] Release 11.3.25 (#30070) ([27509cf](https://github.com/bitnami/charts/commit/27509cfdd2d6ed422279a20426ad0128460bbdcf)), closes [#30070](https://github.com/bitnami/charts/issues/30070)
+
+## <small>11.3.24 (2024-10-22)</small>
+
+* [bitnami/grafana] Release 11.3.24 (#30041) ([02118be](https://github.com/bitnami/charts/commit/02118be5a0b8a7ae049736478200446d3e51f929)), closes [#30041](https://github.com/bitnami/charts/issues/30041)
+
+## <small>11.3.23 (2024-10-18)</small>
+
+* [bitnami/grafana] Release 11.3.23 (#29992) ([78e41be](https://github.com/bitnami/charts/commit/78e41bedaeb1b7dea2f591ad72983232ce081d83)), closes [#29992](https://github.com/bitnami/charts/issues/29992)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>11.3.22 (2024-10-02)</small>
+
+* [bitnami/grafana] Release 11.3.22 (#29697) ([492f272](https://github.com/bitnami/charts/commit/492f2725e775a318ce0028d4dacc4e28ee8224e2)), closes [#29697](https://github.com/bitnami/charts/issues/29697)
+
+## <small>11.3.21 (2024-09-26)</small>
+
+* [bitnami/grafana] Release 11.3.21 (#29630) ([40c1640](https://github.com/bitnami/charts/commit/40c1640d351dcf2f46d532415bfb67d5053af401)), closes [#29630](https://github.com/bitnami/charts/issues/29630)
 
 ## <small>11.3.20 (2024-09-19)</small>
 

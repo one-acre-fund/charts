@@ -1,8 +1,88 @@
 # Changelog
 
-## 1.3.18 (2024-09-05)
+## 1.4.11 (2025-02-19)
 
-* [bitnami/cert-manager] Release 1.3.18 ([#29226](https://github.com/bitnami/charts/pull/29226))
+* [bitnami/cert-manager] Release 1.4.11 ([#31976](https://github.com/bitnami/charts/pull/31976))
+
+## <small>1.4.10 (2025-02-13)</small>
+
+* [bitnami/cert-manager] Release 1.4.10 (#31913) ([06f8a3d](https://github.com/bitnami/charts/commit/06f8a3d74d5299a9effb6797bc789a1d09935953)), closes [#31913](https://github.com/bitnami/charts/issues/31913)
+
+## <small>1.4.9 (2025-02-13)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/cert-manager] Updated cert-manager RBAC (#31906) ([a24b680](https://github.com/bitnami/charts/commit/a24b6802f54f22d228b83fba8a76c14db5224d2b)), closes [#31906](https://github.com/bitnami/charts/issues/31906)
+
+## <small>1.4.8 (2025-02-05)</small>
+
+* [bitnami/cert-manager] Update rules for controller-certificates ClusterRole (#31794) ([2a023c1](https://github.com/bitnami/charts/commit/2a023c106adc6c08019beec9ad5d11f250d22012)), closes [#31794](https://github.com/bitnami/charts/issues/31794)
+
+## <small>1.4.7 (2025-02-04)</small>
+
+* [bitnami/cert-manager] Release 1.4.7 (#31744) ([cb8d670](https://github.com/bitnami/charts/commit/cb8d670d78acdaa9dfbc271b9b0ffe7160c838e3)), closes [#31744](https://github.com/bitnami/charts/issues/31744)
+
+## <small>1.4.6 (2025-02-04)</small>
+
+* [bitnami/cert-manager] Release 1.4.6 (#31728) ([80efd90](https://github.com/bitnami/charts/commit/80efd904e6fc5f341a240fb5ce3d75b01565085b)), closes [#31728](https://github.com/bitnami/charts/issues/31728)
+
+## <small>1.4.5 (2025-02-03)</small>
+
+* [bitnami/cert-manager] Release 1.4.5 (#31714) ([46a27b5](https://github.com/bitnami/charts/commit/46a27b5e4dbebe843ab3e15029e92ace7d3b3f79)), closes [#31714](https://github.com/bitnami/charts/issues/31714)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.4.4 (2025-01-24)</small>
+
+* [bitnami/cert-manager] Release 1.4.4 (#31543) ([857c1cb](https://github.com/bitnami/charts/commit/857c1cbc3b0f874d3f819acda7a5f56bc2933ac9)), closes [#31543](https://github.com/bitnami/charts/issues/31543)
+
+## <small>1.4.3 (2025-01-16)</small>
+
+* [bitnami/cert-manager] Release 1.4.3 (#31409) ([a8585ac](https://github.com/bitnami/charts/commit/a8585ac5863f67e360d4899903bf8f84ca94c266)), closes [#31409](https://github.com/bitnami/charts/issues/31409)
+
+## <small>1.4.2 (2025-01-16)</small>
+
+* [bitnami/cert-manager] Release 1.4.2 (#31401) ([3620b04](https://github.com/bitnami/charts/commit/3620b04c31341d1dcf6197ff5a3f9e8a3c2c52d4)), closes [#31401](https://github.com/bitnami/charts/issues/31401)
+
+## <small>1.4.1 (2025-01-12)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/cert-manager] Release 1.4.1 (#31310) ([40d5294](https://github.com/bitnami/charts/commit/40d52944a726858c011d6dfa77a41a223a75a332)), closes [#31310](https://github.com/bitnami/charts/issues/31310)
+
+## 1.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/cert-manager] Detect non-standard images (#30867) ([bfe39d0](https://github.com/bitnami/charts/commit/bfe39d0581ce5337ec54e0da192055a1a19e5e59)), closes [#30867](https://github.com/bitnami/charts/issues/30867)
+
+## <small>1.3.24 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 1) (#30660) ([7409ca4](https://github.com/bitnami/charts/commit/7409ca4c21869fabe1532dd4f3ff24895df71c6d)), closes [#30660](https://github.com/bitnami/charts/issues/30660)
+* [bitnami/cert-manager] Release 1.3.24 (#30739) ([51daadc](https://github.com/bitnami/charts/commit/51daadc4dff95588d7684acdb404db1dc6925945)), closes [#30739](https://github.com/bitnami/charts/issues/30739)
+
+## <small>1.3.23 (2024-11-20)</small>
+
+* [bitnami/cert-manager] Release 1.3.23 (#30552) ([555fa36](https://github.com/bitnami/charts/commit/555fa36440a6344259ca94a1890029d476552c55)), closes [#30552](https://github.com/bitnami/charts/issues/30552)
+
+## <small>1.3.22 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/cert-manager] Release 1.3.22 (#30255) ([8964c61](https://github.com/bitnami/charts/commit/8964c611d3b11e684ac2f3f478fcea601f4b7321)), closes [#30255](https://github.com/bitnami/charts/issues/30255)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.3.21 (2024-10-09)</small>
+
+* [bitnami/cert-manager] Release 1.3.21 (#29846) ([8bf3be7](https://github.com/bitnami/charts/commit/8bf3be7d9d892616f60e203f65c8a640141e0287)), closes [#29846](https://github.com/bitnami/charts/issues/29846)
+
+## <small>1.3.20 (2024-10-03)</small>
+
+* [bitnami/cert-manager] Release 1.3.20 (#29766) ([af95117](https://github.com/bitnami/charts/commit/af951172a56c854135e1e6bddb89324b14e41fa7)), closes [#29766](https://github.com/bitnami/charts/issues/29766)
+
+## <small>1.3.19 (2024-10-01)</small>
+
+* [bitnami/cert-manager] Release 1.3.19 (#29684) ([b813a20](https://github.com/bitnami/charts/commit/b813a20baf8e1eaeda1f8b7419fc4e21b7c4cc5a)), closes [#29684](https://github.com/bitnami/charts/issues/29684)
+
+## <small>1.3.18 (2024-09-05)</small>
+
+* [bitnami/cert-manager] Release 1.3.18 (#29226) ([f6b20d0](https://github.com/bitnami/charts/commit/f6b20d0411d099e9d27b27fcf0f76b6da79121bf)), closes [#29226](https://github.com/bitnami/charts/issues/29226)
 
 ## <small>1.3.17 (2024-08-16)</small>
 
@@ -808,7 +888,7 @@
 
 ## <small>0.1.3 (2021-06-07)</small>
 
-* fix: service account specific annotations not being used. See https://github.com/bitnami/charts/issu ([fb917a9](https://github.com/bitnami/charts/commit/fb917a9b51d1a3d1173af530e8296749f2d372bb)), closes [#6574](https://github.com/bitnami/charts/issues/6574)
+* fix: service account specific annotations not being used. See https://github.com/bitnami/charts/issu ([fb917a9](https://github.com/bitnami/charts/commit/fb917a9b51d1a3d1173af530e8296749f2d372bb))
 
 ## <small>0.1.2 (2021-05-24)</small>
 

@@ -1,8 +1,73 @@
 # Changelog
 
-## 6.3.20 (2024-09-06)
+## 6.5.6 (2025-02-19)
 
-* [bitnami/influxdb] Release 6.3.20 ([#29239](https://github.com/bitnami/charts/pull/29239))
+* [bitnami/influxdb] Release 6.5.6 ([#32003](https://github.com/bitnami/charts/pull/32003))
+
+## <small>6.5.5 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/influxdb] Release 6.5.5 (#31891) ([aa14ac9](https://github.com/bitnami/charts/commit/aa14ac945ee0cc775dabfe5b85e7ef1e22be984c)), closes [#31891](https://github.com/bitnami/charts/issues/31891)
+
+## <small>6.5.4 (2025-02-04)</small>
+
+* [bitnami/influxdb] Release 6.5.4 (#31761) ([12626a7](https://github.com/bitnami/charts/commit/12626a7766e8f7236c31acf52e2adc24c4bed28a)), closes [#31761](https://github.com/bitnami/charts/issues/31761)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>6.5.3 (2025-01-24)</small>
+
+* [bitnami/influxdb] Release 6.5.3 (#31565) ([6442881](https://github.com/bitnami/charts/commit/6442881d5de8ad5de7cce74e7a96d4a52003ee12)), closes [#31565](https://github.com/bitnami/charts/issues/31565)
+
+## <small>6.5.2 (2025-01-17)</small>
+
+* [bitnami/influxdb] Release 6.5.2 (#31426) ([cf843ee](https://github.com/bitnami/charts/commit/cf843ee793068cf3aa51f0f59faf8ad5fe650fcf)), closes [#31426](https://github.com/bitnami/charts/issues/31426)
+
+## <small>6.5.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/influxdb] Release 6.5.1 (#31316) ([fc98895](https://github.com/bitnami/charts/commit/fc98895cb3833a31b183db63161a6ff72009f1ff)), closes [#31316](https://github.com/bitnami/charts/issues/31316)
+
+## 6.5.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/influxdb] Detect non-standard images (#30882) ([9406b31](https://github.com/bitnami/charts/commit/9406b319964695555717ff20832743fd65c35c40)), closes [#30882](https://github.com/bitnami/charts/issues/30882)
+
+## <small>6.4.2 (2024-12-04)</small>
+
+* [bitnami/influxdb] Release 6.4.2 (#30757) ([a472136](https://github.com/bitnami/charts/commit/a472136ebbbcb99b0414275ca419ef47028e8970)), closes [#30757](https://github.com/bitnami/charts/issues/30757)
+
+## <small>6.4.1 (2024-12-02)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 2) (#30687) ([c457848](https://github.com/bitnami/charts/commit/c457848b2a111aad59830b98f85ffa1e29918e10)), closes [#30687](https://github.com/bitnami/charts/issues/30687)
+* [bitnami/influxdb] Release 6.4.1 (#30717) ([61c79ed](https://github.com/bitnami/charts/commit/61c79ed90c424650e432fcb52f51d6f2df51a564)), closes [#30717](https://github.com/bitnami/charts/issues/30717)
+
+## 6.4.0 (2024-11-29)
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 3) (#30666) ([82fc7e2](https://github.com/bitnami/charts/commit/82fc7e2fc12e2648ed22069942203c02bf5d4cc6)), closes [#30666](https://github.com/bitnami/charts/issues/30666)
+* [bitnami/influxdb] Feature - Add CA bundle option to influxdb backup job (#30659) ([622f64d](https://github.com/bitnami/charts/commit/622f64d352e68038cd4f205a40922a08900c3014)), closes [#30659](https://github.com/bitnami/charts/issues/30659)
+
+## <small>6.3.23 (2024-11-28)</small>
+
+* [bitnam/influxdb] gcloud backups, replace gsutil (#30595) ([9914b1b](https://github.com/bitnami/charts/commit/9914b1bbc403330378c28711371bdf53b76ffc19)), closes [#30595](https://github.com/bitnami/charts/issues/30595)
+
+## <small>6.3.22 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/influxdb] Release 6.3.22 (#30272) ([761fe02](https://github.com/bitnami/charts/commit/761fe022b2837b47c4d6174b6c0ace93a600ea4a)), closes [#30272](https://github.com/bitnami/charts/issues/30272)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>6.3.21 (2024-10-02)</small>
+
+* [bitnami/influxdb] Release 6.3.21 (#29699) ([080cf1c](https://github.com/bitnami/charts/commit/080cf1ca3a7b754b3b0055370d69d18d93523f7a)), closes [#29699](https://github.com/bitnami/charts/issues/29699)
+
+## <small>6.3.20 (2024-09-06)</small>
+
+* [bitnami/influxdb] Release 6.3.20 (#29239) ([ecbbddc](https://github.com/bitnami/charts/commit/ecbbddcdb083cd3de5bcd9b296d200dc1d024b41)), closes [#29239](https://github.com/bitnami/charts/issues/29239)
+
+## <small>6.3.19 (2024-08-27)</small>
+
+* [bitnami/influxdb] Release 6.3.19 (#29054) ([70e3cb9](https://github.com/bitnami/charts/commit/70e3cb9f9a00b2c5a9e9ad0754849059c616074d)), closes [#29054](https://github.com/bitnami/charts/issues/29054)
 
 ## <small>6.3.18 (2024-08-16)</small>
 
@@ -757,7 +822,7 @@
 
 ## <small>2.3.13 (2021-10-01)</small>
 
-* [bitnami/influxdb] extrahosts creates the same paths as hostname (#7654) ([0b46c43](https://github.com/bitnami/charts/commit/0b46c43c141f21eeab971db035a66be16bbb2354)), closes [#7654](https://github.com/bitnami/charts/issues/7654) [/github.com/bitnami/charts/blob/31f75b5950840b3939c65360a781bc1d66b9e9d2/bitnami/influxdb/Chart.yaml#L27](https://github.com//github.com/bitnami/charts/blob/31f75b5950840b3939c65360a781bc1d66b9e9d2/bitnami/influxdb/Chart.yaml/issues/L27)
+* [bitnami/influxdb] extrahosts creates the same paths as hostname (#7654) ([0b46c43](https://github.com/bitnami/charts/commit/0b46c43c141f21eeab971db035a66be16bbb2354)), closes [#7654](https://github.com/bitnami/charts/issues/7654)
 * [bitnami/several] Regenerate README tables ([c3367d9](https://github.com/bitnami/charts/commit/c3367d910710aece8db3ece72554597fce871ae1))
 
 ## <small>2.3.12 (2021-10-01)</small>

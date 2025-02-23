@@ -483,23 +483,28 @@ chainloop config save \
 
 ### Global parameters
 
-| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value  |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`   |
-| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`   |
-| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto` |
-| `development`                                         | Deploys Chainloop pre-configured FOR DEVELOPMENT ONLY. It includes a Vault instance in development mode and pre-configured authentication certificates and passphrases                                                                                                                                                                                              | `true` |
+| Name                                                  | Description                                                                                                                                                                                                                                                                                                                                                         | Value   |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`    |
+| `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`    |
+| `global.security.allowInsecureImages`                 | Allows skipping image verification                                                                                                                                                                                                                                                                                                                                  | `false` |
+| `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto`  |
+| `development`                                         | Deploys Chainloop pre-configured FOR DEVELOPMENT ONLY. It includes a Vault instance in development mode and pre-configured authentication certificates and passphrases                                                                                                                                                                                              | `true`  |
 
 ### Common parameters
 
-| Name                | Description                                        | Value   |
-| ------------------- | -------------------------------------------------- | ------- |
-| `kubeVersion`       | Override Kubernetes version                        | `""`    |
-| `commonAnnotations` | Annotations to add to all deployed objects         | `{}`    |
-| `commonLabels`      | Labels to add to all deployed objects              | `{}`    |
-| `extraDeploy`       | Array of extra objects to deploy with the release  | `[]`    |
-| `rbac.create`       | Specifies whether RBAC resources should be created | `false` |
-| `rbac.rules`        | Custom RBAC rules to set                           | `[]`    |
+| Name                | Description                                                | Value   |
+| ------------------- | ---------------------------------------------------------- | ------- |
+| `kubeVersion`       | Override Kubernetes version                                | `""`    |
+| `apiVersions`       | Override Kubernetes API versions reported by .Capabilities | `[]`    |
+| `nameOverride`      | String to partially override common.names.name             | `""`    |
+| `fullnameOverride`  | String to fully override common.names.fullname             | `""`    |
+| `namespaceOverride` | String to fully override common.names.namespace            | `""`    |
+| `commonAnnotations` | Annotations to add to all deployed objects                 | `{}`    |
+| `commonLabels`      | Labels to add to all deployed objects                      | `{}`    |
+| `extraDeploy`       | Array of extra objects to deploy with the release          | `[]`    |
+| `rbac.create`       | Specifies whether RBAC resources should be created         | `false` |
+| `rbac.rules`        | Custom RBAC rules to set                                   | `[]`    |
 
 ### Secrets Backend
 
@@ -1022,6 +1027,14 @@ service_registration "kubernetes" {}` |
 | `dex.pdb.maxUnavailable`                                | Maximum number/percentage of pods that may be made unavailable. Defaults to `1` if both `dex.pdb.minAvailable` and `dex.pdb.maxUnavailable` are empty.                                                                    | `""`                                                                                     |
 
 ## Upgrading
+
+### To 2.1.0
+
+This version introduces image verification for security purposes. To disable it, set `global.security.allowInsecureImages` to `true`. More details at [GitHub issue](https://github.com/bitnami/charts/issues/30850).
+
+### To 2.0.0
+
+This major updates the PostgreSQL subchart to its newest major, 16.0.0, which uses PostgreSQL 17.x. Follow the [official instructions](https://www.postgresql.org/docs/17/upgrading.html) to upgrade to 17.x.
 
 ### To 1.0.0
 

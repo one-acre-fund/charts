@@ -19,6 +19,12 @@ global:
   ##
   imagePullSecrets: []
   defaultStorageClass: ""
+  ## Security parameters
+  ##
+  security:
+    ## @param global.security.allowInsecureImages Allows skipping image verification
+    ##
+    allowInsecureImages: false
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -34,6 +40,9 @@ global:
 ## @param kubeVersion Force target Kubernetes version (using Helm capabilities if not set)
 ##
 kubeVersion: ""
+## @param apiVersions Override Kubernetes API versions reported by .Capabilities
+##
+apiVersions: []
 ## @param nameOverride String to partially override common.names.fullname template with a string (will prepend the release name)
 ##
 nameOverride: ""
@@ -82,10 +91,9 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: bitnami/kong
-  tag: 3.8.0-debian-12-r2
+  tag: 3.9.0-debian-12-r12
   digest: ""
   ## Specify a imagePullPolicy
-  ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
   ##
   pullPolicy: IfNotPresent
@@ -663,10 +671,9 @@ ingressController:
   image:
     registry: docker.io
     repository: bitnami/kong-ingress-controller
-    tag: 3.3.1-debian-12-r3
+    tag: 3.4.2-debian-12-r1
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -895,18 +902,6 @@ migration:
 ##
 postgresql:
   enabled: true
-  ## Override PostgreSQL default image as 14.x is not supported
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql
-  ## @param postgresql.image.registry [default: REGISTRY_NAME] PostgreSQL image registry
-  ## @param postgresql.image.repository [default: REPOSITORY_NAME/postgresql] PostgreSQL image repository
-  ## @skip postgresql.image.tag PostgreSQL image tag (immutable tags are recommended)
-  ## @param postgresql.image.digest PostgreSQL image digest in the way sha256:aa.... Please note this parameter, if set, will override the tag
-  ##
-  image:
-    registry: docker.io
-    repository: bitnami/postgresql
-    tag: 14.13.0-debian-12-r10
-    digest: ""
   auth:
     username: kong
     password: ""

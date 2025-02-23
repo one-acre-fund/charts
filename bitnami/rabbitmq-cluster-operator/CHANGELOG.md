@@ -1,8 +1,64 @@
 # Changelog
 
-## 4.3.23 (2024-09-24)
+## 4.4.5 (2025-02-14)
 
-* [bitnami/rabbitmq-cluster-operator] Add PodDistruptionBidget (PBDs) ([#29578](https://github.com/bitnami/charts/pull/29578))
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.5 ([#31927](https://github.com/bitnami/charts/pull/31927))
+
+## <small>4.4.4 (2025-02-14)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.4 (#31830) ([4842a9a](https://github.com/bitnami/charts/commit/4842a9a0ce9f02b9aa1ba6bcb62333ac5ad8af82)), closes [#31830](https://github.com/bitnami/charts/issues/31830)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>4.4.3 (2025-01-24)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.3 (#31581) ([f16551b](https://github.com/bitnami/charts/commit/f16551b6fcfb6d4bc727575030a70ae9fa5d3f77)), closes [#31581](https://github.com/bitnami/charts/issues/31581)
+
+## <small>4.4.2 (2025-01-17)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.2 (#31448) ([0656c74](https://github.com/bitnami/charts/commit/0656c7413772219335816bfab8d3d4affaec3153)), closes [#31448](https://github.com/bitnami/charts/issues/31448)
+
+## <small>4.4.1 (2024-12-20)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/rabbitmq-cluster-operator] Release 4.4.1 (#31126) ([22f7911](https://github.com/bitnami/charts/commit/22f79115cfdde74662fc06f76ac372fffd557023)), closes [#31126](https://github.com/bitnami/charts/issues/31126)
+
+## 4.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/rabbitmq-cluster-operator] Detect non-standard images (#30941) ([b95e85b](https://github.com/bitnami/charts/commit/b95e85b077668be0add122fad290e7eecdcdf16c)), closes [#30941](https://github.com/bitnami/charts/issues/30941)
+
+## <small>4.3.29 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.29 (#30776) ([41e2431](https://github.com/bitnami/charts/commit/41e2431f244f5660314c435d6687264be2331fe5)), closes [#30776](https://github.com/bitnami/charts/issues/30776)
+
+## <small>4.3.28 (2024-11-29)</small>
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/rabbitmq-cluster-operator] Fix msg topology operator PodDisruptionBudget (#30445) ([2e5147c](https://github.com/bitnami/charts/commit/2e5147c9c5772350575a925ad41ee16bcf7b4a6f)), closes [#30445](https://github.com/bitnami/charts/issues/30445)
+
+## <small>4.3.27 (2024-11-08)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Unify seLinuxOptions default value (#30332) ([1fabdf7](https://github.com/bitnami/charts/commit/1fabdf79e682fe49ac116aa65064bab744e6f429)), closes [#30332](https://github.com/bitnami/charts/issues/30332)
+
+## <small>4.3.26 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.26 (#30290) ([81bfadb](https://github.com/bitnami/charts/commit/81bfadb9a63f11087c0f20b458d84d1654bcc562)), closes [#30290](https://github.com/bitnami/charts/issues/30290)
+
+## <small>4.3.25 (2024-10-16)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.25 (#29935) ([a59958e](https://github.com/bitnami/charts/commit/a59958e23e1296d0b5bd52eee09803a907366d7e)), closes [#29935](https://github.com/bitnami/charts/issues/29935)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>4.3.24 (2024-10-02)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Release 4.3.24 (#29717) ([1e9448d](https://github.com/bitnami/charts/commit/1e9448d955f40cdaa4212a8f50568dbe3f243b26)), closes [#29717](https://github.com/bitnami/charts/issues/29717)
+
+## <small>4.3.23 (2024-09-24)</small>
+
+* [bitnami/rabbitmq-cluster-operator] Add PodDistruptionBidget (PBDs) (#29578) ([1913960](https://github.com/bitnami/charts/commit/19139606635567e911b28b91ce2f11301a23a829)), closes [#29578](https://github.com/bitnami/charts/issues/29578)
 
 ## <small>4.3.22 (2024-09-06)</small>
 

@@ -21,6 +21,11 @@ global:
   imagePullSecrets: []
   defaultStorageClass: ""
   storageClass: ""
+  ## Security parameters
+  ##
+  security:
+    ## @param global.security.allowInsecureImages Allows skipping image verification
+    allowInsecureImages: false
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -44,14 +49,13 @@ global:
 image:
   registry: docker.io
   repository: bitnami/rabbitmq
-  tag: 4.0.2-debian-12-r0
+  tag: 4.0.6-debian-12-r3
   digest: ""
   ## set to true if you would like to see extra information on logs
   ## It turns BASH and/or NAMI debugging in the image
   ##
   debug: false
   ## Specify a imagePullPolicy
-  ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
   ##
   pullPolicy: IfNotPresent
@@ -154,6 +158,10 @@ auth:
   ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
   ##
   securePassword: true
+  ## @param auth.updatePassword Update RabbitMQ password on secret change
+  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ##
+  updatePassword: false
   ## @param auth.existingPasswordSecret Existing secret with RabbitMQ credentials (existing secret must contain a value for `rabbitmq-password` key or override with setting auth.existingSecretPasswordKey)
   ## e.g:
   ## existingPasswordSecret: name-of-existing-secret
@@ -344,6 +352,18 @@ containerPorts:
   manager: 15672
   epmd: 4369
   metrics: 9419
+## Host Ports
+## @param hostPorts.amqp
+## @param hostPorts.amqpTls
+## @param hostPorts.manager
+## @param hostPorts.metrics
+##
+hostPorts:
+  amqp: ""
+  amqpTls: ""
+  manager: ""
+  metrics: ""
+
 ## @param initScripts Dictionary of init scripts. Evaluated as a template.
 ## Specify dictionary of scripts to be run at first boot
 ## Alternatively, you can put your scripts under the files/docker-entrypoint-initdb.d directory
@@ -377,6 +397,9 @@ extraContainerPorts: []
 ## See : https://www.rabbitmq.com/networking.html for additional information
 ##
 tcpListenOptions:
+  ## @param tcpListenOptions.enabled Enable TCP listen options of RabbitMQ
+  ##
+  enabled: true
   ## @param tcpListenOptions.backlog Maximum size of the unaccepted TCP connections queue
   ##
   backlog: 128
@@ -438,7 +461,7 @@ configuration: |-
   ssl_options.certfile = /opt/bitnami/rabbitmq/certs/server_certificate.pem
   ssl_options.keyfile = /opt/bitnami/rabbitmq/certs/server_key.pem
   {{- if .Values.auth.tls.sslOptionsPassword.enabled }}
-  ssl_options.password = {{ template "rabbitmq.tlsSslOptionsPassword" . }}
+  ssl_options.password = {{ include "common.secrets.passwords.manage" (dict "secret" .Values.auth.tls.sslOptionsPassword.existingSecret "key" .Values.auth.tls.sslOptionsPassword.key "providedValues" (list "auth.tls.sslOptionsPassword.password") "skipB64enc" true "failOnNew" false "context" $) }}
   {{- end }}
   {{- end }}
   {{- if .Values.ldap.enabled }}
@@ -495,12 +518,16 @@ configuration: |-
   {{- if .Values.memoryHighWatermark.enabled }}
   ## Memory Threshold
   ##
+  {{- if (dig "limits" "memory" "" .Values.resources) }}
   total_memory_available_override_value = {{ include "rabbitmq.toBytes" (dig "limits" "memory" "" .Values.resources) }}
+  {{- end }}
   {{- if (eq .Values.memoryHighWatermark.type "absolute") }}
   vm_memory_high_watermark.{{ .Values.memoryHighWatermark.type }} = {{ include "rabbitmq.toBytes" .Values.memoryHighWatermark.value }}
   {{- else if (eq .Values.memoryHighWatermark.type "relative") }}
   vm_memory_high_watermark.{{ .Values.memoryHighWatermark.type }} = {{ .Values.memoryHighWatermark.value }}
   {{- end }}
+  {{- end }}
+  {{- if .Values.tcpListenOptions.enabled }}
   ## TCP Listen Options
   ##
   tcp_listen_options.backlog = {{ .Values.tcpListenOptions.backlog }}
@@ -767,7 +794,7 @@ podSecurityContext:
 ##
 containerSecurityContext:
   enabled: true
-  seLinuxOptions: null
+  seLinuxOptions: {}
   runAsUser: 1001
   runAsGroup: 1001
   runAsNonRoot: true
@@ -1560,10 +1587,9 @@ volumePermissions:
   image:
     registry: docker.io
     repository: bitnami/os-shell
-    tag: 12-debian-12-r30
+    tag: 12-debian-12-r39
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1602,5 +1628,5 @@ volumePermissions:
   ## @param volumePermissions.containerSecurityContext.runAsUser User ID for the init container
   ##
   containerSecurityContext:
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 0

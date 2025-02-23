@@ -1,8 +1,73 @@
 # Changelog
 
-## 1.3.7 (2024-09-26)
+## 1.6.0 (2025-02-20)
 
-* [bitnami/opensearch] Release 1.3.7 ([#29639](https://github.com/bitnami/charts/pull/29639))
+* [bitnami/opensearch] feat: use new helper for checking API versions ([#32061](https://github.com/bitnami/charts/pull/32061))
+
+## <small>1.5.4 (2025-02-06)</small>
+
+* [bitnami/opensearch] bugfix: snapshots init-job to consider security settings (#31809) ([72bced5](https://github.com/bitnami/charts/commit/72bced59eb12b715f924bec907df3dacd175e8cb)), closes [#31809](https://github.com/bitnami/charts/issues/31809)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.5.3 (2025-01-28)</small>
+
+* [bitnami/opensearch] Release 1.5.3 (#31638) ([d5a7ed3](https://github.com/bitnami/charts/commit/d5a7ed377bda0f7899e2d6335ad1860b50687360)), closes [#31638](https://github.com/bitnami/charts/issues/31638)
+
+## <small>1.5.2 (2025-01-25)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/opensearch] Release 1.5.2 (#31592) ([c3e0d1b](https://github.com/bitnami/charts/commit/c3e0d1b5e5bd1cd0bd116f58d47b2541d2dd4211)), closes [#31592](https://github.com/bitnami/charts/issues/31592)
+
+## <small>1.5.1 (2024-12-16)</small>
+
+* [bitnami/opensearch] Release 1.5.1 (#31048) ([4f14ffa](https://github.com/bitnami/charts/commit/4f14ffa0492d1cf05f794be16a77b9fa02a1633c)), closes [#31048](https://github.com/bitnami/charts/issues/31048)
+
+## 1.5.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 5) (#30674) ([ed2a546](https://github.com/bitnami/charts/commit/ed2a54617faf763169e6b01a89100b9db32e1000)), closes [#30674](https://github.com/bitnami/charts/issues/30674)
+* [bitnami/*] docs: :memo: Add "Update Credentials" (batch 3) (#30688) ([10a49f9](https://github.com/bitnami/charts/commit/10a49f9ff2db1d9d11a6edd1c40a9f61803241bc)), closes [#30688](https://github.com/bitnami/charts/issues/30688)
+* [bitnami/*] docs: :memo: Unify "Securing Traffic using TLS" section (#30707) ([b572333](https://github.com/bitnami/charts/commit/b57233336e4fe9af928ecb4f2a5f334011efb1bc)), closes [#30707](https://github.com/bitnami/charts/issues/30707)
+* [bitnami/opensearch] Detect non-standard images (#30934) ([e31f704](https://github.com/bitnami/charts/commit/e31f70462cccd22d5f2508c480101dbeed1a0605)), closes [#30934](https://github.com/bitnami/charts/issues/30934)
+
+## 1.4.0 (2024-11-18)
+
+* [bitnami/opensearch] Enable automated setup of snapshot policies (#29796) ([39322b9](https://github.com/bitnami/charts/commit/39322b9054f3d88006a18c240165dfc7608f5aad)), closes [#29796](https://github.com/bitnami/charts/issues/29796)
+
+## <small>1.3.14 (2024-11-08)</small>
+
+* [bitnami/opensearch] Unify seLinuxOptions default value (#30336) ([2b670fc](https://github.com/bitnami/charts/commit/2b670fc5c17e0dd5ddafef2c062c1a474d07eb21)), closes [#30336](https://github.com/bitnami/charts/issues/30336)
+
+## <small>1.3.13 (2024-11-06)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/opensearch] Release 1.3.13 (#30232) ([7597498](https://github.com/bitnami/charts/commit/75974989d052bcccc258dba5f7211227716c94ec)), closes [#30232](https://github.com/bitnami/charts/issues/30232)
+
+## <small>1.3.12 (2024-10-17)</small>
+
+* [bitnami/opensearch] Release 1.3.12 (#29958) ([5fe7ee5](https://github.com/bitnami/charts/commit/5fe7ee5945e7005a923158b5d85dc8a8757beaf5)), closes [#29958](https://github.com/bitnami/charts/issues/29958)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.3.11 (2024-10-03)</small>
+
+* [bitnami/opensearch] Release 1.3.11 (#29768) ([08d9c3e](https://github.com/bitnami/charts/commit/08d9c3e69a2089a076542b894a7aee96e42c0320)), closes [#29768](https://github.com/bitnami/charts/issues/29768)
+
+## <small>1.3.10 (2024-10-03)</small>
+
+* [bitnami/opensearch] Fix typo in dashboards.fullname helper (#29645) ([5660c8c](https://github.com/bitnami/charts/commit/5660c8cee2e75a37d3b9496e69700bb1e22b8607)), closes [#29645](https://github.com/bitnami/charts/issues/29645)
+
+## <small>1.3.9 (2024-10-02)</small>
+
+* [bitnami/opensearch] Release 1.3.9 (#29747) ([ab4f933](https://github.com/bitnami/charts/commit/ab4f9331ebfbcdc7c031f90ff1e0349e5d0eeb31)), closes [#29747](https://github.com/bitnami/charts/issues/29747)
+
+## <small>1.3.8 (2024-10-02)</small>
+
+* [bitnami/opensearch] Release 1.3.8 (#29726) ([208f678](https://github.com/bitnami/charts/commit/208f67897ca37f1c7b52e7a9f69ab192fd7e7deb)), closes [#29726](https://github.com/bitnami/charts/issues/29726)
+
+## <small>1.3.7 (2024-09-26)</small>
+
+* [bitnami/opensearch] Release 1.3.7 (#29639) ([b5c5a6a](https://github.com/bitnami/charts/commit/b5c5a6a55cbcfe9b359883f991d92ddf6698f1bb)), closes [#29639](https://github.com/bitnami/charts/issues/29639)
 
 ## <small>1.3.6 (2024-09-26)</small>
 

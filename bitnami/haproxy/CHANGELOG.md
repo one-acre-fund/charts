@@ -1,8 +1,83 @@
 # Changelog
 
-## 2.1.6 (2024-09-26)
+## 2.2.10 (2025-02-20)
 
-* [bitnami/haproxy] Release 2.1.6 ([#29631](https://github.com/bitnami/charts/pull/29631))
+* [bitnami/haproxy] Release 2.2.10 ([#32083](https://github.com/bitnami/charts/pull/32083))
+
+## <small>2.2.9 (2025-02-19)</small>
+
+* [bitnami/haproxy] Release 2.2.9 (#32005) ([275b708](https://github.com/bitnami/charts/commit/275b70884a7150c49bc3ba82c24a24a25950b29a)), closes [#32005](https://github.com/bitnami/charts/issues/32005)
+
+## <small>2.2.8 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/haproxy] Release 2.2.8 (#31890) ([cb84b0c](https://github.com/bitnami/charts/commit/cb84b0cef5e1ba778adec03030c3e5a2d62238bb)), closes [#31890](https://github.com/bitnami/charts/issues/31890)
+
+## <small>2.2.7 (2025-02-04)</small>
+
+* [bitnami/haproxy] Release 2.2.7 (#31759) ([34021cb](https://github.com/bitnami/charts/commit/34021cb4a569af9278cfae48918bf746a373b1f7)), closes [#31759](https://github.com/bitnami/charts/issues/31759)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>2.2.6 (2025-01-29)</small>
+
+* [bitnami/haproxy] Release 2.2.6 (#31665) ([d76a6a3](https://github.com/bitnami/charts/commit/d76a6a31c3f78b82752d8d0a5ab1f3996b24a79b)), closes [#31665](https://github.com/bitnami/charts/issues/31665)
+
+## <small>2.2.5 (2025-01-24)</small>
+
+* [bitnami/haproxy] Release 2.2.5 (#31558) ([5959c6d](https://github.com/bitnami/charts/commit/5959c6ddc48675d2c54b52a30a2c4fc426d23f5b)), closes [#31558](https://github.com/bitnami/charts/issues/31558)
+
+## <small>2.2.4 (2025-01-17)</small>
+
+* [bitnami/haproxy] Release 2.2.4 (#31425) ([1355ffd](https://github.com/bitnami/charts/commit/1355ffd8d40ebe7d7e124c0877bb3c8cbbbd7fbd)), closes [#31425](https://github.com/bitnami/charts/issues/31425)
+
+## <small>2.2.3 (2025-01-08)</small>
+
+* [bitnami/haproxy] Release 2.2.3 (#31269) ([5e56e54](https://github.com/bitnami/charts/commit/5e56e54d2f0cfc8e8f246b70f38cbebd5bd87f51)), closes [#31269](https://github.com/bitnami/charts/issues/31269)
+
+## <small>2.2.2 (2024-12-19)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/haproxy] Release 2.2.2 (#31118) ([149f128](https://github.com/bitnami/charts/commit/149f1281818dacd80a3fc13a69cce731b6324639)), closes [#31118](https://github.com/bitnami/charts/issues/31118)
+
+## <small>2.2.1 (2024-12-11)</small>
+
+* [bitnami/haproxy] Release 2.2.1 (#30995) ([c41ce56](https://github.com/bitnami/charts/commit/c41ce563c288524f1aa26671f8553641d6dc1b31)), closes [#30995](https://github.com/bitnami/charts/issues/30995)
+
+## 2.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/haproxy] Detect non-standard images (#30884) ([253b77d](https://github.com/bitnami/charts/commit/253b77de688baec7c5c6db00a8999129ad67cdc6)), closes [#30884](https://github.com/bitnami/charts/issues/30884)
+
+## <small>2.1.12 (2024-12-03)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/haproxy] Release 2.1.12 (#30756) ([fca70ce](https://github.com/bitnami/charts/commit/fca70ce28a049725afdf7c09312fc7bed14847db)), closes [#30756](https://github.com/bitnami/charts/issues/30756)
+
+## <small>2.1.11 (2024-11-26)</small>
+
+* [bitnami/haproxy] Release 2.1.11 (#30630) ([51ca44b](https://github.com/bitnami/charts/commit/51ca44bc1fa53fa85937ed6c76ca44ac5d0180f0)), closes [#30630](https://github.com/bitnami/charts/issues/30630)
+
+## <small>2.1.10 (2024-11-07)</small>
+
+* [bitnami/haproxy] Release 2.1.10 (#30308) ([34c58ba](https://github.com/bitnami/charts/commit/34c58baea2f41efc7792fc9a9201067856790d51)), closes [#30308](https://github.com/bitnami/charts/issues/30308)
+
+## <small>2.1.9 (2024-11-07)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/haproxy] Release 2.1.9 (#30271) ([254fe9d](https://github.com/bitnami/charts/commit/254fe9d19425834baf2fc3f8200435f98c7f9dbb)), closes [#30271](https://github.com/bitnami/charts/issues/30271)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>2.1.8 (2024-10-16)</small>
+
+* [bitnami/haproxy] Release 2.1.8 (#29924) ([788bb4a](https://github.com/bitnami/charts/commit/788bb4a7ba51e14a1a08abac4300332b21688936)), closes [#29924](https://github.com/bitnami/charts/issues/29924)
+
+## <small>2.1.7 (2024-10-02)</small>
+
+* [bitnami/haproxy] Release 2.1.7 (#29698) ([ff2073e](https://github.com/bitnami/charts/commit/ff2073ecc190cc836b43f47326bb4f3086e925db)), closes [#29698](https://github.com/bitnami/charts/issues/29698)
+
+## <small>2.1.6 (2024-09-26)</small>
+
+* [bitnami/haproxy] Release 2.1.6 (#29631) ([ae2a2f6](https://github.com/bitnami/charts/commit/ae2a2f6077ed6e871174355ba2491e2393278b06)), closes [#29631](https://github.com/bitnami/charts/issues/29631)
 
 ## <small>2.1.5 (2024-09-19)</small>
 

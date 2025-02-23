@@ -8,15 +8,25 @@ import { random } from '../support/utils';
 
 it('allows adding a project and a quality gate', () => {
   cy.login();
+  // Skip welcome tour
+  cy.wait(5000);
+  cy.get('body').then(($body) => {
+    if ($body.find('img[src*=mode-tour]').is(':visible')) {
+      cy.get('span').contains('Later').click({force: true});
+      cy.get('button[data-action=skip]').click({force: true});
+    }
+  });
   cy.visit('/projects');
   // Step 1: Create a project
   cy.fixture('projects').then((projects) => {
+    // Wait for DOM content to load
+    cy.wait(5000);
     cy.get('body').then(($body) => {
       if ($body.find('#project-creation-menu-trigger').is(':visible')) {
         cy.get('#project-creation-menu-trigger').click();
       }
     });
-    cy.get('[href="/projects/create?mode=manual"]').click();
+    cy.get('[href="/projects/create?mode=manual"]').click({force: true});
     cy.get('#project-name').type(`${projects.newProject.name} ${random}`);
     cy.get('[type="submit"]').contains('Next').click();
     cy.get('span').contains('Use the global setting').click();
@@ -30,7 +40,6 @@ it('allows adding a project and a quality gate', () => {
       cy.get('[type="submit"]').contains('Create').click();
       cy.contains('Unlock editing').click();
       cy.contains('Add Condition').click({force: true});
-      cy.contains('Select').click({force: true});
       cy.contains('Lines to Cover').click({force: true});
       cy.get('#condition-threshold').type(qualityGates.newQualityGate.threshold);
       cy.get('[type="submit"]').click();

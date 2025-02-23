@@ -16,6 +16,11 @@ global:
   ##   - myRegistryKeySecretName
   ##
   imagePullSecrets: []
+  ## Security parameters
+  ##
+  security:
+    ## @param global.security.allowInsecureImages Allows skipping image verification
+    allowInsecureImages: false
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -65,10 +70,9 @@ clusterDomain: cluster.local
 image:
   registry: docker.io
   repository: bitnami/nginx-ingress-controller
-  tag: 1.11.2-debian-12-r4
+  tag: 1.12.0-debian-12-r9
   digest: ""
   ## Specify a imagePullPolicy
-  ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
   ##
   pullPolicy: IfNotPresent
@@ -196,6 +200,10 @@ tcp: {}
 ##   53: "kube-system/kube-dns:53"
 ##
 udp: {}
+## @param svcPortNamesPrefix Prefix for TCP and UDP ports names in ingress controller service
+## Some cloud providers, like Yandex Cloud may have a requirements for a port name regex to support cloud load balancer integration
+##
+svcPortNamesPrefix: ""
 ## @param command Override default container command (useful when using custom images)
 ##
 command: []
@@ -284,7 +292,7 @@ podSecurityContext:
 containerSecurityContext:
   enabled: true
   allowPrivilegeEscalation: false
-  seLinuxOptions: null
+  seLinuxOptions: {}
   runAsUser: 1001
   runAsGroup: 1001
   readOnlyRootFilesystem: true
@@ -529,10 +537,9 @@ defaultBackend:
   image:
     registry: docker.io
     repository: bitnami/nginx
-    tag: 1.27.1-debian-12-r3
+    tag: 1.27.4-debian-12-r3
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -593,7 +600,7 @@ defaultBackend:
   containerSecurityContext:
     enabled: true
     allowPrivilegeEscalation: false
-    seLinuxOptions: null
+    seLinuxOptions: {}
     runAsUser: 1001
     runAsGroup: 1001
     readOnlyRootFilesystem: true

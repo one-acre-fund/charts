@@ -21,6 +21,11 @@ global:
   imagePullSecrets: []
   defaultStorageClass: ""
   storageClass: ""
+  ## Security parameters
+  ##
+  security:
+    ## @param global.security.allowInsecureImages Allows skipping image verification
+    allowInsecureImages: false
   ## Compatibility adaptations for Kubernetes platforms
   ##
   compatibility:
@@ -621,7 +626,7 @@ volumePermissions:
   image:
     registry: docker.io
     repository: bitnami/os-shell
-    tag: 12-debian-12-r30
+    tag: 12-debian-12-r39
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -676,10 +681,9 @@ nginx:
   image:
     registry: docker.io
     repository: bitnami/nginx
-    tag: 1.27.1-debian-12-r4
+    tag: 1.27.4-debian-12-r4
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1052,10 +1056,9 @@ portal:
   image:
     registry: docker.io
     repository: bitnami/harbor-portal
-    tag: 2.11.1-debian-12-r4
+    tag: 2.12.2-debian-12-r4
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1422,10 +1425,9 @@ core:
   image:
     registry: docker.io
     repository: bitnami/harbor-core
-    tag: 2.11.1-debian-12-r5
+    tag: 2.12.2-debian-12-r7
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -1473,7 +1475,7 @@ core:
   ## The secret must contain the keys:
   ## `CSRF_KEY` (optional - alternatively auto-generated),
   ## `HARBOR_ADMIN_PASSWORD` (optional - alternatively auto-generated),
-  ## `POSTGRESQL_PASSWORD` (optional - alternatively uses weak upstream default. Read below if you set it),
+  ## `POSTGRESQL_PASSWORD` (optional - alternatively uses weak upstream default. Read below if you set it. You must also set postgresql.auth.existingSecret to the same value as core.existingEnvVarsSecret for this to work!),
   ## `postgres-password` (required if POSTGRESQL_PASSWORD is set & must be the same as POSTGRESQL_PASSWORD.)
   ## `HARBOR_DATABASE_PASSWORD` (required if POSTGRESQL_PASSWORD is set & must be the same as POSTGRESQL_PASSWORD.)
   ## `REGISTRY_CREDENTIAL_USERNAME` (optional - alternatively weak defaults),
@@ -1854,10 +1856,9 @@ jobservice:
   image:
     registry: docker.io
     repository: bitnami/harbor-jobservice
-    tag: 2.11.1-debian-12-r4
+    tag: 2.12.2-debian-12-r7
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -2514,10 +2515,9 @@ registry:
     image:
       registry: docker.io
       repository: bitnami/harbor-registry
-      tag: 2.11.1-debian-12-r5
+      tag: 2.12.2-debian-12-r7
       digest: ""
       ## Specify a imagePullPolicy
-      ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
       ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
       ##
       pullPolicy: IfNotPresent
@@ -2686,10 +2686,9 @@ registry:
     image:
       registry: docker.io
       repository: bitnami/harbor-registryctl
-      tag: 2.11.1-debian-12-r4
+      tag: 2.12.2-debian-12-r7
       digest: ""
       ## Specify a imagePullPolicy
-      ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
       ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
       ##
       pullPolicy: IfNotPresent
@@ -2852,10 +2851,9 @@ trivy:
   image:
     registry: docker.io
     repository: bitnami/harbor-adapter-trivy
-    tag: 2.11.1-debian-12-r2
+    tag: 2.12.2-debian-12-r6
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -2916,9 +2914,20 @@ trivy:
   ## @param trivy.skipUpdate The flag to disable Trivy DB downloads from GitHub
   ## You might want to set the value of this flag to `true` in test or CI/CD environments to avoid GitHub rate limiting issues.
   ## If the value is set to `true` you have to manually download the `trivy.db` file and mount it in the
-  ## `/home/scanner/.cache/trivy/db/trivy.db` path.
+  ## `/bitnami/harbor-adapter-trivy/.cache/trivy/db/trivy.db` path.
+  ## ref: https://trivy.dev/dev/docs/configuration/db/
   ##
   skipUpdate: false
+  ## @param trivy.skipJavaDbUpdate The flag to disable Trivy JAVA DB downloads.
+  ## You might want to set the value of this flag to `true` in test or CI/CD environments to avoid GitHub rate limiting issues.
+  ## If the value is set to `true` you have to manually download the `trivy-java.db` file and mount it in the
+  ## `/bitnami/harbor-adapter-trivy/.cache/trivy/java-db/trivy-java.db` path.
+  ##
+  skipJavaDbUpdate: false
+  ## @param trivy.dbRepository OCI repositor(ies) to retrieve the trivy vulnerability database from
+  dbRepository: ""
+  ## @param trivy.javaDbRepository OCI repositor(ies) to retrieve the Java trivy vulnerability database from
+  javaDbRepository: ""
   ## @param trivy.cacheDir Directory to store the cache
   ##
   cacheDir: "/bitnami/harbor-adapter-trivy/.cache"
@@ -3274,10 +3283,9 @@ exporter:
   image:
     registry: docker.io
     repository: bitnami/harbor-exporter
-    tag: 2.11.1-debian-12-r5
+    tag: 2.12.2-debian-12-r7
     digest: ""
     ## Specify a imagePullPolicy
-    ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
     ##
     pullPolicy: IfNotPresent
@@ -3630,7 +3638,7 @@ postgresql:
   image:
     registry: docker.io
     repository: bitnami/postgresql
-    tag: 13.16.0-debian-12-r9
+    tag: 14.16.0-debian-12-r4
     digest: ""
   auth:
     enablePostgresUser: true
@@ -3671,6 +3679,8 @@ postgresql:
 ## @param externalDatabase.password Password for the non-root username for Harbor
 ## @param externalDatabase.sslmode External database ssl mode
 ## @param externalDatabase.coreDatabase External database name for core
+## @param externalDatabase.existingSecret The name of an existing secret with database credentials
+## @param externalDatabase.existingSecretPasswordKey Password key on the existing secret
 ##
 externalDatabase:
   host: localhost
@@ -3679,6 +3689,9 @@ externalDatabase:
   password: ""
   sslmode: disable
   coreDatabase: ""
+  existingSecret: ""
+  existingSecretPasswordKey: "db-password"
+
 ## @section Redis&reg; parameters
 ##
 

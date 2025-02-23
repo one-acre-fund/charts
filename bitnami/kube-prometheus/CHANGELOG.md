@@ -1,8 +1,103 @@
 # Changelog
 
-## 9.6.2 (2024-09-25)
+## 11.1.1 (2025-02-21)
 
-* [bitnami/kube-prometheus] Release 9.6.2 ([#29598](https://github.com/bitnami/charts/pull/29598))
+* [bitnami/kube-prometheus] Release 11.1.1 ([#32030](https://github.com/bitnami/charts/pull/32030))
+
+## 11.1.0 (2025-02-20)
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/kube-prometheus] feat: Add default Prometheus rules (#31989) ([a3b425c](https://github.com/bitnami/charts/commit/a3b425c465d117da7f7ce1bbe4e4eb2662023c64)), closes [#31989](https://github.com/bitnami/charts/issues/31989)
+
+## <small>11.0.2 (2025-02-07)</small>
+
+* [bitnami/kube-prometheus] Release 11.0.2 (#31785) ([0f4e507](https://github.com/bitnami/charts/commit/0f4e507bce3b1040dd74358ec95ea37589e51b4f)), closes [#31785](https://github.com/bitnami/charts/issues/31785)
+
+## <small>11.0.1 (2025-02-05)</small>
+
+* [bitnami/kube-prometheus] Release 11.0.1 (#31734) ([dbaf453](https://github.com/bitnami/charts/commit/dbaf453121a2c4fd9d7ff7aa525ceb378165836c)), closes [#31734](https://github.com/bitnami/charts/issues/31734)
+
+## 11.0.0 (2025-02-04)
+
+* [kube-prometheus] Update kube-state-metric subchart to 5.0.0 (#31731) ([bd0f609](https://github.com/bitnami/charts/commit/bd0f609d17126f312f354ba5597ef70d75828cd0)), closes [#31731](https://github.com/bitnami/charts/issues/31731)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>10.2.5 (2025-01-29)</small>
+
+* [bitnami/kube-prometheus] Release 10.2.5 (#31579) ([6a1d15b](https://github.com/bitnami/charts/commit/6a1d15bffebfd1788a6ab737c80a2e77c4540a01)), closes [#31579](https://github.com/bitnami/charts/issues/31579)
+
+## <small>10.2.4 (2025-01-21)</small>
+
+* [bitnami/kube-prometheus] Release 10.2.4 (#31441) ([1d408bd](https://github.com/bitnami/charts/commit/1d408bded4e34460eee6e9b2050a796d0f772b21)), closes [#31441](https://github.com/bitnami/charts/issues/31441)
+
+## <small>10.2.3 (2024-12-19)</small>
+
+* [bitnami/kube-prometheus] Release 10.2.3 (#31095) ([f201909](https://github.com/bitnami/charts/commit/f20190907226d69578d47c4563fdd556b8b42555)), closes [#31095](https://github.com/bitnami/charts/issues/31095)
+
+## <small>10.2.2 (2024-12-18)</small>
+
+* [bitnami/kube-prometheus] Release 10.2.2 (#31071) ([e8c59dc](https://github.com/bitnami/charts/commit/e8c59dca5577355f81d3f60a1e89cb1df4f94e4f)), closes [#31071](https://github.com/bitnami/charts/issues/31071)
+
+## <small>10.2.1 (2024-12-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/kube-prometheus] Release 10.2.1 (#31040) ([5cf957c](https://github.com/bitnami/charts/commit/5cf957c39ae9798fefa0a4cbcc19bd1e92c23219)), closes [#31040](https://github.com/bitnami/charts/issues/31040)
+
+## 10.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/kube-prometheus] Detect non-standard images (#30912) ([b7e3175](https://github.com/bitnami/charts/commit/b7e317558b8d20e16700c96808411fe0d2c30171)), closes [#30912](https://github.com/bitnami/charts/issues/30912)
+
+## <small>10.1.1 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/kube-prometheus] Release 10.1.1 (#30773) ([66daaac](https://github.com/bitnami/charts/commit/66daaace6d6db9320e863a225bafa8394bb5c0ea)), closes [#30773](https://github.com/bitnami/charts/issues/30773)
+
+## 10.1.0 (2024-11-26)
+
+* [bitnami/kube-prometheus] Add support for scrapeClasses (#30579) ([0e5573b](https://github.com/bitnami/charts/commit/0e5573b5dc58b3832a544646e4d4debfa8b0db7b)), closes [#30579](https://github.com/bitnami/charts/issues/30579)
+
+## <small>10.0.5 (2024-11-25)</small>
+
+* [bitnami/kube-prometheus] Release 10.0.5 (#30565) ([ce829ea](https://github.com/bitnami/charts/commit/ce829ea73180c41fae4f249214cd22faafdf92cc)), closes [#30565](https://github.com/bitnami/charts/issues/30565)
+
+## <small>10.0.4 (2024-11-14)</small>
+
+* [bitnami/kube-prometheus] Fix update-crds CI job (#30413) ([0842084](https://github.com/bitnami/charts/commit/0842084f5fd59fe09c69fd7883eaf2edada28647)), closes [#30413](https://github.com/bitnami/charts/issues/30413)
+
+## <small>10.0.3 (2024-11-11)</small>
+
+* [bitnami/kube-prometheus] Release 10.0.3 (#30295) ([36a5b01](https://github.com/bitnami/charts/commit/36a5b01ed167623695583a36a8b403c889cbf217)), closes [#30295](https://github.com/bitnami/charts/issues/30295)
+
+## <small>10.0.2 (2024-11-11)</small>
+
+* [bitnami/kube-prometheus] Add dummy values.yaml to CRDs subchart (#30397) ([b12bddb](https://github.com/bitnami/charts/commit/b12bddb0436eda5e84fdce3ebf0a3d7b42b6706d)), closes [#30397](https://github.com/bitnami/charts/issues/30397)
+
+## <small>10.0.1 (2024-11-07)</small>
+
+* [bitnami/kube-prometheus] Release 10.0.1 (#30252) ([4aea338](https://github.com/bitnami/charts/commit/4aea3383732b4f2e90d3f8f8b59d5f7a7d976f65)), closes [#30252](https://github.com/bitnami/charts/issues/30252)
+
+## 10.0.0 (2024-11-06)
+
+* [bitnami/kube-prometheus] feat!: :boom: Update prometheus-operator to 0.78.0 and move CRDs to subcha ([a6731f1](https://github.com/bitnami/charts/commit/a6731f1b291c38c067023db24ef6005543e7a99e)), closes [#30142](https://github.com/bitnami/charts/issues/30142)
+
+## <small>9.6.5 (2024-10-30)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/kube-prometheus] Fix spec for thanos sidecar if no extraEnv is provided (#30127) ([74cd002](https://github.com/bitnami/charts/commit/74cd00208c7e9d093e8abd6e603547103b40d39c)), closes [#30127](https://github.com/bitnami/charts/issues/30127)
+
+## <small>9.6.4 (2024-10-24)</small>
+
+* [bitnami/kube-prometheus] Release 9.6.4 (#30073) ([d809c39](https://github.com/bitnami/charts/commit/d809c39849c5a04fb5928f37c5d9cf9da310f2bc)), closes [#30073](https://github.com/bitnami/charts/issues/30073)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>9.6.3 (2024-10-02)</small>
+
+* [bitnami/kube-prometheus] Release 9.6.3 (#29715) ([cff710b](https://github.com/bitnami/charts/commit/cff710b336b09df69aee200754b7d9b1267c8d04)), closes [#29715](https://github.com/bitnami/charts/issues/29715)
+
+## <small>9.6.2 (2024-09-25)</small>
+
+* [bitnami/kube-prometheus] Release 9.6.2 (#29598) ([d34d13a](https://github.com/bitnami/charts/commit/d34d13a2845a29dd31127ac9618f70f201b46576)), closes [#29598](https://github.com/bitnami/charts/issues/29598)
 
 ## <small>9.6.1 (2024-09-20)</small>
 

@@ -1,8 +1,74 @@
 # Changelog
 
-## 1.0.1 (2024-09-19)
+## 2.3.0 (2025-02-20)
 
-* [bitnami/valkey] Release 1.0.1 ([#29532](https://github.com/bitnami/charts/pull/29532))
+* [bitnami/valkey] feat: use new helper for checking API versions ([#32064](https://github.com/bitnami/charts/pull/32064))
+
+## <small>2.2.5 (2025-02-20)</small>
+
+* [bitnami/valkey] Release 2.2.5 (#32067) ([a410e1e](https://github.com/bitnami/charts/commit/a410e1e40380759aa5721748ca9ba7c276df5c8a)), closes [#32067](https://github.com/bitnami/charts/issues/32067)
+
+## <small>2.2.4 (2025-02-17)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/valkey] Release 2.2.4 (#31946) ([f578883](https://github.com/bitnami/charts/commit/f578883ec3e15a7781b72be5ecdf40beb7b353af)), closes [#31946](https://github.com/bitnami/charts/issues/31946)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>2.2.3 (2025-01-10)</small>
+
+* [bitnami/valkey] bugfix: instructions to obtain password on installation notes (#31287) ([a1d5cd2](https://github.com/bitnami/charts/commit/a1d5cd259aaf9b96fb447ade0bc5827ac6e49531)), closes [#31287](https://github.com/bitnami/charts/issues/31287)
+
+## <small>2.2.2 (2025-01-08)</small>
+
+* [bitnami/valkey] Release 2.2.2 (#31246) ([8b7bfe3](https://github.com/bitnami/charts/commit/8b7bfe3148a3a068b39c0afdf30ced26829f088b)), closes [#31246](https://github.com/bitnami/charts/issues/31246)
+
+## <small>2.2.1 (2024-12-17)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/valkey] fix: sentinel pdb (#31020) ([711d831](https://github.com/bitnami/charts/commit/711d8319865931adc84705188b23ab575597b12f)), closes [#31020](https://github.com/bitnami/charts/issues/31020)
+
+## 2.2.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/valkey] Detect non-standard images (#30950) ([3145dda](https://github.com/bitnami/charts/commit/3145ddaddcf99d4e23609a67e9740acfb589bc97)), closes [#30950](https://github.com/bitnami/charts/issues/30950)
+
+## <small>2.1.2 (2024-12-05)</small>
+
+* [bitnami/valkey] Fix broken failover in sentinel setups (#30689) ([1d3ed00](https://github.com/bitnami/charts/commit/1d3ed00f2868fbc37aee3b6adbbe29d8ef0aaa4f)), closes [#30689](https://github.com/bitnami/charts/issues/30689) [#30024](https://github.com/bitnami/charts/issues/30024)
+
+## <small>2.1.1 (2024-12-01)</small>
+
+* [bitnami/valkey] Release 2.1.1 (#30703) ([bfda05c](https://github.com/bitnami/charts/commit/bfda05c36504559d998d6f87a70d687c17741c09)), closes [#30703](https://github.com/bitnami/charts/issues/30703)
+
+## 2.1.0 (2024-11-29)
+
+* [bitnami/*] docs: :memo: Add "Prometheus metrics" (batch 6) (#30675) ([7b9cd04](https://github.com/bitnami/charts/commit/7b9cd04c2ffc730a0d62da787f2d4967c0ede47c)), closes [#30675](https://github.com/bitnami/charts/issues/30675)
+* [bitnami/valkey] feat: :sparkles: :memo: Allow password update via values.yaml (#30690) ([20a71ea](https://github.com/bitnami/charts/commit/20a71eadaf7dbb5a29ef3f83a1b5e14485206aad)), closes [#30690](https://github.com/bitnami/charts/issues/30690)
+
+## <small>2.0.2 (2024-11-04)</small>
+
+* [bitnami/valkey] Fix default kukbectl.command when sentinel.service.createPrimary is true (#30090) ([4bd6eb5](https://github.com/bitnami/charts/commit/4bd6eb5ffffb92361dd929289ee17430c815e87e)), closes [#30090](https://github.com/bitnami/charts/issues/30090)
+
+## <small>2.0.1 (2024-10-29)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/valkey] Fix sentinel.service.createprimary config to sentinel.service.createPrimary to work ([e330cab](https://github.com/bitnami/charts/commit/e330cab75828f69fb18cd5ef1140add5f6f9d858)), closes [#30091](https://github.com/bitnami/charts/issues/30091)
+
+## 2.0.0 (2024-10-23)
+
+* [bitnami/valkey] Update all the references from to master/slave to primary/replica (#30024) ([75cc62d](https://github.com/bitnami/charts/commit/75cc62d9caf28c6f522042cd0f94cb9aca877837)), closes [#30024](https://github.com/bitnami/charts/issues/30024)
+
+## <small>1.0.3 (2024-10-22)</small>
+
+* [bitnami/valkey] Release 1.0.3 (#30048) ([f843e7e](https://github.com/bitnami/charts/commit/f843e7ecb5b89b32e2245071bf1c910552dcb7a5)), closes [#30048](https://github.com/bitnami/charts/issues/30048)
+
+## <small>1.0.2 (2024-10-03)</small>
+
+* [bitnami/valkey] Release 1.0.2 (#29770) ([68a889f](https://github.com/bitnami/charts/commit/68a889fcb6dc21a275cfbad539c9fc1097912167)), closes [#29770](https://github.com/bitnami/charts/issues/29770)
+
+## <small>1.0.1 (2024-09-19)</small>
+
+* [bitnami/valkey] Release 1.0.1 (#29532) ([77709d5](https://github.com/bitnami/charts/commit/77709d5c1d7b621ce46e3ed92e0ec9ab2b560448)), closes [#29532](https://github.com/bitnami/charts/issues/29532)
 
 ## 1.0.0 (2024-09-17)
 

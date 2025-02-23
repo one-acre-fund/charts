@@ -1,8 +1,76 @@
 # Changelog
 
-## 1.3.22 (2024-09-11)
+## 1.4.7 (2025-02-20)
 
-* [bitnami/prometheus] Allow rendering resources values ([#29342](https://github.com/bitnami/charts/pull/29342))
+* [bitnami/prometheus] Release 1.4.7 ([#32031](https://github.com/bitnami/charts/pull/32031))
+
+## <small>1.4.6 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/prometheus] Release 1.4.6 (#31900) ([89f7e53](https://github.com/bitnami/charts/commit/89f7e53a19af293a4ce2fcd1261abcb5c0803feb)), closes [#31900](https://github.com/bitnami/charts/issues/31900)
+
+## <small>1.4.5 (2025-02-05)</small>
+
+* [bitnami/prometheus] Release 1.4.5 (#31776) ([8d72f34](https://github.com/bitnami/charts/commit/8d72f34addc80047ac7fdf2dc5035b74f8f1d51d)), closes [#31776](https://github.com/bitnami/charts/issues/31776)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
+
+## <small>1.4.4 (2025-01-24)</small>
+
+* [bitnami/prometheus] Release 1.4.4 (#31580) ([67f0ae3](https://github.com/bitnami/charts/commit/67f0ae3dc65683ccd661c84a66177d0839cc65b0)), closes [#31580](https://github.com/bitnami/charts/issues/31580)
+
+## <small>1.4.3 (2025-01-22)</small>
+
+* [bitnami/prometheus] Remove GOSS duplicated command (#31513) ([433437c](https://github.com/bitnami/charts/commit/433437cf7c5dca688668de467173382963febe1c)), closes [#31513](https://github.com/bitnami/charts/issues/31513)
+
+## <small>1.4.2 (2025-01-17)</small>
+
+* [bitnami/prometheus] Release 1.4.2 (#31446) ([8d5a3a8](https://github.com/bitnami/charts/commit/8d5a3a81abd654712bdddeec3f7263890dabe9b8)), closes [#31446](https://github.com/bitnami/charts/issues/31446)
+
+## <small>1.4.1 (2025-01-13)</small>
+
+* [bitnami/*] Fix typo in README (#31052) ([b41a51d](https://github.com/bitnami/charts/commit/b41a51d1bd04841fc108b78d3b8357a5292771c8)), closes [#31052](https://github.com/bitnami/charts/issues/31052)
+* [bitnami/prometheus] Release 1.4.1 (#31324) ([074a131](https://github.com/bitnami/charts/commit/074a1318cbcb9063e83927d585e12475431cc93c)), closes [#31324](https://github.com/bitnami/charts/issues/31324)
+
+## 1.4.0 (2024-12-10)
+
+* [bitnami/*] Add Bitnami Premium to NOTES.txt (#30854) ([3dfc003](https://github.com/bitnami/charts/commit/3dfc00376df6631f0ce54b8d440d477f6caa6186)), closes [#30854](https://github.com/bitnami/charts/issues/30854)
+* [bitnami/prometheus] Detect non-standard images (#30938) ([492b79e](https://github.com/bitnami/charts/commit/492b79e3b1e75d12d57d7d4881faf01c682a4ec8)), closes [#30938](https://github.com/bitnami/charts/issues/30938)
+
+## <small>1.3.29 (2024-12-04)</small>
+
+* [bitnami/*] docs: :memo: Add "Backup & Restore" section (#30711) ([35ab536](https://github.com/bitnami/charts/commit/35ab5363741e7548f4076f04da6e62d10153c60c)), closes [#30711](https://github.com/bitnami/charts/issues/30711)
+* [bitnami/prometheus] Release 1.3.29 (#30774) ([f1b557c](https://github.com/bitnami/charts/commit/f1b557c5e48a6a6195353d2827922638f91cd250)), closes [#30774](https://github.com/bitnami/charts/issues/30774)
+
+## <small>1.3.28 (2024-11-19)</small>
+
+* [bitnami/prometheus] Release 1.3.28 (#30518) ([8a90ea8](https://github.com/bitnami/charts/commit/8a90ea87706d89c78bcaa0bb08ca6a0d96512b5c)), closes [#30518](https://github.com/bitnami/charts/issues/30518)
+
+## <small>1.3.27 (2024-11-08)</small>
+
+* [bitnami/prometheus] Unify seLinuxOptions default value (#30330) ([09074d0](https://github.com/bitnami/charts/commit/09074d09e43535326e7c71d2d4c461d620bce784)), closes [#30330](https://github.com/bitnami/charts/issues/30330)
+
+## <small>1.3.26 (2024-11-07)</small>
+
+* [bitnami/mastodon][bitnami/prometheus] Fix README.md files typos (#30194) ([0ef19fb](https://github.com/bitnami/charts/commit/0ef19fb4ac61547d519c9cc029f39b7026ab70e2)), closes [#30194](https://github.com/bitnami/charts/issues/30194)
+* [bitnami/prometheus] Release 1.3.26 (#30289) ([ab4ecb0](https://github.com/bitnami/charts/commit/ab4ecb03466c1be4498052b9b7a3fbb1e743e36d)), closes [#30289](https://github.com/bitnami/charts/issues/30289)
+
+## <small>1.3.25 (2024-11-06)</small>
+
+* [bitnami/*] Remove wrong comment about imagePullPolicy (#30107) ([a51f9e4](https://github.com/bitnami/charts/commit/a51f9e4bb0fbf77199512d35de7ac8abe055d026)), closes [#30107](https://github.com/bitnami/charts/issues/30107)
+* [bitnami/prometheus] Release 1.3.25 (#30239) ([0409456](https://github.com/bitnami/charts/commit/0409456f78ef40e4a4b60114db902a31244b3157)), closes [#30239](https://github.com/bitnami/charts/issues/30239)
+
+## <small>1.3.24 (2024-10-22)</small>
+
+* [bitnami/prometheus] Release 1.3.24 (#30045) ([a08faca](https://github.com/bitnami/charts/commit/a08facaa0f3050b722e4c8160c5e667eb28b5f7d)), closes [#30045](https://github.com/bitnami/charts/issues/30045)
+* Update documentation links to techdocs.broadcom.com (#29931) ([f0d9ad7](https://github.com/bitnami/charts/commit/f0d9ad78f39f633d275fc576d32eae78ded4d0b8)), closes [#29931](https://github.com/bitnami/charts/issues/29931)
+
+## <small>1.3.23 (2024-10-02)</small>
+
+* [bitnami/prometheus] Release 1.3.23 (#29716) ([b7bd1ad](https://github.com/bitnami/charts/commit/b7bd1ad379e8735003f5d180fc0c79bf773f9ea6)), closes [#29716](https://github.com/bitnami/charts/issues/29716)
+
+## <small>1.3.22 (2024-09-11)</small>
+
+* [bitnami/prometheus] Allow rendering resources values (#29342) ([c1d1852](https://github.com/bitnami/charts/commit/c1d185295aeaf8880d2b16c654026e78fefb4cf7)), closes [#29342](https://github.com/bitnami/charts/issues/29342)
 
 ## <small>1.3.21 (2024-09-09)</small>
 
