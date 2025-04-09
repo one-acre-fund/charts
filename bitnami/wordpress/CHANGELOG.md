@@ -1,8 +1,45 @@
 # Changelog
 
-## 24.1.12 (2025-02-21)
+## 24.2.2 (2025-04-09)
 
-* [bitnami/wordpress] Release 24.1.12 ([#32098](https://github.com/bitnami/charts/pull/32098))
+* [bitnami/wordpress] Release 24.2.2 ([#32921](https://github.com/bitnami/charts/pull/32921))
+
+## <small>24.2.1 (2025-04-05)</small>
+
+* [bitnami/wordpress] Release 24.2.1 (#32824) ([1f14bb1](https://github.com/bitnami/charts/commit/1f14bb10870b4cd30fe1d6d2e7d9e8c32eaf9a8f)), closes [#32824](https://github.com/bitnami/charts/issues/32824)
+
+## 24.2.0 (2025-04-04)
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/wordpress] Set `usePasswordFiles=true` by default (#32770) ([d31ec15](https://github.com/bitnami/charts/commit/d31ec15591a7ed93fdb9087a87a87ec436084ac4)), closes [#32770](https://github.com/bitnami/charts/issues/32770)
+
+## <small>24.1.18 (2025-03-07)</small>
+
+* [bitnami/wordpress] fix network policy when metrics enabled (#32338) ([ddcee74](https://github.com/bitnami/charts/commit/ddcee74411ab886e7ff1831e248392cf6dfed668)), closes [#32338](https://github.com/bitnami/charts/issues/32338)
+
+## <small>24.1.17 (2025-03-06)</small>
+
+* [bitnami/wordpress] Release 24.1.17 (#32335) ([1dec218](https://github.com/bitnami/charts/commit/1dec21880650c8b459025016068493a9fa063e01)), closes [#32335](https://github.com/bitnami/charts/issues/32335)
+
+## <small>24.1.16 (2025-03-04)</small>
+
+* [bitnami/wordpress] Release 24.1.16 (#32272) ([87d4450](https://github.com/bitnami/charts/commit/87d44507ee9c84e14779123f158ec1b76eb9f997)), closes [#32272](https://github.com/bitnami/charts/issues/32272)
+
+## <small>24.1.15 (2025-03-03)</small>
+
+* [bitnami/wordpress] Release 24.1.15 (#32241) ([dc71572](https://github.com/bitnami/charts/commit/dc715729ccc1a46759da07ab0c4f927e47eb5850)), closes [#32241](https://github.com/bitnami/charts/issues/32241)
+
+## <small>24.1.14 (2025-02-27)</small>
+
+* [bitnami/wordpress] Release 24.1.14 (#32198) ([2898255](https://github.com/bitnami/charts/commit/28982556c1d3fee68bc88faf4e951789ca29738e)), closes [#32198](https://github.com/bitnami/charts/issues/32198)
+
+## <small>24.1.13 (2025-02-24)</small>
+
+* [bitnami/wordpress] Release 24.1.13 (#32142) ([81907c7](https://github.com/bitnami/charts/commit/81907c74f7d63f829091ba25273317d4cea034d5)), closes [#32142](https://github.com/bitnami/charts/issues/32142)
+
+## <small>24.1.12 (2025-02-21)</small>
+
+* [bitnami/wordpress] Release 24.1.12 (#32098) ([d2eec31](https://github.com/bitnami/charts/commit/d2eec3130d51f8beb35168378ae1671009cc17d1)), closes [#32098](https://github.com/bitnami/charts/issues/32098)
 
 ## <small>24.1.11 (2025-02-13)</small>
 

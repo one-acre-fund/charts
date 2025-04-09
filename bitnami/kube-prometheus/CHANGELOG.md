@@ -1,8 +1,21 @@
 # Changelog
 
-## 11.1.1 (2025-02-21)
+## 11.1.4 (2025-04-02)
 
-* [bitnami/kube-prometheus] Release 11.1.1 ([#32030](https://github.com/bitnami/charts/pull/32030))
+* [bitnami/kube-prometheus] Release 11.1.4 ([#32759](https://github.com/bitnami/charts/pull/32759))
+
+## <small>11.1.3 (2025-03-17)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/kube-prometheus] Release 11.1.3 (#32406) ([bab0ee2](https://github.com/bitnami/charts/commit/bab0ee20e13d00d7d9a2c153da82abf7ac77bc15)), closes [#32406](https://github.com/bitnami/charts/issues/32406)
+
+## <small>11.1.2 (2025-03-07)</small>
+
+* [bitnami/kube-prometheus] Release 11.1.2 (#32313) ([7b5a8f7](https://github.com/bitnami/charts/commit/7b5a8f7a8310e1eae3f7c555caab16b8fe2cd0f5)), closes [#32313](https://github.com/bitnami/charts/issues/32313)
+
+## <small>11.1.1 (2025-02-21)</small>
+
+* [bitnami/kube-prometheus] Release 11.1.1 (#32030) ([8213f74](https://github.com/bitnami/charts/commit/8213f749a83b78d692fd5728ba7df54cdd17e25e)), closes [#32030](https://github.com/bitnami/charts/issues/32030)
 
 ## 11.1.0 (2025-02-20)
 

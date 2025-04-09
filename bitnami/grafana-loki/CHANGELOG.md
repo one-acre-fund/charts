@@ -1,8 +1,30 @@
 # Changelog
 
-## 4.7.5 (2025-02-19)
+## 4.7.10 (2025-04-09)
 
-* [bitnami/grafana-loki] Release 4.7.5 ([#31998](https://github.com/bitnami/charts/pull/31998))
+* [bitnami/grafana-loki] Release 4.7.10 ([#32927](https://github.com/bitnami/charts/pull/32927))
+
+## <small>4.7.9 (2025-04-09)</small>
+
+* [bitnami/grafana-loki] Release 4.7.9 (#32903) ([7e2d4dd](https://github.com/bitnami/charts/commit/7e2d4dd7aa5bf57df38325595c8a9ef383dd588c)), closes [#32903](https://github.com/bitnami/charts/issues/32903)
+
+## <small>4.7.8 (2025-04-04)</small>
+
+* [bitnami/grafana-loki] Release 4.7.8 (#32818) ([17c21d4](https://github.com/bitnami/charts/commit/17c21d46945596a7fbb452dd9d54c7b4f8218307)), closes [#32818](https://github.com/bitnami/charts/issues/32818)
+
+## <small>4.7.7 (2025-04-01)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/grafana-loki] Release 4.7.7 (#32733) ([0a73e2b](https://github.com/bitnami/charts/commit/0a73e2bbc57dfa6a0114f40730717a1f79f918f7)), closes [#32733](https://github.com/bitnami/charts/issues/32733)
+
+## <small>4.7.6 (2025-03-05)</small>
+
+* [bitnami/grafana-loki] Release 4.7.6 (#32290) ([b88e4c4](https://github.com/bitnami/charts/commit/b88e4c40285eee65ea33132671cf7de0e27ca0ac)), closes [#32290](https://github.com/bitnami/charts/issues/32290)
+
+## <small>4.7.5 (2025-02-19)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/grafana-loki] Release 4.7.5 (#31998) ([270b97e](https://github.com/bitnami/charts/commit/270b97e77c02faaf5cc4297a184e1a5ab683ed4b)), closes [#31998](https://github.com/bitnami/charts/issues/31998)
 
 ## <small>4.7.4 (2025-02-04)</small>
 

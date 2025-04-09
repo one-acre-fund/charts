@@ -1,8 +1,34 @@
 # Changelog
 
+## 2.0.4 (2025-04-09)
+
+* [bitnami/nessie] Release 2.0.4 ([#32913](https://github.com/bitnami/charts/pull/32913))
+
+## <small>2.0.3 (2025-04-08)</small>
+
+* [bitnami/nessie] Release 2.0.3 (#32872) ([d8de398](https://github.com/bitnami/charts/commit/d8de39855a8f2cbd3bd106eaebe62f212d5f762e)), closes [#32872](https://github.com/bitnami/charts/issues/32872)
+
+## <small>2.0.2 (2025-03-21)</small>
+
+* [bitnami/nessie] Release 2.0.2 (#32552) ([15c0d4f](https://github.com/bitnami/charts/commit/15c0d4fd69a7022e2549f25752a10f40b99cbc14)), closes [#32552](https://github.com/bitnami/charts/issues/32552)
+
+## <small>2.0.1 (2025-03-18)</small>
+
+* [bitnami/nessie] Release 2.0.1 (#32496) ([dcab365](https://github.com/bitnami/charts/commit/dcab3650aeb7690484cdaa85acc1eda2b2f94f29)), closes [#32496](https://github.com/bitnami/charts/issues/32496)
+
+## 2.0.0 (2025-03-13)
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/nessie] Set `usePasswordFiles=true` by default (#32114) ([7e2e48d](https://github.com/bitnami/charts/commit/7e2e48d97a122ac93bea56a28308acd8ed39b39d)), closes [#32114](https://github.com/bitnami/charts/issues/32114)
+
+## <small>1.2.1 (2025-02-24)</small>
+
+* [bitnami/nessie] Release 1.2.1 (#32144) ([6af5812](https://github.com/bitnami/charts/commit/6af5812bc806e92231e61f263b3da77017661199)), closes [#32144](https://github.com/bitnami/charts/issues/32144)
+
 ## 1.2.0 (2025-02-20)
 
-* [bitnami/nessie] feat: use new helper for checking API versions ([#32060](https://github.com/bitnami/charts/pull/32060))
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/nessie] feat: use new helper for checking API versions (#32060) ([ddd3062](https://github.com/bitnami/charts/commit/ddd30620658739d77770ca05dd98cfa5ca9fb35e)), closes [#32060](https://github.com/bitnami/charts/issues/32060)
 
 ## <small>1.1.10 (2025-02-06)</small>
 

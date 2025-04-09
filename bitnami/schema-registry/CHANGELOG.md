@@ -1,8 +1,27 @@
 # Changelog
 
-## 23.1.3 (2025-02-21)
+## 25.1.0 (2025-04-01)
 
-* [bitnami/schema-registry] Release 23.1.3 ([#32104](https://github.com/bitnami/charts/pull/32104))
+* [bitnami/schema-registry] Set `usePasswordFiles=true` by default ([#32713](https://github.com/bitnami/charts/pull/32713))
+
+## 25.0.0 (2025-03-26)
+
+* [bitnami/schema-registry] feat: bump major due to major bump on Kafka dep (#32618) ([d1bd546](https://github.com/bitnami/charts/commit/d1bd54623e3b6c26ae2358a5295e106b396e3702)), closes [#32618](https://github.com/bitnami/charts/issues/32618)
+
+## 24.0.0 (2025-03-12)
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/schema-registry] Release 24.0.0 (#32424) ([1817445](https://github.com/bitnami/charts/commit/18174456aa09c324493c5e1d08c4b9f3c68891d7)), closes [#32424](https://github.com/bitnami/charts/issues/32424)
+
+## <small>23.1.4 (2025-03-04)</small>
+
+* [bitnami/schema-registry] Release 23.1.4 (#32264) ([3477fc1](https://github.com/bitnami/charts/commit/3477fc14499c31ae4280b0f49bd2b516bcda4c42)), closes [#32264](https://github.com/bitnami/charts/issues/32264)
+
+## <small>23.1.3 (2025-02-21)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/schema-registry] Release 23.1.3 (#32104) ([bdb8188](https://github.com/bitnami/charts/commit/bdb818815325b07e681d8545df39ec169fe50061)), closes [#32104](https://github.com/bitnami/charts/issues/32104)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
 
 ## <small>23.1.2 (2025-01-28)</small>
 

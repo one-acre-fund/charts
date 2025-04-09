@@ -1,8 +1,30 @@
 # Changelog
 
-## 5.1.12 (2025-02-13)
+## 5.2.4 (2025-04-09)
 
-* [bitnami/appsmith] Release 5.1.12 ([#31915](https://github.com/bitnami/charts/pull/31915))
+* [bitnami/appsmith] Release 5.2.4 ([#32896](https://github.com/bitnami/charts/pull/32896))
+
+## <small>5.2.3 (2025-04-08)</small>
+
+* [bitnami/appsmith] Release 5.2.3 (#32864) ([3984dbf](https://github.com/bitnami/charts/commit/3984dbf04eb6011547c48b0ff2241d7f011b7227)), closes [#32864](https://github.com/bitnami/charts/issues/32864)
+
+## <small>5.2.2 (2025-03-20)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/appsmith] Release 5.2.2 (#32534) ([c276082](https://github.com/bitnami/charts/commit/c276082de22e8eddfcef1aff31e14a447c807f07)), closes [#32534](https://github.com/bitnami/charts/issues/32534)
+
+## <small>5.2.1 (2025-02-26)</small>
+
+* [bitnami/appsmith] Release 5.2.1 (#32175) ([439e74b](https://github.com/bitnami/charts/commit/439e74b78474ddc9cef3e4348efacc840f0b6032)), closes [#32175](https://github.com/bitnami/charts/issues/32175)
+
+## 5.2.0 (2025-02-24)
+
+* [bitnami/appsmith] Add support for `usePasswordFiles` (#32078) ([c4826b8](https://github.com/bitnami/charts/commit/c4826b82e2f2d2d9eee65ae8472ca28748a401ef)), closes [#32078](https://github.com/bitnami/charts/issues/32078)
+
+## <small>5.1.12 (2025-02-13)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/appsmith] Release 5.1.12 (#31915) ([30ffee6](https://github.com/bitnami/charts/commit/30ffee66df76f98c23d157dd3ba6ef441e0869a0)), closes [#31915](https://github.com/bitnami/charts/issues/31915)
 
 ## <small>5.1.11 (2025-02-07)</small>
 

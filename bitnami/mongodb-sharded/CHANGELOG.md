@@ -1,8 +1,22 @@
 # Changelog
 
-## 9.1.3 (2025-02-21)
+## 9.2.2 (2025-04-02)
 
-* [bitnami/mongodb-sharded] Release 9.1.3 ([#32134](https://github.com/bitnami/charts/pull/32134))
+* [bitnami/mongodb-sharded] Release 9.2.2 ([#32751](https://github.com/bitnami/charts/pull/32751))
+
+## <small>9.2.1 (2025-03-21)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/mongodb-sharded] Release 9.2.1 (#32550) ([73a090e](https://github.com/bitnami/charts/commit/73a090eab45cd85a0623bb50906b3ae4d1d3c366)), closes [#32550](https://github.com/bitnami/charts/issues/32550)
+
+## 9.2.0 (2025-02-27)
+
+* [bitnami/mongodb-sharded] Set `usePasswordFiles=true` by default (#32112) ([6c1ce79](https://github.com/bitnami/charts/commit/6c1ce79e1f9dcd194f101ee60b85fd41b16971f2)), closes [#32112](https://github.com/bitnami/charts/issues/32112)
+
+## <small>9.1.3 (2025-02-21)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/mongodb-sharded] Release 9.1.3 (#32134) ([65a30fa](https://github.com/bitnami/charts/commit/65a30fab023ed5b9d85d9bf80b435237c7a04226)), closes [#32134](https://github.com/bitnami/charts/issues/32134)
 
 ## <small>9.1.2 (2025-02-03)</small>
 

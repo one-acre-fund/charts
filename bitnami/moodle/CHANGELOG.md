@@ -1,8 +1,18 @@
 # Changelog
 
-## 25.1.4 (2025-02-21)
+## 25.2.0 (2025-04-04)
 
-* [bitnami/moodle] Release 25.1.4 ([#32103](https://github.com/bitnami/charts/pull/32103))
+* [bitnami/moodle] Set `usePasswordFiles=true` by default ([#32705](https://github.com/bitnami/charts/pull/32705))
+
+## <small>25.1.5 (2025-03-17)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/moodle] Release 25.1.5 (#32473) ([313c5b6](https://github.com/bitnami/charts/commit/313c5b61f8981333edbe04e7b66d37594f04dc1a)), closes [#32473](https://github.com/bitnami/charts/issues/32473)
+
+## <small>25.1.4 (2025-02-21)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/moodle] Release 25.1.4 (#32103) ([f95a5d9](https://github.com/bitnami/charts/commit/f95a5d9c6bf68248e3e55aafc3e00a8df4de1a0a)), closes [#32103](https://github.com/bitnami/charts/issues/32103)
 
 ## <small>25.1.3 (2025-02-10)</small>
 

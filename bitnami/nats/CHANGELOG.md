@@ -1,8 +1,42 @@
 # Changelog
 
-## 9.0.3 (2025-02-12)
+## 9.0.11 (2025-04-09)
 
-* [bitnami/nats] Release 9.0.3 ([#31901](https://github.com/bitnami/charts/pull/31901))
+* [bitnami/nats] Release 9.0.11 ([#32929](https://github.com/bitnami/charts/pull/32929))
+
+## <small>9.0.10 (2025-04-09)</small>
+
+* [bitnami/nats] Release 9.0.10 (#32907) ([85f9f14](https://github.com/bitnami/charts/commit/85f9f14119a4f8693116c4b1f346fdff3bcd03eb)), closes [#32907](https://github.com/bitnami/charts/issues/32907)
+
+## <small>9.0.9 (2025-04-08)</small>
+
+* [bitnami/nats] Release 9.0.9 (#32873) ([138f5a9](https://github.com/bitnami/charts/commit/138f5a9dcd179ce78354423b43b037ce13bdcc73)), closes [#32873](https://github.com/bitnami/charts/issues/32873)
+
+## <small>9.0.8 (2025-04-02)</small>
+
+* [bitnami/nats] Release 9.0.8 (#32754) ([fbba74c](https://github.com/bitnami/charts/commit/fbba74c68011f672055966d535858be10a8dd74e)), closes [#32754](https://github.com/bitnami/charts/issues/32754)
+
+## <small>9.0.7 (2025-03-19)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/nats] Release 9.0.7 (#32517) ([a902ef8](https://github.com/bitnami/charts/commit/a902ef8c45ad542e44e8e89171ad03ba47ea31fc)), closes [#32517](https://github.com/bitnami/charts/issues/32517)
+
+## <small>9.0.6 (2025-03-11)</small>
+
+* [bitnami/nats] allow to modify JetStream store directory (#32359) ([9d5238f](https://github.com/bitnami/charts/commit/9d5238f55b072d6d769a8b3023c9af9c75516fa8)), closes [#32359](https://github.com/bitnami/charts/issues/32359)
+
+## <small>9.0.5 (2025-03-05)</small>
+
+* [bitnami/nats] Release 9.0.5 (#32307) ([a8104c6](https://github.com/bitnami/charts/commit/a8104c627677ac03a2ea97c21ba0769cbb0a7a6f)), closes [#32307](https://github.com/bitnami/charts/issues/32307)
+
+## <small>9.0.4 (2025-02-25)</small>
+
+* [bitnami/nats] Release 9.0.4 (#32167) ([8c7b9c9](https://github.com/bitnami/charts/commit/8c7b9c9a40e180d24147d7f98d8865ebc518a1b9)), closes [#32167](https://github.com/bitnami/charts/issues/32167)
+
+## <small>9.0.3 (2025-02-12)</small>
+
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/nats] Release 9.0.3 (#31901) ([21d36d6](https://github.com/bitnami/charts/commit/21d36d6aebea4cde7c02efc6dc2c4299943e9f74)), closes [#31901](https://github.com/bitnami/charts/issues/31901)
 
 ## <small>9.0.2 (2025-02-07)</small>
 
