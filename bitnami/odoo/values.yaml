@@ -327,6 +327,31 @@ customReadinessProbe: {}
 ## @param customStartupProbe Custom startupProbe that overrides the default one
 #
 customStartupProbe: {}
+
+## @param customCronStartupProbe Custom startupProbe that overrides the default one in cron deployment
+#
+customCronStartupProbe: {}
+
+## @param cronStartupProbe.enabled Enable cronStartupProbe
+## @param cronStartupProbe.exec Command to execute for cronStartupProbe
+## @param cronStartupProbe.periodSeconds Period seconds for cronStartupProbe
+## @param cronStartupProbe.timeoutSeconds Timeout seconds for cronStartupProbe
+## @param cronStartupProbe.failureThreshold Failure threshold for cronStartupProbe
+## @param cronStartupProbe.successThreshold Success threshold for cronStartupProbe
+##
+cronStartupProbe:
+  enabled: false
+  exec:
+    command:
+      - bash
+      - -c
+      - >
+        odoo shell -d bitnami_odoo -c "exit(0)" >/dev/null 2>&1
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
 ## @param lifecycleHooks LifecycleHooks to set additional configuration at startup
 ##
 lifecycleHooks: {}

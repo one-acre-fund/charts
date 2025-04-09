@@ -12,8 +12,8 @@ metadata:
     app.kubernetes.io/instance: {{ template "common.names.fullname" . }}-cron
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: {{ template "common.names.fullname" . }}-cron
-    app.kubernetes.io/version: 17.0.20240805
-    helm.sh/chart: odoo-26.2.16
+    app.kubernetes.io/version: {{ .Chart.AppVersion }}
+    helm.sh/chart: {{ include "common.names.chart" . }}
   {{- if .Values.commonAnnotations }}
   annotations: {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
   {{- end }}
@@ -35,8 +35,8 @@ spec:
         app.kubernetes.io/instance: {{ template "common.names.fullname" . }}-cron
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: {{ template "common.names.fullname" . }}-cron
-        app.kubernetes.io/version: 17.0.20240805
-        helm.sh/chart: odoo-26.2.16      
+        app.kubernetes.io/version: {{ .Chart.AppVersion }}
+        helm.sh/chart: {{ include "common.names.chart" . }}      
       {{- if .Values.podAnnotations }}
       annotations: {{- include "common.tplvalues.render" (dict "value" .Values.podAnnotations "context" $) | nindent 8 }}
       {{- end }}
@@ -226,28 +226,10 @@ spec:
             {{- include "common.tplvalues.render" (dict "value" .Values.extraContainerPorts "context" $) | nindent 12 }}
             {{- end }}
           {{- if not .Values.diagnosticMode.enabled }}
-          {{- if .Values.customLivenessProbe }}
-          livenessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.customLivenessProbe "context" $) | nindent 12 }}
-          {{- else if .Values.livenessProbe.enabled }}
-          livenessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.livenessProbe "enabled" "path") "context" $) | nindent 12 }}
-            tcpSocket:
-              port: http
-          {{- end }}
-          {{- if .Values.customReadinessProbe }}
-          readinessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.customReadinessProbe "context" $) | nindent 12 }}
-          {{- else if .Values.readinessProbe.enabled }}
-          readinessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.readinessProbe "enabled" "path") "context" $) | nindent 12 }}
-            httpGet:
-              path: {{ .Values.readinessProbe.path }}
-              port: http
-          {{- end }}
-          {{- if .Values.customStartupProbe }}
-          startupProbe: {{- include "common.tplvalues.render" (dict "value" .Values.customStartupProbe "context" $) | nindent 12 }}
-          {{- else if .Values.startupProbe.enabled }}
-          startupProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.startupProbe "enabled" "path") "context" $) | nindent 12 }}
-            httpGet:
-              path: {{ .Values.startupProbe.path }}
-              port: http
+          {{- if .Values.customCronStartupProbe }}
+          startupProbe: {{- include "common.tplvalues.render" (dict "value" .Values.customCronStartupProbe "context" $) | nindent 12 }}
+          {{- else if .Values.cronStartupProbe.enabled }}
+          startupProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.cronStartupProbe "enabled" "path") "context" $) | nindent 12 }}
           {{- end }}
           {{- end }}
           {{- if .Values.resources }}
