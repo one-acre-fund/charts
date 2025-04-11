@@ -343,14 +343,27 @@ cronStartupProbe:
   enabled: false
   exec:
     command:
-      - bash
-      - -c
-      - >
-        odoo shell -d bitnami_odoo -c "exit(0)" >/dev/null 2>&1
-  periodSeconds: 10
-  timeoutSeconds: 5
-  failureThreshold: 6
+      - cat
+      - /opt/bitnami/odoo/conf/odoo.conf
+  initialDelaySeconds: 10
+  timeoutSeconds: 1
+  periodSeconds: 30
   successThreshold: 1
+  failureThreshold: 3
+
+customCronLivenessProbe: {}
+
+cronLivenessProbe:
+  enabled: false
+  exec:
+    command:
+      - cat
+      - /opt/bitnami/odoo/conf/odoo.conf
+  initialDelaySeconds: 10
+  timeoutSeconds: 1
+  periodSeconds: 30
+  successThreshold: 1
+  failureThreshold: 3
 
 ## @param lifecycleHooks LifecycleHooks to set additional configuration at startup
 ##

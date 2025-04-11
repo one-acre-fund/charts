@@ -231,6 +231,11 @@ spec:
           {{- else if .Values.cronStartupProbe.enabled }}
           startupProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.cronStartupProbe "enabled" "path") "context" $) | nindent 12 }}
           {{- end }}
+          {{- if .Values.customCronLivenessProbe }}
+          livenessProbe: {{- include "common.tplvalues.render" (dict "value" .Values.customCronLivenessProbe "context" $) | nindent 12 }}
+          {{- else if .Values.cronLivenessProbe.enabled }}
+          livenessProbe: {{- include "common.tplvalues.render" (dict "value" (omit .Values.cronLivenessProbe "enabled" "path") "context" $) | nindent 12 }}
+          {{- end }}
           {{- end }}
           {{- if .Values.resources }}
           resources: {{- toYaml .Values.resources | nindent 12 }}
