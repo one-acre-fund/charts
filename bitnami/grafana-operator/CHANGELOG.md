@@ -1,8 +1,117 @@
 # Changelog
 
-## 4.9.11 (2025-04-02)
+## 4.9.37 (2025-08-18)
 
-* [bitnami/grafana-operator] Add new CRDs and RBAC ([#32413](https://github.com/bitnami/charts/pull/32413))
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references ([#36100](https://github.com/bitnami/charts/pull/36100))
+
+## <small>4.9.36 (2025-08-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35853) ([5b05b74](https://github.com/bitnami/charts/commit/5b05b743ba69939dab0dfc06d851ef45daf408d6)), closes [#35853](https://github.com/bitnami/charts/issues/35853)
+
+## <small>4.9.35 (2025-08-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35811) ([1e393ed](https://github.com/bitnami/charts/commit/1e393ed30bf289a5c43c5eb51f1d7970961fcc21)), closes [#35811](https://github.com/bitnami/charts/issues/35811)
+
+## <small>4.9.34 (2025-08-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35802) ([9d4d336](https://github.com/bitnami/charts/commit/9d4d336e4b807c80856d13b1d0972579758674e6)), closes [#35802](https://github.com/bitnami/charts/issues/35802)
+
+## <small>4.9.33 (2025-08-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35775) ([9610df9](https://github.com/bitnami/charts/commit/9610df90caa3c70c8ed39d09db696e80db383c42)), closes [#35775](https://github.com/bitnami/charts/issues/35775)
+
+## <small>4.9.32 (2025-08-07)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35688) ([86a5ce0](https://github.com/bitnami/charts/commit/86a5ce0ad8f7af90f26ed6acfac6861ae8fb9eb2)), closes [#35688](https://github.com/bitnami/charts/issues/35688)
+
+## <small>4.9.31 (2025-08-07)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35483) ([a5d428e](https://github.com/bitnami/charts/commit/a5d428e1b7f9391057035c34b45a1724e84f8179)), closes [#35483](https://github.com/bitnami/charts/issues/35483)
+
+## <small>4.9.30 (2025-08-06)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35438) ([4d5ab69](https://github.com/bitnami/charts/commit/4d5ab691b62acb62806a586fbdfdb48e6c0961fb)), closes [#35438](https://github.com/bitnami/charts/issues/35438)
+
+## <small>4.9.29 (2025-08-06)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35436) ([d1e350d](https://github.com/bitnami/charts/commit/d1e350de576aa87b70747656219082fe1d696d25)), closes [#35436](https://github.com/bitnami/charts/issues/35436)
+
+## <small>4.9.28 (2025-08-05)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35418) ([814adc7](https://github.com/bitnami/charts/commit/814adc7d85f309e071086c1a48e06af68aaaa2eb)), closes [#35418](https://github.com/bitnami/charts/issues/35418)
+
+## <small>4.9.27 (2025-08-05)</small>
+
+* [bitnami/grafana-operator] Remove references to deprecated helpers (#35409) ([b15f00b](https://github.com/bitnami/charts/commit/b15f00b7d4f8937c445bc8afb0f6341cac57f7ac)), closes [#35409](https://github.com/bitnami/charts/issues/35409)
+
+## <small>4.9.26 (2025-08-04)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35395) ([5cd5bd8](https://github.com/bitnami/charts/commit/5cd5bd8ef192f62ec63b0dfcb384ac822303180f)), closes [#35395](https://github.com/bitnami/charts/issues/35395)
+
+## <small>4.9.25 (2025-07-25)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#35299) ([e10fb0c](https://github.com/bitnami/charts/commit/e10fb0c5895f481e5902fae2de5df2a151622b1a)), closes [#35299](https://github.com/bitnami/charts/issues/35299)
+
+## <small>4.9.24 (2025-07-08)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34899) ([defae01](https://github.com/bitnami/charts/commit/defae01aceb79b81742451a160d99b9d590c42fe)), closes [#34899](https://github.com/bitnami/charts/issues/34899)
+
+## <small>4.9.23 (2025-06-18)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34534) ([b9a513c](https://github.com/bitnami/charts/commit/b9a513c6cd097871e36ede7b77df16ef6691d67c)), closes [#34534](https://github.com/bitnami/charts/issues/34534)
+
+## <small>4.9.22 (2025-06-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34444) ([2eecc28](https://github.com/bitnami/charts/commit/2eecc281d0bc0aaaca667144bfcd924196434830)), closes [#34444](https://github.com/bitnami/charts/issues/34444)
+
+## <small>4.9.21 (2025-06-06)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34172) ([d43617f](https://github.com/bitnami/charts/commit/d43617f7f9eb39728f00fdf96bca24cc9148ffe7)), closes [#34172](https://github.com/bitnami/charts/issues/34172)
+
+## <small>4.9.20 (2025-06-06)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34167) ([1eba506](https://github.com/bitnami/charts/commit/1eba506cc5527807166d7767280e6d6a67087965)), closes [#34167](https://github.com/bitnami/charts/issues/34167)
+
+## <small>4.9.19 (2025-06-03)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#34061) ([f54ee8d](https://github.com/bitnami/charts/commit/f54ee8d651d9005d1100183cecf75ea2c04d70f9)), closes [#34061](https://github.com/bitnami/charts/issues/34061)
+
+## <small>4.9.18 (2025-05-22)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#33849) ([88c3e47](https://github.com/bitnami/charts/commit/88c3e47b06c401f0f1167098094de66b3666d6cb)), closes [#33849](https://github.com/bitnami/charts/issues/33849)
+
+## <small>4.9.17 (2025-05-13)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#33661) ([8fda402](https://github.com/bitnami/charts/commit/8fda40245768a8a4ebed06511edaf9996a79d784)), closes [#33661](https://github.com/bitnami/charts/issues/33661)
+
+## <small>4.9.16 (2025-05-12)</small>
+
+* [bitnami/grafana-operator] :zap: :arrow_up: Update dependency references (#33605) ([0bee120](https://github.com/bitnami/charts/commit/0bee120c9930188b27cc3285eea94c585a3ca6b7)), closes [#33605](https://github.com/bitnami/charts/issues/33605)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>4.9.15 (2025-05-07)</small>
+
+* [bitnami/grafana-operator] Release 4.9.15 (#33520) ([5d5a22b](https://github.com/bitnami/charts/commit/5d5a22bd3ac142cac8367e9a69414c3a44725d36)), closes [#33520](https://github.com/bitnami/charts/issues/33520)
+
+## <small>4.9.14 (2025-05-06)</small>
+
+* [bitnami/grafana-operator] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 reference ([6bab5cc](https://github.com/bitnami/charts/commit/6bab5cce113601dbdd2370de0e3cb7455e099a17)), closes [#33370](https://github.com/bitnami/charts/issues/33370)
+
+## <small>4.9.13 (2025-04-22)</small>
+
+* [bitnami/grafana-operator] don't add common labels to Grafana resources (#33049) ([e76b535](https://github.com/bitnami/charts/commit/e76b535ed1b8a16135540a5588eac2370c3b1c06)), closes [#33049](https://github.com/bitnami/charts/issues/33049)
+
+## <small>4.9.12 (2025-04-10)</small>
+
+* [bitnami/grafana-operator] Release 4.9.12 (#32949) ([1fc4f9b](https://github.com/bitnami/charts/commit/1fc4f9bf14da9ee68952cc20e5f2aa798c0d05e9)), closes [#32949](https://github.com/bitnami/charts/issues/32949)
+
+## <small>4.9.11 (2025-04-07)</small>
+
+* [bitnami/grafana-operator] Add new CRDs and RBAC (#32413) ([bc5dfb5](https://github.com/bitnami/charts/commit/bc5dfb5935e85426494bf6ccddc0aa3a8ec0658e)), closes [#32413](https://github.com/bitnami/charts/issues/32413)
 
 ## <small>4.9.10 (2025-04-01)</small>
 

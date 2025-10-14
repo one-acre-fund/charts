@@ -1,8 +1,97 @@
 # Changelog
 
-## 11.7.2 (2025-04-09)
+## 12.0.8 (2025-08-26)
 
-* [bitnami/tomcat] Release 11.7.2 ([#32918](https://github.com/bitnami/charts/pull/32918))
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references ([#36190](https://github.com/bitnami/charts/pull/36190))
+
+## <small>12.0.7 (2025-08-12)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35756) ([92073fa](https://github.com/bitnami/charts/commit/92073fab84accccee569b0796ab7c99a5465ce9a)), closes [#35756](https://github.com/bitnami/charts/issues/35756)
+
+## <small>12.0.6 (2025-08-08)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35708) ([b6c5614](https://github.com/bitnami/charts/commit/b6c5614431cbddf453cd9ecd617b6a65c6944cbc)), closes [#35708](https://github.com/bitnami/charts/issues/35708)
+
+## <small>12.0.5 (2025-08-08)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35696) ([6d9f595](https://github.com/bitnami/charts/commit/6d9f595e141915e26116dab365ad44bd3e6bcd18)), closes [#35696](https://github.com/bitnami/charts/issues/35696)
+
+## <small>12.0.4 (2025-08-07)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35657) ([058ef86](https://github.com/bitnami/charts/commit/058ef86f764227e33a7a794f467c404d241b8431)), closes [#35657](https://github.com/bitnami/charts/issues/35657)
+
+## <small>12.0.3 (2025-08-07)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35574) ([8898ae3](https://github.com/bitnami/charts/commit/8898ae3c628e06e7c97bf1d8ddcf284aa72b66b8)), closes [#35574](https://github.com/bitnami/charts/issues/35574)
+
+## <small>12.0.2 (2025-08-06)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35437) ([a7038ef](https://github.com/bitnami/charts/commit/a7038ef1fcff36cfddb8c2694177a6bf8333b1a2)), closes [#35437](https://github.com/bitnami/charts/issues/35437)
+
+## <small>12.0.1 (2025-07-15)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#35130) ([d2513d9](https://github.com/bitnami/charts/commit/d2513d9bfbee3960c32d973c1f4fc59b736a3bb5)), closes [#35130](https://github.com/bitnami/charts/issues/35130)
+
+## 12.0.0 (2025-07-09)
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34967) ([3b88c24](https://github.com/bitnami/charts/commit/3b88c24498eb228a44fddab08e7e4fa722af57b3)), closes [#34967](https://github.com/bitnami/charts/issues/34967)
+
+## <small>11.7.14 (2025-07-04)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34809) ([b526e48](https://github.com/bitnami/charts/commit/b526e4853e9672de01199d9839d42dc9b36ac7ba)), closes [#34809](https://github.com/bitnami/charts/issues/34809)
+
+## <small>11.7.13 (2025-07-01)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34757) ([22bf2fb](https://github.com/bitnami/charts/commit/22bf2fb2a79a7a6a31ed6f434a8c6b19c7020230)), closes [#34757](https://github.com/bitnami/charts/issues/34757)
+
+## <small>11.7.12 (2025-06-11)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34342) ([70d9da9](https://github.com/bitnami/charts/commit/70d9da9b2644479c1ca4efc359a244de76730164)), closes [#34342](https://github.com/bitnami/charts/issues/34342)
+
+## <small>11.7.11 (2025-06-10)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34301) ([8f194e2](https://github.com/bitnami/charts/commit/8f194e28dcf58d8f843ba9dc6b550b42eb29243c)), closes [#34301](https://github.com/bitnami/charts/issues/34301)
+
+## <small>11.7.10 (2025-06-10)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#34286) ([8826462](https://github.com/bitnami/charts/commit/88264623f7417eee76706b35667d924c6823d9e7)), closes [#34286](https://github.com/bitnami/charts/issues/34286)
+
+## <small>11.7.9 (2025-05-28)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33939) ([bc54b6b](https://github.com/bitnami/charts/commit/bc54b6b6ff948bec3776f435e29a39830d5f7593)), closes [#33939](https://github.com/bitnami/charts/issues/33939)
+
+## <small>11.7.8 (2025-05-27)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33906) ([4912516](https://github.com/bitnami/charts/commit/4912516d9651b90db6bd1746e8123d7e18838e14)), closes [#33906](https://github.com/bitnami/charts/issues/33906)
+
+## <small>11.7.7 (2025-05-27)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33904) ([4d211ba](https://github.com/bitnami/charts/commit/4d211ba9148561476a93399585caa48653daf03f)), closes [#33904](https://github.com/bitnami/charts/issues/33904)
+
+## <small>11.7.6 (2025-05-16)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33763) ([6c7406e](https://github.com/bitnami/charts/commit/6c7406e7f1bf85b2bc077b1988d107d1d7b93af9)), closes [#33763](https://github.com/bitnami/charts/issues/33763)
+
+## <small>11.7.5 (2025-05-12)</small>
+
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33620) ([c7e2322](https://github.com/bitnami/charts/commit/c7e232230711b6bf29ee6c6b56adcb4239a1e31a)), closes [#33620](https://github.com/bitnami/charts/issues/33620)
+
+## <small>11.7.4 (2025-05-09)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/tomcat] :zap: :arrow_up: Update dependency references (#33586) ([ddad138](https://github.com/bitnami/charts/commit/ddad1380b5f535847177d3c3807190fed6e3d6f4)), closes [#33586](https://github.com/bitnami/charts/issues/33586)
+
+## <small>11.7.3 (2025-05-06)</small>
+
+* [bitnami/tomcat] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33442) ([56d36fd](https://github.com/bitnami/charts/commit/56d36fd23a50e154cfa1624bdeb4087986f17cbc)), closes [#33442](https://github.com/bitnami/charts/issues/33442)
+
+## <small>11.7.2 (2025-04-09)</small>
+
+* [bitnami/tomcat] Release 11.7.2 (#32918) ([eefe9c5](https://github.com/bitnami/charts/commit/eefe9c57d08c6f24a94b0873f35341b5162402cb)), closes [#32918](https://github.com/bitnami/charts/issues/32918)
 
 ## <small>11.7.1 (2025-04-08)</small>
 

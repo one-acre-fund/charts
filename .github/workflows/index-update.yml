@@ -16,11 +16,11 @@ jobs:
     steps:
       - id: checkout-repo
         name: Checkout repo
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           ref: index
           path: index
-      - uses: oras-project/setup-oras@5c0b487ce3fe0ce3ab0d034e63669e426e294e4d
+      - uses: oras-project/setup-oras@22ce207df3b08e061f537244349aac6ae1d214f6
       - id: get-oci-index
         name: Get OCI index
         run: |
@@ -60,7 +60,7 @@ jobs:
           curl -SsLfO "https://get.helm.sh/${HELM_TARBALL}" && sudo tar xf "$HELM_TARBALL" --strip-components 1 -C /usr/local/bin
           # Install file plugin
           helm plugin add https://github.com/zoobab/helm_file_repo
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           ref: 'index'
           path: index

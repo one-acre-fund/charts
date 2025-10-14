@@ -16,11 +16,20 @@ helm install my-release oci://registry-1.docker.io/bitnamicharts/kuberay
 
 Looking to use KubeRay in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
+## ⚠️ Important Notice: Upcoming changes to the Bitnami Catalog
+
+Beginning August 28th, 2025, Bitnami will evolve its public catalog to offer a curated set of hardened, security-focused images under the new [Bitnami Secure Images initiative](https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure-images-for-production-ready-containerized-applications). As part of this transition:
+
+- Granting community users access for the first time to security-optimized versions of popular container images.
+- Bitnami will begin deprecating support for non-hardened, Debian-based software images in its free tier and will gradually remove non-latest tags from the public catalog. As a result, community users will have access to a reduced number of hardened images. These images are published only under the “latest” tag and are intended for development purposes
+- Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/bitnami) to the “Bitnami Legacy” repository (docker.io/bitnamilegacy), where they will no longer receive updates.
+- For production workloads and long-term support, users are encouraged to adopt Bitnami Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
+
+These changes aim to improve the security posture of all Bitnami users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [Bitnami Secure Images announcement](https://github.com/bitnami/containers/issues/83267).
+
 ## Introduction
 
 This chart bootstraps a [KubeRay](https://github.com/bitnami/containers/tree/main/bitnami/kuberay) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -213,6 +222,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | `operator.customStartupProbe`                                | Custom startupProbe that overrides the default one                                                                                                                                                                                  | `{}`                               |
 | `operator.watchAllNamespaces`                                | Watch for KubeRay resources in all namespaces                                                                                                                                                                                       | `true`                             |
 | `operator.watchNamespaces`                                   | Watch for KubeRay resources in the given namespaces                                                                                                                                                                                 | `[]`                               |
+| `operator.crNamespacedRbacEnable`                            | Specifies whether a RBAC resources should be created when `operator.watchAllNamespaces` is set to `false`                                                                                                                           | `true`                             |
 | `operator.enableBatchScheduler`                              | Enable batch scheduler component                                                                                                                                                                                                    | `false`                            |
 | `operator.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if operator.resources is set (operator.resources is recommended for production). | `nano`                             |
 | `operator.resources`                                         | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                   | `{}`                               |
@@ -333,7 +343,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | `operator.metrics.serviceMonitor.annotations`       | Additional custom annotations for the ServiceMonitor                                                   | `{}`    |
 | `operator.metrics.serviceMonitor.labels`            | Extra labels for the ServiceMonitor                                                                    | `{}`    |
 | `operator.metrics.serviceMonitor.jobLabel`          | The name of the label on the target service to use as the job name in Prometheus                       | `""`    |
-| `operator.metrics.serviceMonitor.honorLabels`       | honorLabels chooses the metric's labels on collisions with target labels                               | `false` |
+| `operator.metrics.serviceMonitor.honorLabels`       | honorLabels chooses the metric's labels on collisions with target labels                               | `true`  |
 | `operator.metrics.serviceMonitor.interval`          | Interval at which metrics should be scraped.                                                           | `""`    |
 | `operator.metrics.serviceMonitor.scrapeTimeout`     | Timeout after which the scrape is ended                                                                | `""`    |
 | `operator.metrics.serviceMonitor.metricRelabelings` | Specify additional relabeling of metrics                                                               | `[]`    |
@@ -517,7 +527,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 | Name                                                             | Description                                                                                                                                                                                                                                 | Value            |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | `cluster.head.rayStartParams`                                    | Set Ray start parameters                                                                                                                                                                                                                    | `{}`             |
-| `cluster.head.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if cluster.head.resources is set (cluster.head.resources is recommended for production). | `medium`         |
+| `cluster.head.resourcesPreset`                                   | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if cluster.head.resources is set (cluster.head.resources is recommended for production). | `large`          |
 | `cluster.head.resources`                                         | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                                           | `{}`             |
 | `cluster.head.podSecurityContext.enabled`                        | Enabled Ray Cluster Worker (common) pods' Security Context                                                                                                                                                                                  | `true`           |
 | `cluster.head.podSecurityContext.fsGroupChangePolicy`            | Set filesystem group change policy                                                                                                                                                                                                          | `Always`         |

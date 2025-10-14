@@ -1,8 +1,61 @@
 # Changelog
 
+## 5.0.0 (2025-08-11)
+
+* [bitnami/superset] Upgrade to Redis subchart 22 ([#35723](https://github.com/bitnami/charts/pull/35723))
+
+## <small>4.0.2 (2025-08-07)</small>
+
+* [bitnami/superset] :zap: :arrow_up: Update dependency references (#35684) ([20b9701](https://github.com/bitnami/charts/commit/20b970147099aebebd66f8f2ffab2477c47810ee)), closes [#35684](https://github.com/bitnami/charts/issues/35684)
+
+## <small>4.0.1 (2025-07-30)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/superset] :zap: :arrow_up: Update dependency references (#35345) ([2b341db](https://github.com/bitnami/charts/commit/2b341dbb1c49630cef316ea5cf0d3c4835f13108)), closes [#35345](https://github.com/bitnami/charts/issues/35345)
+
+## 4.0.0 (2025-06-30)
+
+* [bitnami/superset] :zap: :arrow_up: Update dependency references (#34724) ([027289f](https://github.com/bitnami/charts/commit/027289ff18e3e39e302dac191f196b1ba481b077)), closes [#34724](https://github.com/bitnami/charts/issues/34724)
+
+## <small>3.0.4 (2025-06-16)</small>
+
+* [bitnami/superset] Support `nameOverride` and `fullnameOverride` for internal Redis® (#34364) ([820cc91](https://github.com/bitnami/charts/commit/820cc91650c63d807a04b87a764093b26265b611)), closes [#34364](https://github.com/bitnami/charts/issues/34364)
+
+## <small>3.0.3 (2025-06-09)</small>
+
+* [bitnami/superset] :zap: :arrow_up: Update dependency references (#34274) ([548bf19](https://github.com/bitnami/charts/commit/548bf19e2cb77c60610f83b2e213b1a156c16ae5)), closes [#34274](https://github.com/bitnami/charts/issues/34274)
+
+## <small>3.0.2 (2025-05-28)</small>
+
+* [bitnami/superset] :zap: :arrow_up: Update dependency references (#33934) ([b9d1588](https://github.com/bitnami/charts/commit/b9d15881884dbc3f39a9102f0c75a31fafe565de)), closes [#33934](https://github.com/bitnami/charts/issues/33934)
+
+## <small>3.0.1 (2025-05-09)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/superset] fix ingress with extraHosts failed to deploy (#33052) ([504fc3f](https://github.com/bitnami/charts/commit/504fc3fa4c12c5699e81db78db975a38a4ecbbe7)), closes [#33052](https://github.com/bitnami/charts/issues/33052)
+
+## 3.0.0 (2025-05-07)
+
+* [bitnami/superset] feat!: :arrow_up: :boom: Bump Redis(R) to 8.0 (#33512) ([da6da50](https://github.com/bitnami/charts/commit/da6da50e471c17933688cee861af5d5f8be32a81)), closes [#33512](https://github.com/bitnami/charts/issues/33512)
+
+## <small>2.0.3 (2025-05-07)</small>
+
+* [bitnami/superset] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#3343 ([579785a](https://github.com/bitnami/charts/commit/579785a27121c71fe803e31fdf1b3071c2cc62a5)), closes [#33439](https://github.com/bitnami/charts/issues/33439) [#33402](https://github.com/bitnami/charts/issues/33402)
+
+## <small>2.0.2 (2025-05-06)</small>
+
+* [bitnami/superset] fix(wait-for-examples): Support 429 errors in examples load (#33458) ([e01e70b](https://github.com/bitnami/charts/commit/e01e70b87ef128aa92db1c7f2cd79d16afbc42e5)), closes [#33458](https://github.com/bitnami/charts/issues/33458)
+
+## <small>2.0.1 (2025-04-28)</small>
+
+* [bitnami/superset] Release 2.0.1 (#33222) ([20821a5](https://github.com/bitnami/charts/commit/20821a5961f08a9db2dd9ecb2ac62a1cfad60c51)), closes [#33222](https://github.com/bitnami/charts/issues/33222)
+
 ## 2.0.0 (2025-04-04)
 
-* [bitnami/superset] Set `usePasswordFiles=true` by default ([#32778](https://github.com/bitnami/charts/pull/32778))
+* [bitnami/superset] Set `usePasswordFiles=true` by default (#32778) ([89677d4](https://github.com/bitnami/charts/commit/89677d409181b014153179e4aa709cb9ffe79035)), closes [#32778](https://github.com/bitnami/charts/issues/32778)
 
 ## <small>1.1.3 (2025-04-02)</small>
 

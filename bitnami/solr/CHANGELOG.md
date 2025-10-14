@@ -1,8 +1,50 @@
 # Changelog
 
-## 9.6.1 (2025-04-09)
+## 9.6.10 (2025-08-07)
 
-* [bitnami/solr] Release 9.6.1 ([#32893](https://github.com/bitnami/charts/pull/32893))
+* [bitnami/solr] :zap: :arrow_up: Update dependency references ([#35677](https://github.com/bitnami/charts/pull/35677))
+
+## <small>9.6.9 (2025-08-07)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#35654) ([59a92ac](https://github.com/bitnami/charts/commit/59a92ac0f421e0746ebd147073a66b2811530165)), closes [#35654](https://github.com/bitnami/charts/issues/35654)
+
+## <small>9.6.8 (2025-07-24)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#35291) ([44fd9c5](https://github.com/bitnami/charts/commit/44fd9c5c94be137d14a38ace5a2bd728b8f8c66d)), closes [#35291](https://github.com/bitnami/charts/issues/35291)
+
+## <small>9.6.7 (2025-07-15)</small>
+
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#35125) ([22cb24b](https://github.com/bitnami/charts/commit/22cb24bac3320c4df0574859b2c0d45a39f8ba68)), closes [#35125](https://github.com/bitnami/charts/issues/35125)
+
+## <small>9.6.6 (2025-07-08)</small>
+
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#34843) ([c69d5bc](https://github.com/bitnami/charts/commit/c69d5bcf19dce8dbebea97c2198babb46c1d9671)), closes [#34843](https://github.com/bitnami/charts/issues/34843)
+
+## <small>9.6.5 (2025-06-08)</small>
+
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#34253) ([d1a06ef](https://github.com/bitnami/charts/commit/d1a06eff8e5fb1566ecc76f8520035de0fc74807)), closes [#34253](https://github.com/bitnami/charts/issues/34253)
+
+## <small>9.6.4 (2025-05-09)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/solr] :zap: :arrow_up: Update dependency references (#33583) ([91aceee](https://github.com/bitnami/charts/commit/91aceee9beb02e970c02f2b624756548e3af24ea)), closes [#33583](https://github.com/bitnami/charts/issues/33583)
+
+## <small>9.6.3 (2025-05-07)</small>
+
+* [bitnami/solr] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33435) ([537f842](https://github.com/bitnami/charts/commit/537f842cd75f07bab23b261697a89a47be5e65e7)), closes [#33435](https://github.com/bitnami/charts/issues/33435)
+
+## <small>9.6.2 (2025-05-07)</small>
+
+* [bitnami/solr] Add persistentvolumeclaim retention on solr statefulset (#33310) ([34ee22f](https://github.com/bitnami/charts/commit/34ee22fa3bc6d59cb3969a76d7655515e8969049)), closes [#33310](https://github.com/bitnami/charts/issues/33310)
+* Fix typo mentioning Geode in Solr and Zookeeper (#32987) ([9dd4289](https://github.com/bitnami/charts/commit/9dd42891c2c9f5ed339e5dbc1506a13f29e0d45c)), closes [#32987](https://github.com/bitnami/charts/issues/32987)
+
+## <small>9.6.1 (2025-04-09)</small>
+
+* [bitnami/solr] Release 9.6.1 (#32893) ([0326481](https://github.com/bitnami/charts/commit/0326481eb281ec144bc172c14ed160bdd6239a25)), closes [#32893](https://github.com/bitnami/charts/issues/32893)
 
 ## 9.6.0 (2025-04-04)
 

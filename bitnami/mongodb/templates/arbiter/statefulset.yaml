@@ -126,6 +126,9 @@ spec:
             - /bitnami/scripts/generate-certs.sh
           args:
             - -s {{ include "mongodb.arbiter.service.nameOverride" . }}
+          {{- if .Values.tls.securityContext }}
+          securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.tls.securityContext "context" $) | nindent 12 }}
+          {{- end }}
         {{- end }}
       containers:
         - name: mongodb-arbiter
@@ -303,7 +306,7 @@ spec:
         - name: common-scripts
           configMap:
             name: {{ printf "%s-common-scripts" (include "mongodb.fullname" .) }}
-            defaultMode: 0o555
+            defaultMode: 0555
         {{- if or .Values.arbiter.configuration .Values.arbiter.existingConfigmap }}
         - name: config
           configMap:
@@ -319,10 +322,10 @@ spec:
             items:
             - key: mongodb-ca-cert
               path: mongodb-ca-cert
-              mode: 0o600
+              mode: 0600
             - key: mongodb-ca-key
               path: mongodb-ca-key
-              mode: 0o600
+              mode: 0600
         {{- else }}
         - name: mongodb-certs-0
           secret:

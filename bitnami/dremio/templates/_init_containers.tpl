@@ -235,7 +235,7 @@ Init container definition for waiting for the database to be ready
     - -ec
     - |
       set -e
-      {{- if .context.Values.usePasswordFiles }}
+      {{- if .Values.usePasswordFiles }}
       # We need to load all the secret env vars to the system
       for file in $(find /bitnami/dremio/secrets -type f); do
           env_var_name="$(basename $file)"
@@ -479,7 +479,7 @@ Init container definition for waiting for the database to be ready
           fi
       }
 
-      host="{{ ternary "https" "http" .Values.dremio.tls.enabled }}://{{ include "dremio.master-coordinator.fullname" . }}-0.{{ printf "%s-headless" (include "common.names.fullname" .) | trunc 63 | trimSuffix "-" }}:{{ .Values.dremio.containerPorts.web }}"
+      host="{{ ternary "https" "http" .Values.dremio.tls.enabled }}://{{ include "dremio.master-coordinator.fullname" . }}-0.{{ include "dremio.headlessServiceName" . }}:{{ .Values.dremio.containerPorts.web }}"
 
       echo "Checking connection to $host"
       if retry_while "check_master_coordinator $host"; then

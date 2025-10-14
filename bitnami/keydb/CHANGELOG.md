@@ -1,8 +1,86 @@
 # Changelog
 
-## 0.5.4 (2025-03-21)
+## 0.5.22 (2025-08-23)
 
-* [bitnami/keydb] Release 0.5.4 ([#32554](https://github.com/bitnami/charts/pull/32554))
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references ([#36176](https://github.com/bitnami/charts/pull/36176))
+
+## <small>0.5.21 (2025-08-13)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35832) ([7d2dd44](https://github.com/bitnami/charts/commit/7d2dd447f18e3c4776a90f6efc4a16d7918b0e64)), closes [#35832](https://github.com/bitnami/charts/issues/35832)
+
+## <small>0.5.20 (2025-08-09)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35712) ([201f64f](https://github.com/bitnami/charts/commit/201f64fe5aa7411a320169d550527c52089a681e)), closes [#35712](https://github.com/bitnami/charts/issues/35712)
+
+## <small>0.5.19 (2025-08-07)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35617) ([d6de187](https://github.com/bitnami/charts/commit/d6de187c57d83ba02b797c90bbc7e779b144c7d3)), closes [#35617](https://github.com/bitnami/charts/issues/35617)
+
+## <small>0.5.18 (2025-08-07)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35579) ([1355f5e](https://github.com/bitnami/charts/commit/1355f5e18e2b9cfe2846abe1b6293d2ddd4cd6bc)), closes [#35579](https://github.com/bitnami/charts/issues/35579)
+
+## <small>0.5.17 (2025-08-07)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35521) ([3d1b053](https://github.com/bitnami/charts/commit/3d1b053c21eb21accaa3c2461ac2ceb4f6a9f24c)), closes [#35521](https://github.com/bitnami/charts/issues/35521)
+
+## <small>0.5.16 (2025-07-15)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#35099) ([753d69d](https://github.com/bitnami/charts/commit/753d69d10d708f6e0d15f173ee02f077daee58fe)), closes [#35099](https://github.com/bitnami/charts/issues/35099)
+
+## <small>0.5.15 (2025-07-09)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#34946) ([56e89ea](https://github.com/bitnami/charts/commit/56e89ea4be5d315cdbab391eabc4cc5a990975ea)), closes [#34946](https://github.com/bitnami/charts/issues/34946)
+
+## <small>0.5.14 (2025-07-01)</small>
+
+*  [bitnami/keydb] Fix StatefulSet capitalization in replica HPA (#34729) ([124ac14](https://github.com/bitnami/charts/commit/124ac149b03c77d54b8aaccc268bbf0da22f3572)), closes [#34729](https://github.com/bitnami/charts/issues/34729)
+
+## <small>0.5.13 (2025-06-13)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#34485) ([6e0d14c](https://github.com/bitnami/charts/commit/6e0d14c221d3475dc491144f8394108b3b806bd0)), closes [#34485](https://github.com/bitnami/charts/issues/34485)
+
+## <small>0.5.12 (2025-06-08)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#34250) ([0c5977d](https://github.com/bitnami/charts/commit/0c5977d58de0c9f7d8ee83037aeb32c43271e03d)), closes [#34250](https://github.com/bitnami/charts/issues/34250)
+
+## <small>0.5.11 (2025-06-06)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#34213) ([bf69f89](https://github.com/bitnami/charts/commit/bf69f8926c844dbfdd377131e580c6d4910f8141)), closes [#34213](https://github.com/bitnami/charts/issues/34213)
+
+## <small>0.5.10 (2025-05-22)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#33823) ([53b341e](https://github.com/bitnami/charts/commit/53b341e069b24a179b3b5146f4ab2f68d0c0d820)), closes [#33823](https://github.com/bitnami/charts/issues/33823)
+
+## <small>0.5.9 (2025-05-19)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#33746) ([cbd1f29](https://github.com/bitnami/charts/commit/cbd1f2976e1869f1db3e7f4769a7bd6899bf4788)), closes [#33746](https://github.com/bitnami/charts/issues/33746)
+
+## <small>0.5.8 (2025-05-15)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#33706) ([38c7ba6](https://github.com/bitnami/charts/commit/38c7ba65672f4e79c2f9d71a82df479f2d5c6e05)), closes [#33706](https://github.com/bitnami/charts/issues/33706)
+
+## <small>0.5.7 (2025-05-13)</small>
+
+* [bitnami/keydb] :zap: :arrow_up: Update dependency references (#33634) ([826148b](https://github.com/bitnami/charts/commit/826148b6ef282ddf642e49ff880bc121a91b6c72)), closes [#33634](https://github.com/bitnami/charts/issues/33634)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>0.5.6 (2025-05-06)</small>
+
+* [bitnami/keydb] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33381) ([9fce7db](https://github.com/bitnami/charts/commit/9fce7db045bb0eb41566f8b21176b0c9cebe9818)), closes [#33381](https://github.com/bitnami/charts/issues/33381)
+
+## <small>0.5.5 (2025-04-20)</small>
+
+* [bitnami/keydb] Release 0.5.5 (#33084) ([333e4ec](https://github.com/bitnami/charts/commit/333e4ec92b771a936ad0ba4ce42d4debb8ff0c57)), closes [#33084](https://github.com/bitnami/charts/issues/33084)
+
+## <small>0.5.4 (2025-03-21)</small>
+
+* [bitnami/*] Add tanzuCategory annotation (#32409) ([a8fba5c](https://github.com/bitnami/charts/commit/a8fba5cb01f6f4464ca7f69c50b0fbe97d837a95)), closes [#32409](https://github.com/bitnami/charts/issues/32409)
+* [bitnami/keydb] Release 0.5.4 (#32554) ([0dcd062](https://github.com/bitnami/charts/commit/0dcd0627b23297021d46bfe89ae634bfd87fdbbd)), closes [#32554](https://github.com/bitnami/charts/issues/32554)
 
 ## <small>0.5.3 (2025-03-10)</small>
 

@@ -1,12 +1,12 @@
 <!--- app-name: MongoDB&reg; Sharded -->
 
-# MongoDB(R) Sharded packaged by Bitnami
+# MongoDB&reg; Sharded packaged by Bitnami
 
-MongoDB(R) is an open source NoSQL database that uses JSON for data storage. MongoDB(TM) Sharded improves scalability and reliability for large datasets by distributing data across multiple machines.
+MongoDB&reg; is an open source NoSQL database that uses JSON for data storage. MongoDB&trade; Sharded improves scalability and reliability for large datasets by distributing data across multiple machines.
 
 [Overview of MongoDB&reg; Sharded](http://www.mongodb.org)
 
-Disclaimer: The respective trademarks mentioned in the offering are owned by the respective companies. We do not provide a commercial license for any of these products. This listing has an open-source license. MongoDB(R) is run and maintained by MongoDB, which is a completely separate project from Bitnami.
+Disclaimer: The respective trademarks mentioned in the offering are owned by the respective companies. We do not provide a commercial license for any of these products. This listing has an open-source license. MongoDB&reg; is run and maintained by MongoDB, which is a completely separate project from Bitnami.
 
 ## TL;DR
 
@@ -16,6 +16,17 @@ helm install my-release oci://registry-1.docker.io/bitnamicharts/mongodb-sharded
 
 Looking to use MongoDBreg; Sharded in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
+## ⚠️ Important Notice: Upcoming changes to the Bitnami Catalog
+
+Beginning August 28th, 2025, Bitnami will evolve its public catalog to offer a curated set of hardened, security-focused images under the new [Bitnami Secure Images initiative](https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure-images-for-production-ready-containerized-applications). As part of this transition:
+
+- Granting community users access for the first time to security-optimized versions of popular container images.
+- Bitnami will begin deprecating support for non-hardened, Debian-based software images in its free tier and will gradually remove non-latest tags from the public catalog. As a result, community users will have access to a reduced number of hardened images. These images are published only under the “latest” tag and are intended for development purposes
+- Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/bitnami) to the “Bitnami Legacy” repository (docker.io/bitnamilegacy), where they will no longer receive updates.
+- For production workloads and long-term support, users are encouraged to adopt Bitnami Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
+
+These changes aim to improve the security posture of all Bitnami users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [Bitnami Secure Images announcement](https://github.com/bitnami/containers/issues/83267).
+
 ## Introduction
 
 This chart bootstraps a [MongoDB(&reg;) Sharded](https://github.com/bitnami/containers/tree/main/bitnami/mongodb-sharded) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
@@ -23,8 +34,6 @@ This chart bootstraps a [MongoDB(&reg;) Sharded](https://github.com/bitnami/cont
 Classified as a NoSQL database, MongoDB&reg; eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas, making the integration of data in certain types of applications easier and faster.
 
 This chart uses the [sharding method](https://docs.mongodb.com/manual/sharding/) for distributing data across multiple machines. This is meant for deployments with very large data sets and high throughput operations.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -263,6 +272,7 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 | `service.ports.mongodb`                              | MongoDB&reg; service port                                                                                                                                                                                                                             | `27017`                           |
 | `service.clusterIP`                                  | Static clusterIP or None for headless services                                                                                                                                                                                                        | `""`                              |
 | `service.nodePorts.mongodb`                          | Specify the nodePort value for the LoadBalancer and NodePort service types.                                                                                                                                                                           | `""`                              |
+| `service.nodePorts.metrics`                          | Specify the metrics nodePort value for the LoadBalancer and NodePort service types.                                                                                                                                                                   | `""`                              |
 | `service.externalIPs`                                | External IP list to use with ClusterIP service type                                                                                                                                                                                                   | `[]`                              |
 | `service.loadBalancerIP`                             | Static IP Address to use for LoadBalancer service type                                                                                                                                                                                                | `""`                              |
 | `service.loadBalancerSourceRanges`                   | List of IP ranges allowed access to load balancer (if supported)                                                                                                                                                                                      | `[]`                              |
@@ -322,6 +332,7 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 | `configsvr.persistence.accessModes`                           | Use volume as ReadOnly or ReadWrite                                                                                                                                                                                                   | `["ReadWriteOnce"]`                                    |
 | `configsvr.persistence.size`                                  | PersistentVolumeClaim size                                                                                                                                                                                                            | `8Gi`                                                  |
 | `configsvr.persistence.annotations`                           | Persistent Volume annotations                                                                                                                                                                                                         | `{}`                                                   |
+| `configsvr.persistence.selector`                              | Selector to match an existing Persistent Volume for Config Server data PVC                                                                                                                                                            | `{}`                                                   |
 | `configsvr.persistentVolumeClaimRetentionPolicy.enabled`      | Enable Persistent volume retention policy for Config Server StatefulSet                                                                                                                                                               | `false`                                                |
 | `configsvr.persistentVolumeClaimRetentionPolicy.whenScaled`   | Volume retention behavior when the replica count of the StatefulSet is reduced                                                                                                                                                        | `Retain`                                               |
 | `configsvr.persistentVolumeClaimRetentionPolicy.whenDeleted`  | Volume retention behavior that applies when the StatefulSet is deleted                                                                                                                                                                | `Retain`                                               |
@@ -563,6 +574,7 @@ The Bitnami Kibana chart supports mounting extra volumes (either PVCs, secrets o
 | `shardsvr.persistence.accessModes`                          | Use volume as ReadOnly or ReadWrite                                                      | `["ReadWriteOnce"]` |
 | `shardsvr.persistence.size`                                 | PersistentVolumeClaim size                                                               | `8Gi`               |
 | `shardsvr.persistence.annotations`                          | Additional volume annotations                                                            | `{}`                |
+| `shardsvr.persistence.selector`                             | Selector to match an existing Persistent Volume for Shard data PVC                       | `{}`                |
 | `shardsvr.persistentVolumeClaimRetentionPolicy.enabled`     | Enable Persistent volume retention policy for Shard replicas StatefulSet                 | `false`             |
 | `shardsvr.persistentVolumeClaimRetentionPolicy.whenScaled`  | Volume retention behavior when the replica count of the StatefulSet is reduced           | `Retain`            |
 | `shardsvr.persistentVolumeClaimRetentionPolicy.whenDeleted` | Volume retention behavior that applies when the StatefulSet is deleted                   | `Retain`            |

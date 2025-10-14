@@ -1,8 +1,51 @@
 # Changelog
 
+## 2.31.7 (2025-10-03)
+
+* [bitnami/common] Replace "+" to "_" in value of app.kubernetes.io/version ([#36324](https://github.com/bitnami/charts/pull/36324))
+
+## <small>2.31.6 (2025-09-22)</small>
+
+* [bitnami/*] Remove annotations.category (#36224) ([2abc0f9](https://github.com/bitnami/charts/commit/2abc0f9d7e89a5453e57f029c66f581b3d5855ef)), closes [#36224](https://github.com/bitnami/charts/issues/36224)
+* [bitnami/common] Replace "+" to "_" in value of app.kubernetes.io/version… (#36272) ([f25c8f4](https://github.com/bitnami/charts/commit/f25c8f4fbabdf66fa9094311cb94304a16fb698d)), closes [#36272](https://github.com/bitnami/charts/issues/36272)
+
+## <small>2.31.4 (2025-08-12)</small>
+
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/common] docs: remove references to deprecated helpers on README (#35412) ([6239867](https://github.com/bitnami/charts/commit/623986710e3b80f11076d3ded1dc1681d8df62c5)), closes [#35412](https://github.com/bitnami/charts/issues/35412)
+* [bitnami/common] feat: adapt common.errors.insecureImages for BSI (#35751) ([c6bc598](https://github.com/bitnami/charts/commit/c6bc59845497f84f740e47075f8af840f150536e)), closes [#35751](https://github.com/bitnami/charts/issues/35751)
+
+## <small>2.31.3 (2025-06-12)</small>
+
+* [bitnami/common] bugfix: common.capabilities.vpa.apiVersion context (#34372) ([440d610](https://github.com/bitnami/charts/commit/440d6101d0be6e4a37b5f04c6c1ced414d632bfb)), closes [#34372](https://github.com/bitnami/charts/issues/34372)
+
+## <small>2.31.2 (2025-05-20)</small>
+
+* [bitnami/common] Prevent release name from breaking DNS naming specification (#33773) ([07f5233](https://github.com/bitnami/charts/commit/07f523329cad2dfe999b62dc45aa0072541f90be)), closes [#33773](https://github.com/bitnami/charts/issues/33773)
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+
+## <small>2.31.1 (2025-05-07)</small>
+
+* [bitnami/common] chore: :recycle: Remove unused helpers (#33496) ([d96e16a](https://github.com/bitnami/charts/commit/d96e16aa1e2f1d42de829330f5c0dbc1c4666493)), closes [#33496](https://github.com/bitnami/charts/issues/33496)
+
+## 2.31.0 (2025-05-05)
+
+* [bitnami/common] chore: :recycle: Remove deprecated APIs (<1.23.0) (#33320) ([3826a9e](https://github.com/bitnami/charts/commit/3826a9e1488c12545f11cf8cb1a11d23daf90602)), closes [#33320](https://github.com/bitnami/charts/issues/33320)
+
+## <small>2.30.2 (2025-04-30)</small>
+
+* [bitnami/common] add namespaces to extraPodAffinityTerms for affinities (#33173) ([4e35d60](https://github.com/bitnami/charts/commit/4e35d6016945db7b9fd4eef72b177d4826d69ece)), closes [#33173](https://github.com/bitnami/charts/issues/33173)
+
+## <small>2.30.1 (2025-04-30)</small>
+
+* [bitnami/common] Allows tpl in provided passwords "common.secrets.passwords.manage" (#33196) ([1f53dd8](https://github.com/bitnami/charts/commit/1f53dd862f2aca1071f5734c3ba825e3ff4fa383)), closes [#33196](https://github.com/bitnami/charts/issues/33196)
+* [bitnami/common] Restore 'Paremeters' section of the README (#32861) ([72f3f35](https://github.com/bitnami/charts/commit/72f3f353e35da99060a1662770655a12a2253887)), closes [#32861](https://github.com/bitnami/charts/issues/32861)
+
 ## 2.30.0 (2025-02-19)
 
-* [bitnami/common] Add helper to check API versions ([#31969](https://github.com/bitnami/charts/pull/31969))
+* [bitnami/*] Use CDN url for the Bitnami Application Icons (#31881) ([d9bb11a](https://github.com/bitnami/charts/commit/d9bb11a9076b9bfdcc70ea022c25ef50e9713657)), closes [#31881](https://github.com/bitnami/charts/issues/31881)
+* [bitnami/common] Add helper to check API versions (#31969) ([5ba89c5](https://github.com/bitnami/charts/commit/5ba89c5afc3d57e36f90364638d9beabb32499f4)), closes [#31969](https://github.com/bitnami/charts/issues/31969)
+* Update copyright year (#31682) ([e9f02f5](https://github.com/bitnami/charts/commit/e9f02f5007068751f7eb2270fece811e685c99b6)), closes [#31682](https://github.com/bitnami/charts/issues/31682)
 
 ## <small>2.29.1 (2025-01-23)</small>
 

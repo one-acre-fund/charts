@@ -62,7 +62,7 @@ Create a default fully qualified redis name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 */}}
 {{- define "superset.redis.fullname" -}}
-{{- include "common.names.dependency.fullname" (dict "chartName" "redis-master" "chartValues" .Values.redis "context" $) -}}
+{{- include "common.names.dependency.fullname" (dict "chartName" "redis" "chartValues" .Values.redis "context" $) -}}
 {{- end -}}
 
 {{/*
@@ -124,7 +124,11 @@ Get the configmap name
 Add environment variables to configure database values
 */}}
 {{- define "superset.database.host" -}}
-{{- ternary (include "superset.postgresql.fullname" .) .Values.externalDatabase.host .Values.postgresql.enabled -}}
+{{- if eq .Values.postgresql.architecture "replication" }}
+    {{- printf "%s-primary" (ternary (include "superset.postgresql.fullname" .) (tpl .Values.externalDatabase.host $) .Values.postgresql.enabled) -}}
+{{- else -}}
+    {{- ternary (include "superset.postgresql.fullname" .) (tpl .Values.externalDatabase.host $) .Values.postgresql.enabled -}}
+{{- end -}}
 {{- end -}}
 
 {{/*
@@ -171,7 +175,11 @@ Add environment variables to configure database values
 Add environment variables to configure redis values
 */}}
 {{- define "superset.redis.host" -}}
-{{- ternary (include "superset.redis.fullname" .) .Values.externalRedis.host .Values.redis.enabled -}}
+{{- if .Values.redis.enabled -}}
+    {{- printf "%s-master" (include "superset.redis.fullname" .) -}}
+{{- else -}}
+    {{- printf "%s" (tpl .Values.externalRedis.host $) -}}
+{{- end -}}
 {{- end -}}
 
 {{/*
@@ -405,11 +413,13 @@ Init container definition to wait for Redis
         {{- end }}
 
         check_examples_database() {
-            echo "SELECT dashboard_title FROM dashboards" | postgresql_remote_execute_print_output "$SUPERSET_DATABASE_HOST" "$SUPERSET_DATABASE_PORT_NUMBER" "$SUPERSET_DATABASE_NAME" "$SUPERSET_DATABASE_USER" "$SUPERSET_DATABASE_PASSWORD" | grep "Dashboard"
+            # deck.gl Demo is one of the latest dashboards loaded.
+            echo "SELECT dashboard_title FROM dashboards" | postgresql_remote_execute_print_output "$SUPERSET_DATABASE_HOST" "$SUPERSET_DATABASE_PORT_NUMBER" "$SUPERSET_DATABASE_NAME" "$SUPERSET_DATABASE_USER" "$SUPERSET_DATABASE_PASSWORD" | grep "deck.gl Demo"
         }
 
         info "Checking if the 'examples' database exists at $SUPERSET_DATABASE_HOST:$SUPERSET_DATABASE_PORT_NUMBER"
-        if ! retry_while "check_examples_database"; then
+        # Retry 5 min
+        if ! retry_while "check_examples_database" 60; then
             error "Examples database not ready yet"
             exit 1
         else

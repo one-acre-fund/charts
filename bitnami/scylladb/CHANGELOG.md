@@ -1,8 +1,61 @@
 # Changelog
 
+## 5.0.5 (2025-08-19)
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references ([#36145](https://github.com/bitnami/charts/pull/36145))
+
+## <small>5.0.4 (2025-08-08)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#35676) ([26d68e0](https://github.com/bitnami/charts/commit/26d68e094ad724342b7a45091d300868350e6dac)), closes [#35676](https://github.com/bitnami/charts/issues/35676)
+
+## <small>5.0.3 (2025-08-07)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#35655) ([c1197ac](https://github.com/bitnami/charts/commit/c1197ac1897bd0be0accc88c1d64b87429a3a827)), closes [#35655](https://github.com/bitnami/charts/issues/35655)
+
+## <small>5.0.2 (2025-08-06)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#35439) ([7ec7f11](https://github.com/bitnami/charts/commit/7ec7f11240832ce85ab78906c3976067111a9e66)), closes [#35439](https://github.com/bitnami/charts/issues/35439)
+
+## <small>5.0.1 (2025-07-15)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#35128) ([a3a15ef](https://github.com/bitnami/charts/commit/a3a15ef99ebf7be5b0165a30f91f2b29a34e9043)), closes [#35128](https://github.com/bitnami/charts/issues/35128)
+
+## 5.0.0 (2025-07-14)
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#35045) ([8623aff](https://github.com/bitnami/charts/commit/8623affe43b7da1e04804954a69561281d13a094)), closes [#35045](https://github.com/bitnami/charts/issues/35045)
+
+## <small>4.0.5 (2025-07-09)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#34978) ([ded08d1](https://github.com/bitnami/charts/commit/ded08d12fe99a5ed37d87af89dc5da2f23226ecd)), closes [#34978](https://github.com/bitnami/charts/issues/34978)
+
+## <small>4.0.4 (2025-06-13)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#34491) ([b36c8a2](https://github.com/bitnami/charts/commit/b36c8a20acfc4bc1f7bad7d5b435e14a4af7a649)), closes [#34491](https://github.com/bitnami/charts/issues/34491)
+
+## <small>4.0.3 (2025-06-05)</small>
+
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#34120) ([ff39819](https://github.com/bitnami/charts/commit/ff3981932b4ccb138c9bc208cd4d999d3e387a66)), closes [#34120](https://github.com/bitnami/charts/issues/34120)
+
+## <small>4.0.2 (2025-05-31)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/scylladb] :zap: :arrow_up: Update dependency references (#34023) ([76c10cf](https://github.com/bitnami/charts/commit/76c10cf217c5f37c4806bfc3b06683b849d8903f)), closes [#34023](https://github.com/bitnami/charts/issues/34023)
+
+## <small>4.0.1 (2025-05-01)</small>
+
+* [bitnami/scylladb] Release 4.0.1 (#33283) ([379064a](https://github.com/bitnami/charts/commit/379064a0cd45ee361b356b558e18e305f687e528)), closes [#33283](https://github.com/bitnami/charts/issues/33283)
+
+## 4.0.0 (2025-04-15)
+
+* [bitnami/scylladb] Release 4.0.0 (#33022) ([834b80a](https://github.com/bitnami/charts/commit/834b80a2e22e5d4545d6f91e9ab80a2cb59d197b)), closes [#33022](https://github.com/bitnami/charts/issues/33022)
+
 ## 3.3.0 (2025-04-04)
 
-* [bitnami/scylladb] Set `usePasswordFiles=true` by default ([#32710](https://github.com/bitnami/charts/pull/32710))
+* [bitnami/scylladb] Set `usePasswordFiles=true` by default (#32710) ([5bdbf23](https://github.com/bitnami/charts/commit/5bdbf23b803e784ffafa47108f839a6d1a64ae0b)), closes [#32710](https://github.com/bitnami/charts/issues/32710)
 
 ## <small>3.2.1 (2025-03-22)</small>
 

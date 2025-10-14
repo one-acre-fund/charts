@@ -1,8 +1,144 @@
 # Changelog
 
-## 16.6.2 (2025-04-07)
+## 16.7.26 (2025-08-14)
 
-* [bitnami/postgresql] Release 16.6.2 ([#32842](https://github.com/bitnami/charts/pull/32842))
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references ([#35921](https://github.com/bitnami/charts/pull/35921))
+
+## <small>16.7.25 (2025-08-14)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35895) ([8a562c7](https://github.com/bitnami/charts/commit/8a562c7ca004e8fc5a672f405a384940c39e2b08)), closes [#35895](https://github.com/bitnami/charts/issues/35895)
+
+## <small>16.7.24 (2025-08-08)</small>
+
+* [bitnami/postgresql] Remove hardcoded references to image repository (#35694) ([bc094f7](https://github.com/bitnami/charts/commit/bc094f791daca01aa0b07e73ded566fef3a07896)), closes [#35694](https://github.com/bitnami/charts/issues/35694)
+
+## <small>16.7.23 (2025-08-08)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35631) ([652fbf8](https://github.com/bitnami/charts/commit/652fbf8f02c27adce46fcdb9fa979a0240f97039)), closes [#35631](https://github.com/bitnami/charts/issues/35631)
+
+## <small>16.7.22 (2025-08-07)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35518) ([4f82f0a](https://github.com/bitnami/charts/commit/4f82f0aa93399b88880c20b83cecd14d1876c749)), closes [#35518](https://github.com/bitnami/charts/issues/35518)
+
+## <small>16.7.21 (2025-07-21)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35235) ([e3f9cac](https://github.com/bitnami/charts/commit/e3f9cac9c285f30febbce7a27d83dfa582a6fc09)), closes [#35235](https://github.com/bitnami/charts/issues/35235)
+
+## <small>16.7.20 (2025-07-18)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/postgresql] Rename backup.cronjob.timeZone to backup.cronjob.timezone (#35153) ([8a2dca9](https://github.com/bitnami/charts/commit/8a2dca9f6b2d37d2975fb1f3ddfe23c9ca963336)), closes [#35153](https://github.com/bitnami/charts/issues/35153)
+
+## <small>16.7.19 (2025-07-15)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35116) ([15c6eee](https://github.com/bitnami/charts/commit/15c6eeeee5d8454b93eeada473a80a0230d6d3ae)), closes [#35116](https://github.com/bitnami/charts/issues/35116)
+
+## <small>16.7.18 (2025-07-12)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35031) ([57712c4](https://github.com/bitnami/charts/commit/57712c4ec8815f8a641234c2be519610ca31ff14)), closes [#35031](https://github.com/bitnami/charts/issues/35031)
+
+## <small>16.7.17 (2025-07-11)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#35012) ([b57f28f](https://github.com/bitnami/charts/commit/b57f28f07f6d93331979a6460c7204dfc67fb29e)), closes [#35012](https://github.com/bitnami/charts/issues/35012)
+
+## <small>16.7.16 (2025-07-09)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34943) ([c3ac2ad](https://github.com/bitnami/charts/commit/c3ac2ad4660570101dd734c6b2b1caf480ef4ad1)), closes [#34943](https://github.com/bitnami/charts/issues/34943)
+
+## <small>16.7.15 (2025-07-01)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34741) ([d71b40e](https://github.com/bitnami/charts/commit/d71b40e05b95ab88db99478d3c2ee04e131b63bd)), closes [#34741](https://github.com/bitnami/charts/issues/34741)
+
+## <small>16.7.14 (2025-06-26)</small>
+
+* [bitnami/postgresql] Update dependencies (#34650) ([25dc474](https://github.com/bitnami/charts/commit/25dc47460564f2c15aadd286037a32710665fce0)), closes [#34650](https://github.com/bitnami/charts/issues/34650)
+
+## <small>16.7.13 (2025-06-19)</small>
+
+* [bitnami/postgresql] Fix invalid template reference in postgresql update-password job (#34527) ([6ee27f5](https://github.com/bitnami/charts/commit/6ee27f537363be3f3e5279bfe726e6bae5c3cfb5)), closes [#34527](https://github.com/bitnami/charts/issues/34527)
+
+## <small>16.7.12 (2025-06-16)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34377) ([858195b](https://github.com/bitnami/charts/commit/858195b20aa25e8b985e5d1a8e85b8498870987a)), closes [#34377](https://github.com/bitnami/charts/issues/34377)
+
+## <small>16.7.11 (2025-06-11)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34353) ([ea1c058](https://github.com/bitnami/charts/commit/ea1c058afa569f454a2955380428a5276a89c885)), closes [#34353](https://github.com/bitnami/charts/issues/34353)
+* Fix incorrect value paths in password update job documentation (#34057) ([8e61c28](https://github.com/bitnami/charts/commit/8e61c28f6fabe634533eca525aa4ab35065f28b2)), closes [#34057](https://github.com/bitnami/charts/issues/34057)
+
+## <small>16.7.10 (2025-06-06)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34210) ([5880187](https://github.com/bitnami/charts/commit/5880187fcb235887cbe944dad6e38152471badb9)), closes [#34210](https://github.com/bitnami/charts/issues/34210)
+
+## <small>16.7.9 (2025-06-03)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34076) ([1063457](https://github.com/bitnami/charts/commit/10634578d525989118eba62cc72d2eb86b96029f)), closes [#34076](https://github.com/bitnami/charts/issues/34076)
+
+## <small>16.7.8 (2025-05-30)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#34009) ([41b1852](https://github.com/bitnami/charts/commit/41b1852d4b83df903fc4148e09a8406922a821d3)), closes [#34009](https://github.com/bitnami/charts/issues/34009)
+
+## <small>16.7.7 (2025-05-30)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#33992) ([8d6133c](https://github.com/bitnami/charts/commit/8d6133cdb968ce73091026ec8b8031fd8cdd767e)), closes [#33992](https://github.com/bitnami/charts/issues/33992)
+
+## <small>16.7.6 (2025-05-30)</small>
+
+* [bitnami/postgresql] Update dependencies (#33986) ([400a5e5](https://github.com/bitnami/charts/commit/400a5e5dc0b0db3d222a588f49b6b8577da2dd75)), closes [#33986](https://github.com/bitnami/charts/issues/33986)
+
+## <small>16.7.5 (2025-05-27)</small>
+
+* [bitnami/*] Add CNAB link for charts on Azure MP (#33695) ([6312371](https://github.com/bitnami/charts/commit/63123718de94dbedd798d380807b57031e98ed4f)), closes [#33695](https://github.com/bitnami/charts/issues/33695)
+* [bitnami/*] Update CNAB tip (#33741) ([2bc74f3](https://github.com/bitnami/charts/commit/2bc74f3f539481ceaa12833c114047583912b748)), closes [#33741](https://github.com/bitnami/charts/issues/33741)
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#33916) ([96adefd](https://github.com/bitnami/charts/commit/96adefd64d7296b21fd2f491cc14bef9f9e31548)), closes [#33916](https://github.com/bitnami/charts/issues/33916)
+
+## <small>16.7.4 (2025-05-13)</small>
+
+* [bitnami/postgresql] Support for global postgresql fullnameOverride (#33616) ([7e006db](https://github.com/bitnami/charts/commit/7e006db0e1ed2d6dbc1bf1ffc3ebeac48726efa5)), closes [#33616](https://github.com/bitnami/charts/issues/33616)
+
+## <small>16.7.3 (2025-05-13)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#33619) ([ab01617](https://github.com/bitnami/charts/commit/ab0161760fa3754e64945e5a94fd95866c8b929e)), closes [#33619](https://github.com/bitnami/charts/issues/33619)
+
+## <small>16.7.2 (2025-05-09)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#33598) ([6fa611b](https://github.com/bitnami/charts/commit/6fa611bcc3611666ac322d421ed6c2a0eb10646c)), closes [#33598](https://github.com/bitnami/charts/issues/33598)
+
+## <small>16.7.1 (2025-05-08)</small>
+
+* [bitnami/postgresql] :zap: :arrow_up: Update dependency references (#33577) ([71ca86a](https://github.com/bitnami/charts/commit/71ca86a822cee8d5125cab0cc7b8adc43d3f115f)), closes [#33577](https://github.com/bitnami/charts/issues/33577)
+
+## 16.7.0 (2025-05-08)
+
+* [bitnami/postgresql] Global postgres fullname override, needed when the fullname needs to be shared  ([81a2c5f](https://github.com/bitnami/charts/commit/81a2c5f710bb3ba6a8a338cde54a309f3697bf32)), closes [#33198](https://github.com/bitnami/charts/issues/33198)
+
+## <small>16.6.7 (2025-05-06)</small>
+
+* [bitnami/postgresql] Release 16.6.7 (#33384) ([71bd413](https://github.com/bitnami/charts/commit/71bd413abfa6e4622f5a479c2d6ffe965b7986b1)), closes [#33384](https://github.com/bitnami/charts/issues/33384)
+
+## <small>16.6.6 (2025-04-25)</small>
+
+* [bitnami/postgresql] fix(backup): mount secrets with password file (#33144) ([121d54e](https://github.com/bitnami/charts/commit/121d54ed2dae38cf311ef7a70287e20e7b68bd3e)), closes [#33144](https://github.com/bitnami/charts/issues/33144)
+
+## <small>16.6.5 (2025-04-24)</small>
+
+* [bitnami/postgresql] Release 16.6.5 (#33165) ([67bec6a](https://github.com/bitnami/charts/commit/67bec6a685cbec208524c7f67397e2a55549b187)), closes [#33165](https://github.com/bitnami/charts/issues/33165)
+
+## <small>16.6.4 (2025-04-23)</small>
+
+*  [bitnami/postgresql] Fix annotations not applied to passwordUpdateJob (#32969) ([307b38e](https://github.com/bitnami/charts/commit/307b38e8a536a10902ef3d667ef82396b737b94d)), closes [#32969](https://github.com/bitnami/charts/issues/32969)
+
+## <small>16.6.3 (2025-04-09)</small>
+
+* [bitnami/postgresql] Release 16.6.3 (#32915) ([ea17904](https://github.com/bitnami/charts/commit/ea1790406d0ec080c9eed3157402f702eb6c73a1)), closes [#32915](https://github.com/bitnami/charts/issues/32915)
+
+## <small>16.6.2 (2025-04-07)</small>
+
+* [bitnami/postgresql] Release 16.6.2 (#32842) ([9668041](https://github.com/bitnami/charts/commit/96680412e57a9beefcebc0d86be4e859fd393197)), closes [#32842](https://github.com/bitnami/charts/issues/32842)
 
 ## <small>16.6.1 (2025-04-07)</small>
 

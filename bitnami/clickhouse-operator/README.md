@@ -16,13 +16,22 @@ helm install my-release oci://registry-1.docker.io/bitnamicharts/clickhouse-oper
 
 Looking to use ClickHouse Operator in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
+## ⚠️ Important Notice: Upcoming changes to the Bitnami Catalog
+
+Beginning August 28th, 2025, Bitnami will evolve its public catalog to offer a curated set of hardened, security-focused images under the new [Bitnami Secure Images initiative](https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure-images-for-production-ready-containerized-applications). As part of this transition:
+
+- Granting community users access for the first time to security-optimized versions of popular container images.
+- Bitnami will begin deprecating support for non-hardened, Debian-based software images in its free tier and will gradually remove non-latest tags from the public catalog. As a result, community users will have access to a reduced number of hardened images. These images are published only under the “latest” tag and are intended for development purposes
+- Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/bitnami) to the “Bitnami Legacy” repository (docker.io/bitnamilegacy), where they will no longer receive updates.
+- For production workloads and long-term support, users are encouraged to adopt Bitnami Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
+
+These changes aim to improve the security posture of all Bitnami users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [Bitnami Secure Images announcement](https://github.com/bitnami/containers/issues/83267).
+
 ## Introduction
 
 Bitnami charts for Helm are carefully engineered, actively maintained and are the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
 
 This chart bootstraps a [ClickHouse Operator](https://github.com/Altinity/clickhouse-operator) Deployment in a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -147,7 +156,7 @@ Install the [Bitnami Kube Prometheus helm chart](https://github.com/bitnami/char
 
 ### Deploying extra resources
 
-Apart from the Operator, you may want to deploy ClickHouse Installation or ClickHouse Keeper Installation objects. For covering this case, the chart allows adding the full specification of other objects using the `extraDeploy` parameter. The following example creates a ClickHouse Installation using the `default-clickhouse` pod template:
+Apart from the Operator, you may want to deploy ClickHouse Installation or ClickHouse Keeper Installation objects. For covering this case, the chart allows adding the full specification of other objects using the `extraDeploy` parameter. The following examples creates a ClickHouse Installation using the `default-clickhouse` pod template and a ClickHouse Keeper Installation using the `default-keeper` pod template:
 
 ```yaml
 extraDeploy:
@@ -157,67 +166,103 @@ extraDeploy:
     name: test
   spec:
     defaults:
+      storageManagement:
+        provisioner: Operator
       templates:
         podTemplate: default-clickhouse
         dataVolumeClaimTemplate: default-volume-claim
     configuration:
       settings:
-        http_port: 8124
-        tcp_port: 9001
-        interserver_http_port: 9010
+        http_port: 8123
+        tcp_port: 9000
+        interserver_http_port: 9009
       users:
-        test_user/networks/ip:
-          - 0.0.0.0/0
-          - '::/0'
+        default/networks/ip:
+        - 0.0.0.0/0
+        - '::/0'
       clusters:
-        - name: test
+      - name: cluster
+        layout:
+          replicasCount: 1
+      zookeeper:
+        nodes:
+          - host: chk-test-cluster
+            port: 2181
+    templates:
+      podTemplates:
+      - name: default-clickhouse
+        distribution: Unspecified
+        spec:
+          containers:
+          - name: clickhouse
+            image: docker.io/bitnami/clickhouse
+            volumeMounts:
+            - name: default-volume-claim
+              mountPath: /bitnami/clickhouse
+      volumeClaimTemplates:
+      - name: default-volume-claim
+        spec:
+          accessModes:
+          - ReadWriteOnce
+          resources:
+            requests:
+              storage: 8Gi
+- apiVersion: clickhouse-keeper.altinity.com/v1
+  kind: ClickHouseKeeperInstallation
+  metadata:
+    name: test
+  spec:
+    defaults:
+      storageManagement:
+        provisioner: Operator
+      templates:
+        podTemplate: default-keeper
+        dataVolumeClaimTemplate: default-volume-claim
+    configuration:
+      clusters:
+        - name: cluster
           layout:
             replicasCount: 1
     templates:
       podTemplates:
-        - name: default-clickhouse
-          distribution: Unspecified
-          spec:
-            containers:
-              - name: clickhouse
-                image: docker.io/bitnami/clickhouse
-                env:
-                  - name: CLICKHOUSE_HTTP_PORT
-                    value: "8124"
-                  - name: CLICKHOUSE_TCP_PORT
-                    value: "9001"
-                  - name: CLICKHOUSE_INTERSERVER_HTTP_PORT
-                    value: "9010"
-                ports:
-                  - name: http
-                    containerPort: 8124
-                  - name: tcp
-                    containerPort: 9001
-                  - name: interserver
-                    containerPort: 9010
-                volumeMounts:
-                  - name: default-volume-claim
-                    mountPath: /bitnami/clickhouse
-                  - name: empty-dir
-                    mountPath: /opt/bitnami/clickhouse/logs
-                    subPath: app-logs-dir
-                  - name: empty-dir
-                    mountPath: /opt/bitnami/clickhouse/tmp
-                    subPath: app-tmp-dir
-                  - name: empty-dir
-                    mountPath: /tmp
-                    subPath: tmp-dir
-            volumes:
-              - name: empty-dir
-                emptyDir: {}
+      - name: default-keeper
+        distribution: Unspecified
+        spec:
+          containers:
+          - name: clickhouse-keeper
+            image: docker.io/bitnami/clickhouse-keeper
+            workingDir: /var/lib/clickhouse-keeper
+            env:
+            - name: CLICKHOUSE_KEEPER_SERVER_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            volumeMounts:
+            - name: default-volume-claim
+              mountPath: /bitnami/clickhouse-keeper
       volumeClaimTemplates:
-        - name: default-volume-claim
-          spec:
-            accessModes:
-            - ReadWriteOnce
-            resources:
-              requests:
-                storage: 8Gi
+      - name: default-volume-claim
+        spec:
+          accessModes:
+          - ReadWriteOnce
+          resources:
+            requests:
+              storage: 8Gi
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: chk-test-cluster
+    labels:
+      clickhouse-keeper.altinity.com/chk: test
+      clickhouse-keeper.altinity.com/cluster: cluster
+  spec:
+    ports:
+      - port: 2181
+        name: client
+    selector:
+      clickhouse-keeper.altinity.com/chk: test
+      clickhouse-keeper.altinity.com/cluster: cluster
+      clickhouse-keeper.altinity.com/ready: "yes"
 ```
 
 Check the [official quickstart guide](https://docs.altinity.com/altinitykubernetesoperator/kubernetesquickstartguide/quickcluster/) for more examples of how to deploy ClickHouse Installations.
@@ -268,11 +313,11 @@ Check the [official quickstart guide](https://docs.altinity.com/altinitykubernet
 | `keeperImage.digest`                                | ClickHouse Keeper image digest in the way sha256:aa.... Please note this parameter, if set, will override the tag image tag (immutable tags are recommended)                                                                   | `""`                                  |
 | `keeperImage.pullPolicy`                            | ClickHouse Keeper image pull policy                                                                                                                                                                                            | `IfNotPresent`                        |
 | `keeperImage.pullSecrets`                           | ClickHouse Keeper image pull secrets                                                                                                                                                                                           | `[]`                                  |
-| `auth.username`                                     | ClickHouse Admin username                                                                                                                                                                                                      | `default`                             |
-| `auth.password`                                     | ClickHouse Admin password                                                                                                                                                                                                      | `""`                                  |
-| `auth.existingSecret`                               | Name of a secret containing the Admin credentials                                                                                                                                                                              | `""`                                  |
-| `auth.existingSecretUsernameKey`                    | Name of the key inside the existing secret containing the Admin username                                                                                                                                                       | `""`                                  |
-| `auth.existingSecretPasswordKey`                    | Name of the key inside the existing secret containing the Admin password                                                                                                                                                       | `""`                                  |
+| `auth.username`                                     | ClickHouse Operator username                                                                                                                                                                                                   | `clickhouse_operator`                 |
+| `auth.password`                                     | ClickHouse Operator password                                                                                                                                                                                                   | `""`                                  |
+| `auth.existingSecret`                               | Name of a secret containing the ClickHouse Operator credentials (expected keys: `username` and `password`)                                                                                                                     | `""`                                  |
+| `ipFamily.enableIpv4`                               | Enable IPv4 addresses                                                                                                                                                                                                          | `true`                                |
+| `ipFamily.enableIpv6`                               | Enable IPv6 listening                                                                                                                                                                                                          | `true`                                |
 | `replicaCount`                                      | Number of ClickHouse Operator replicas to deploy                                                                                                                                                                               | `1`                                   |
 | `containerPorts.metrics`                            | ClickHouse Operator Metrics container port                                                                                                                                                                                     | `9999`                                |
 | `extraContainerPorts`                               | Optionally specify extra list of additional ports for ClickHouse Operator containers                                                                                                                                           | `[]`                                  |

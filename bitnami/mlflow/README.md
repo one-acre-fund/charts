@@ -16,13 +16,22 @@ helm install my-release oci://registry-1.docker.io/bitnamicharts/mlflow
 
 Looking to use MLflow in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
 
+## ⚠️ Important Notice: Upcoming changes to the Bitnami Catalog
+
+Beginning August 28th, 2025, Bitnami will evolve its public catalog to offer a curated set of hardened, security-focused images under the new [Bitnami Secure Images initiative](https://news.broadcom.com/app-dev/broadcom-introduces-bitnami-secure-images-for-production-ready-containerized-applications). As part of this transition:
+
+- Granting community users access for the first time to security-optimized versions of popular container images.
+- Bitnami will begin deprecating support for non-hardened, Debian-based software images in its free tier and will gradually remove non-latest tags from the public catalog. As a result, community users will have access to a reduced number of hardened images. These images are published only under the “latest” tag and are intended for development purposes
+- Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/bitnami) to the “Bitnami Legacy” repository (docker.io/bitnamilegacy), where they will no longer receive updates.
+- For production workloads and long-term support, users are encouraged to adopt Bitnami Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
+
+These changes aim to improve the security posture of all Bitnami users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [Bitnami Secure Images announcement](https://github.com/bitnami/containers/issues/83267).
+
 ## Introduction
 
 This chart bootstraps a [MLflow](https://github.com/bitnami/containers/tree/main/bitnami/mlflow) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 Python is built for full integration into Python that enables you to use it with its libraries and main packages.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.dev/) for deployment and management of Helm Charts in clusters.
 
 ## Prerequisites
 
@@ -91,7 +100,6 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 | `global.imageRegistry`                                | Global Docker image registry                                                                                                                                                                                                                                                                                                                                        | `""`    |
 | `global.imagePullSecrets`                             | Global Docker registry secret names as an array                                                                                                                                                                                                                                                                                                                     | `[]`    |
 | `global.defaultStorageClass`                          | Global default StorageClass for Persistent Volume(s)                                                                                                                                                                                                                                                                                                                | `""`    |
-| `global.storageClass`                                 | DEPRECATED: use global.defaultStorageClass instead                                                                                                                                                                                                                                                                                                                  | `""`    |
 | `global.security.allowInsecureImages`                 | Allows skipping image verification                                                                                                                                                                                                                                                                                                                                  | `false` |
 | `global.compatibility.openshift.adaptSecurityContext` | Adapt the securityContext sections of the deployment to make them compatible with Openshift restricted-v2 SCC: remove runAsUser, runAsGroup and fsGroup and let the platform use their allowed default IDs. Possible values: auto (apply if the detected running cluster is Openshift), force (perform the adaptation always), disabled (do not perform adaptation) | `auto`  |
 
@@ -276,19 +284,21 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ### MLflow Tracking Persistence Parameters
 
-| Name                                 | Description                                                                                             | Value               |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ------------------- |
-| `tracking.persistence.enabled`       | Enable persistence using Persistent Volume Claims                                                       | `true`              |
-| `tracking.persistence.mountPath`     | Path to mount the volume at.                                                                            | `/bitnami/mlflow`   |
-| `tracking.persistence.subPath`       | The subdirectory of the volume to mount to, useful in dev environments and one PV for multiple services | `""`                |
-| `tracking.persistence.storageClass`  | Storage class of backing PVC                                                                            | `""`                |
-| `tracking.persistence.labels`        | Persistent Volume labels                                                                                | `{}`                |
-| `tracking.persistence.annotations`   | Persistent Volume Claim annotations                                                                     | `{}`                |
-| `tracking.persistence.accessModes`   | Persistent Volume Access Modes                                                                          | `["ReadWriteOnce"]` |
-| `tracking.persistence.size`          | Size of data volume                                                                                     | `8Gi`               |
-| `tracking.persistence.existingClaim` | The name of an existing PVC to use for persistence                                                      | `""`                |
-| `tracking.persistence.selector`      | Selector to match an existing Persistent Volume for MLflow data PVC                                     | `{}`                |
-| `tracking.persistence.dataSource`    | Custom PVC data source                                                                                  | `{}`                |
+| Name                                               | Description                                                                                             | Value               |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
+| `tracking.persistence.enabled`                     | Enable persistence using Persistent Volume Claims                                                       | `true`              |
+| `tracking.persistence.mountPath`                   | Path to mount the volume at.                                                                            | `/bitnami/mlflow`   |
+| `tracking.persistence.subPath`                     | The subdirectory of the volume to mount to, useful in dev environments and one PV for multiple services | `""`                |
+| `tracking.persistence.storageClass`                | Storage class of backing PVC                                                                            | `""`                |
+| `tracking.persistence.labels`                      | Persistent Volume labels                                                                                | `{}`                |
+| `tracking.persistence.annotations`                 | Persistent Volume Claim annotations                                                                     | `{}`                |
+| `tracking.persistence.accessModes`                 | Persistent Volume Access Modes                                                                          | `["ReadWriteOnce"]` |
+| `tracking.persistence.size`                        | Size of data volume                                                                                     | `8Gi`               |
+| `tracking.persistence.existingClaim`               | The name of an existing PVC to use for persistence                                                      | `""`                |
+| `tracking.persistence.selector`                    | Selector to match an existing Persistent Volume for MLflow data PVC                                     | `{}`                |
+| `tracking.persistence.dataSource`                  | Custom PVC data source                                                                                  | `{}`                |
+| `tracking.tmpVolume.ephemeral.enabled`             | Use a generic ephemeral volume for `/tmp` instead of `emptyDir`                                         | `false`             |
+| `tracking.tmpVolume.ephemeral.volumeClaimTemplate` | Custom `volumeClaimTemplate` for the ephemeral volume (YAML map)                                        | `{}`                |
 
 ### MLflow Tracking Other Parameters
 
@@ -485,6 +495,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 | `minio.service.type`               | MinIO&reg; service type                                                                                                           | `ClusterIP`                                         |
 | `minio.service.loadBalancerIP`     | MinIO&reg; service LoadBalancer IP                                                                                                | `""`                                                |
 | `minio.service.ports.api`          | MinIO&reg; service port                                                                                                           | `80`                                                |
+| `minio.console.enabled`            | Enable MinIO&reg; Console                                                                                                         | `false`                                             |
 
 ### External S3 parameters
 
@@ -556,6 +567,10 @@ run.source.git.revision=master
 Find more information about how to deal with common errors related to Bitnami's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
 
 ## Upgrading
+
+### To 4.0.0
+
+This major updates the `minio` subchart to its newest major, 17.0.0. For more information on this subchart's major, please refer to [minio upgrade notes](https://github.com/bitnami/charts/tree/main/bitnami/minio#to-1700).
 
 ### To 3.0.0
 

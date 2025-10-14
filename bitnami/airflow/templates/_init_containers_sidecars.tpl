@@ -47,7 +47,7 @@ Returns an init-container that prepares the Airflow configuration files for main
       db_password="$(airflow_encode_url "$AIRFLOW_DATABASE_PASSWORD")"
       airflow_conf_set "database" "sql_alchemy_conn" "postgresql+psycopg2://${db_user}:${db_password}@${AIRFLOW_DATABASE_HOST}:${AIRFLOW_DATABASE_PORT_NUMBER}/${AIRFLOW_DATABASE_NAME}"
     {{- end }}
-    {{- if or (eq .Values.executor "CeleryExecutor") (eq .Values.executor "CeleryKubernetesExecutor") }}
+    {{- if or (contains "CeleryExecutor" .Values.executor) (eq .Values.executor "CeleryKubernetesExecutor") }}
       {{- if and .Values.usePasswordFiles }}
       export REDIS_PASSWORD="$(< $REDIS_PASSWORD_FILE)"
       {{- end }}
@@ -60,6 +60,8 @@ Returns an init-container that prepares the Airflow configuration files for main
     {{- end }}
       airflow_conf_set "celery" "broker_url" "redis://${redis_credentials}@${REDIS_HOST}:${REDIS_PORT_NUMBER}/${REDIS_DATABASE}"
     {{- end }}
+      # Configure authentication backend
+      airflow_conf_set "core" "auth_manager" "airflow.providers.fab.auth_manager.fab_auth_manager.FabAuthManager"
       info "Airflow configuration ready"
 
       if [[ -f "/opt/bitnami/airflow/config/airflow_local_settings.py" ]]; then
@@ -105,7 +107,7 @@ Returns an init-container that prepares the Airflow configuration files for main
     - name: AIRFLOW_DATABASE_PORT_NUMBER
       value: {{ include "airflow.database.port" . }}
     {{- end }}
-    {{- if or (eq .Values.executor "CeleryExecutor") (eq .Values.executor "CeleryKubernetesExecutor") }}
+    {{- if or (contains "CeleryExecutor" .Values.executor) (eq .Values.executor "CeleryKubernetesExecutor") }}
     - name: REDIS_HOST
       value: {{ include "airflow.redis.host" . | quote }}
     - name: REDIS_PORT_NUMBER
@@ -124,6 +126,9 @@ Returns an init-container that prepares the Airflow configuration files for main
           name: {{ include "airflow.redis.secretName" . }}
           key: redis-password
     {{- end }}
+    {{- end }}
+    {{- if .Values.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.extraEnvVars "context" $) | nindent 4 }}
     {{- end }}
   volumeMounts:
     - name: empty-dir
@@ -187,6 +192,9 @@ Returns an init-container that prepares the Airflow Webserver configuration file
           key: bind-password
     {{- end }}
     {{- end }}
+    {{- if .Values.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.extraEnvVars "context" $) | nindent 4 }}
+    {{- end }}
   volumeMounts:
     - name: empty-dir
       mountPath: /emptydir
@@ -222,11 +230,20 @@ Returns an init-container that waits for db migrations to be ready
       . /opt/bitnami/scripts/airflow-env.sh
       . /opt/bitnami/scripts/libairflow.sh
 
+      info "Trying to connect to the database server"
+      airflow_wait_for_db_connection
       info "Waiting for db migrations to be completed"
       airflow_wait_for_db_migrations
+      {{- if (include "airflow.isImageMajorVersion3" .) }}
+      info "Waiting for the admin user to exist"
+      airflow_wait_for_admin_user
+      {{- end }}
   env:
     - name: BITNAMI_DEBUG
       value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
+    {{- if .Values.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.extraEnvVars "context" $) | nindent 4 }}
+    {{- end }}
   volumeMounts:
     - name: empty-dir
       mountPath: /tmp
@@ -258,6 +275,40 @@ create folders or volume names
 {{- end -}}
 
 {{/*
+Returns an init-container that prepares the venv directory
+*/}}
+{{- define "airflow.defaultInitContainers.prepareVenv" -}}
+- name: prepare-venv
+  image: {{ include "airflow.image" . }}
+  imagePullPolicy: {{ .Values.image.pullPolicy }}
+  {{- if .Values.defaultInitContainers.prepareVenv.containerSecurityContext.enabled }}
+  securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.defaultInitContainers.prepareVenv.containerSecurityContext "context" .) | nindent 4 }}
+  {{- end }}
+  {{- if .Values.defaultInitContainers.prepareVenv.resources }}
+  resources: {{- toYaml .Values.defaultInitContainers.prepareVenv.resources | nindent 4 }}
+  {{- else if ne .Values.defaultInitContainers.prepareVenv.resourcesPreset "none" }}
+  resources: {{- include "common.resources.preset" (dict "type" .Values.defaultInitContainers.prepareVenv.resourcesPreset) | nindent 4 }}
+  {{- end }}
+  command:
+    - /bin/bash
+  args:
+    - -ec
+    - |
+      . /opt/bitnami/scripts/libairflow.sh
+
+      # Copy the configuration files to the writable directory
+      cp -r --preserve=mode /opt/bitnami/airflow/venv /emptydir/venv-base-dir
+
+      info "Copy operation completed"
+  env:
+    - name: BITNAMI_DEBUG
+      value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
+  volumeMounts:
+    - name: empty-dir
+      mountPath: /emptydir
+{{- end -}}
+
+{{/*
 Returns shared structure between load-dags and load-plugins init containers
 */}}
 {{- define "airflow.defaultInitContainers.shared" -}}
@@ -276,9 +327,15 @@ Returns shared structure between load-dags and load-plugins init containers
   {{- else }}
   command: ["/bin/bash"]
   {{- end }}
-  {{- if .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVars }}
-  env: {{- include "common.tplvalues.render" (dict "value" .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVars "context" .) | nindent 4 }}
-  {{- end }}
+  env:
+    - name: BITNAMI_DEBUG
+      value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
+    {{- if .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVars "context" .) | nindent 4 }}
+    {{- end }}
+    {{- if .Values.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.extraEnvVars "context" $) | nindent 4 }}
+    {{- end }}
   {{- if or .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVarsCM .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVarsSecret }}
   envFrom:
     {{- if .Values.defaultInitContainers.loadDAGsPlugins.extraEnvVarsCM }}
@@ -417,9 +474,15 @@ Returns shared structure between sync-dags and sync-plugins sidecars
   {{- else }}
   command: ["/bin/bash"]
   {{- end }}
-  {{- if .Values.defaultSidecars.syncDAGsPlugins.extraEnvVars }}
-  env: {{- include "common.tplvalues.render" (dict "value" .Values.defaultSidecars.syncDAGsPlugins.extraEnvVars "context" .) | nindent 4 }}
-  {{- end }}
+  env:
+    - name: BITNAMI_DEBUG
+      value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
+    {{- if .Values.defaultSidecars.syncDAGsPlugins.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.defaultSidecars.syncDAGsPlugins.extraEnvVars "context" .) | nindent 4 }}
+    {{- end }}
+    {{- if .Values.extraEnvVars }}
+    {{- include "common.tplvalues.render" (dict "value" .Values.extraEnvVars "context" $) | nindent 4 }}
+    {{- end }}
   {{- if or .Values.defaultSidecars.syncDAGsPlugins.extraEnvVarsCM .Values.defaultSidecars.syncDAGsPlugins.extraEnvVarsSecret }}
   envFrom:
     {{- if .Values.defaultSidecars.syncDAGsPlugins.extraEnvVarsCM }}

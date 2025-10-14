@@ -1,8 +1,121 @@
 # Changelog
 
+## 16.0.1 (2025-08-13)
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references ([#35787](https://github.com/bitnami/charts/pull/35787))
+
+## 16.0.0 (2025-08-13)
+
+* [bitnami/milvus] :arrow_up: Major release: Milvus 2.6.0 architecture update (#35416) ([add3279](https://github.com/bitnami/charts/commit/add327965d7501d876cd851562e6eb6dca386a45)), closes [#35416](https://github.com/bitnami/charts/issues/35416)
+
+## <small>15.0.16 (2025-08-05)</small>
+
+* [bitnami/*] docs: update BSI warning on charts' notes (#35340) ([07483a5](https://github.com/bitnami/charts/commit/07483a5ed964b409266dc025e4b55bf2eb0f621c)), closes [#35340](https://github.com/bitnami/charts/issues/35340)
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#35405) ([4b59236](https://github.com/bitnami/charts/commit/4b59236cdf9c27d3c46f4ebd505e2e2d09a3d2ea)), closes [#35405](https://github.com/bitnami/charts/issues/35405)
+
+## <small>15.0.15 (2025-07-21)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#35231) ([7df8965](https://github.com/bitnami/charts/commit/7df896578c9837f78f2ee3044ebf5f55a4786952)), closes [#35231](https://github.com/bitnami/charts/issues/35231)
+
+## <small>15.0.14 (2025-07-18)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#35202) ([c7d1ea8](https://github.com/bitnami/charts/commit/c7d1ea89d0f8065fe3566f8de887be20b4338b6d)), closes [#35202](https://github.com/bitnami/charts/issues/35202)
+
+## <small>15.0.13 (2025-07-18)</small>
+
+* [bitnami/*] Adapt main README and change ascii (#35173) ([73d15e0](https://github.com/bitnami/charts/commit/73d15e03e04647efa902a1d14a09ea8657429cd0)), closes [#35173](https://github.com/bitnami/charts/issues/35173)
+* [bitnami/*] Adapt welcome message to BSI (#35170) ([e1c8146](https://github.com/bitnami/charts/commit/e1c8146831516fb35de736a6f3fd10e5e7a44286)), closes [#35170](https://github.com/bitnami/charts/issues/35170)
+* [bitnami/*] Add BSI to charts' READMEs (#35174) ([4973fd0](https://github.com/bitnami/charts/commit/4973fd08dd7e95398ddcc4054538023b542e19f2)), closes [#35174](https://github.com/bitnami/charts/issues/35174)
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#35195) ([310932d](https://github.com/bitnami/charts/commit/310932d1bbc597431f2f90493574f6cd4241e893)), closes [#35195](https://github.com/bitnami/charts/issues/35195)
+
+## <small>15.0.12 (2025-07-15)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#35110) ([40ab0af](https://github.com/bitnami/charts/commit/40ab0af64c8e4312c705243993b2cee8968944d4)), closes [#35110](https://github.com/bitnami/charts/issues/35110)
+
+## <small>15.0.11 (2025-07-09)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34966) ([e18191b](https://github.com/bitnami/charts/commit/e18191b55de7d2ae8e9df67f111b22ea315a5d4b)), closes [#34966](https://github.com/bitnami/charts/issues/34966)
+
+## <small>15.0.10 (2025-07-09)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34925) ([9f43943](https://github.com/bitnami/charts/commit/9f43943c8901f5379a8e64df460fa89c2369fa4f)), closes [#34925](https://github.com/bitnami/charts/issues/34925)
+
+## <small>15.0.9 (2025-07-01)</small>
+
+* [bitnami/milvus] Add GCS support to _helpers.tpl (#34701) ([f5bb014](https://github.com/bitnami/charts/commit/f5bb0144962b9bca647c91d7c649e3669f7ecd52)), closes [#34701](https://github.com/bitnami/charts/issues/34701)
+
+## <small>15.0.8 (2025-06-27)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34691) ([a2d40b9](https://github.com/bitnami/charts/commit/a2d40b9b39ec0839cfeef3231a6e1d6ab0efc8c0)), closes [#34691](https://github.com/bitnami/charts/issues/34691)
+
+## <small>15.0.7 (2025-06-25)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34639) ([763ed53](https://github.com/bitnami/charts/commit/763ed53e749e6cf771e372bb169aa112b54c9486)), closes [#34639](https://github.com/bitnami/charts/issues/34639)
+
+## <small>15.0.6 (2025-06-13)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34468) ([148525c](https://github.com/bitnami/charts/commit/148525cfbf55d11f13fcfbbffd49c1267e053597)), closes [#34468](https://github.com/bitnami/charts/issues/34468)
+
+## <small>15.0.5 (2025-06-13)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34416) ([dab9868](https://github.com/bitnami/charts/commit/dab9868a93f1bcf36f80ee0b10bb629c5d780b88)), closes [#34416](https://github.com/bitnami/charts/issues/34416)
+
+## <small>15.0.4 (2025-06-11)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34231) ([15bd4ec](https://github.com/bitnami/charts/commit/15bd4eca47e589eb651d0147e47281385b1cf7cc)), closes [#34231](https://github.com/bitnami/charts/issues/34231)
+
+## <small>15.0.3 (2025-06-09)</small>
+
+* [bitnami/milvus] Disable MinIO Console (#34267) ([8b41b99](https://github.com/bitnami/charts/commit/8b41b999bc18cd5f69425408df0be3363308b822)), closes [#34267](https://github.com/bitnami/charts/issues/34267)
+
+## <small>15.0.2 (2025-06-06)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34194) ([b495f95](https://github.com/bitnami/charts/commit/b495f9503fed33537b6a4204837a08ffed27b0e5)), closes [#34194](https://github.com/bitnami/charts/issues/34194)
+
+## <small>15.0.1 (2025-06-04)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34068) ([7655ce3](https://github.com/bitnami/charts/commit/7655ce39df8fe96f4a188e74c74c4652393d2e73)), closes [#34068](https://github.com/bitnami/charts/issues/34068)
+
+## 15.0.0 (2025-06-04)
+
+* [bitnami/milvus] feat: major version due to Minio major bump (#34089) ([efe3f52](https://github.com/bitnami/charts/commit/efe3f5269c383f5c834ae80fdefba7551a94d3c5)), closes [#34089](https://github.com/bitnami/charts/issues/34089)
+
+## <small>14.0.1 (2025-05-30)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#34004) ([e6e1f98](https://github.com/bitnami/charts/commit/e6e1f986bba45a1e6795c681882467f1f286bdb2)), closes [#34004](https://github.com/bitnami/charts/issues/34004)
+
+## 14.0.0 (2025-05-26)
+
+* [bitnami/milvus] Update ETCD subchart (#33877) ([e120600](https://github.com/bitnami/charts/commit/e120600ee2e1865e941f40444b38b320ad236fc9)), closes [#33877](https://github.com/bitnami/charts/issues/33877)
+
+## <small>13.2.6 (2025-05-23)</small>
+
+* [bitnami/milvus] :zap: :arrow_up: Update dependency references (#33854) ([7715762](https://github.com/bitnami/charts/commit/77157629dde5db3fe814f387815a8151e67d1945)), closes [#33854](https://github.com/bitnami/charts/issues/33854)
+
+## <small>13.2.5 (2025-05-22)</small>
+
+* [bitnami/kubeapps] Deprecation followup (#33579) ([77e312c](https://github.com/bitnami/charts/commit/77e312c1772d4d7c4dc5d3ac0e80f4e452e3a062)), closes [#33579](https://github.com/bitnami/charts/issues/33579)
+* [bitnami/milvus] Release 13.2.5 (#33543) ([33469b7](https://github.com/bitnami/charts/commit/33469b7b6a28f0d89ac3d35f0ea608b0ab4a0708)), closes [#33543](https://github.com/bitnami/charts/issues/33543)
+
+## <small>13.2.4 (2025-05-06)</small>
+
+* [bitnami/milvus] chore: :recycle: :arrow_up: Update common and remove k8s < 1.23 references (#33401) ([c9dc0e5](https://github.com/bitnami/charts/commit/c9dc0e5a73faedc0f0180c64b239ae2380289363)), closes [#33401](https://github.com/bitnami/charts/issues/33401)
+
+## <small>13.2.3 (2025-04-28)</small>
+
+* [bitnami/milvus] Release 13.2.3 (#33203) ([836880d](https://github.com/bitnami/charts/commit/836880d0db095d52ef2c4aa8f53b119b97c0c563)), closes [#33203](https://github.com/bitnami/charts/issues/33203)
+
+## <small>13.2.2 (2025-04-17)</small>
+
+* [bitnami/milvus] Release 13.2.2 (#33053) ([2cfdfba](https://github.com/bitnami/charts/commit/2cfdfba561db8c3ef1034a86f0f2340ba1a7ee1f)), closes [#33053](https://github.com/bitnami/charts/issues/33053)
+
+## <small>13.2.1 (2025-04-10)</small>
+
+* [bitnami/milvus] Release 13.2.1 (#32956) ([5b01b03](https://github.com/bitnami/charts/commit/5b01b030219eb6f935e4fafd20d3f8d46bf5b297)), closes [#32956](https://github.com/bitnami/charts/issues/32956)
+
 ## 13.2.0 (2025-04-08)
 
-* [bitnami/milvus] Update minio chart ([#32867](https://github.com/bitnami/charts/pull/32867))
+* [bitnami/milvus] Update minio chart (#32867) ([4a1bdbe](https://github.com/bitnami/charts/commit/4a1bdbeb4c7467d2e34ecea0a6930e195c255922)), closes [#32867](https://github.com/bitnami/charts/issues/32867)
 
 ## 13.1.0 (2025-04-07)
 
